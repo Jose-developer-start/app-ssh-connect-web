@@ -1,0 +1,53 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap");
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+a,
+b {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+a {
+  color: #f1f1f1 !important;
+}
+p{
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+.content__title {
+    position: absolute;
+    font-size: 50px;
+    color: #2c2e2d;
+    font-weight: 700;
+    left: -150px;
+    top: 140px;
+  }
+  
+  .freefire__logo {
+    background-image: url("../../public/images/freefire.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    width: 500px;
+    height: 300px;
+  }
+
+  .font-weight-bolder:hover{
+    color: rgb(117, 199, 128);
+  }

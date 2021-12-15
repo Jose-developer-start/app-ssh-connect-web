@@ -1,0 +1,41 @@
+
+header {
+    height: 50vh;
+    width: 100%;
+    background: #2a6591 !important;
+  }
+  
+  header h1 {
+    color: #f1f4f4;
+  }
+  
+  header p {
+    color: #beb193;
+    font-size: 20px;
+  }
+  
+
+.ticket {
+    background: #f8aa02;
+    height: 150px;
+    width: 150px;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .ticket__header h3 {
+    font-weight: 700;
+    font-size: 40px;
+    color: #f2f2f2;
+    border-bottom: 1px solid #00467a;
+  }
+  
+  .ticket__footer p {
+    font-family: "Poppins", "san-serif";
+    font-weight: 300;
+    color: #f1f4f4;
+  }
