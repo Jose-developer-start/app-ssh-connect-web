@@ -23,8 +23,7 @@ export default function Table({ accounts }) {
                                 <td>{account.user}</td>
                                 <td>{account.date}</td>
                                 <td>
-                                    <a className="btn btn-info" href="#"><i className="fas fa-edit"></i></a>
-                                    <a href="#" className="btn btn-outline-danger" ><i className="fas fa-trash-alt"></i></a>
+                                    Online
                                 </td>
                             </tr>
                         ))
