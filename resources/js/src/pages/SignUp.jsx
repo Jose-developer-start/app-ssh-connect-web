@@ -1,21 +1,18 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import Alert from '../components/Alert';
 
-export default function SignIn() {
+export default function SignUp() {
+    const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const [authUser,setAuthUser] = useState(
-        sessionStorage.getItem('user') || ''
-    )
-
     const [result, setResult] = useState(null);
-
     const onSubmit = (e) => {
         e.preventDefault();
         const fetchPost = async () => {
-            const BASE_API_URL = "http://localhost:8000/api/login";
+            const BASE_API_URL = location.origin + "/api/register";
             let data = {
+                'name': name,
                 'email': email,
                 'password': password
             }
@@ -28,27 +25,14 @@ export default function SignIn() {
                 }
             })
             const postJson = await postsFetch.json();
-            if(postJson.data.name != ""){
-
-                setAuthUser(sessionStorage.setItem('user',JSON.stringify(postJson.data)));
-            }else{
-                setResult(postJson.data.result)
-            }
-            console.log(postJson.data)
+            //console.log(postJson.data);
+            setResult(postJson.data); //useState Result
         }
         fetchPost();
-    }
-
-    //sessionStorage.removeItem('user')
-    if(authUser != ""){
-        setTimeout(()=>{
-            location.href = location.origin
-
-        },1000);
-        return (
-            <h3>Validando datos...</h3>
-        )
-        
+        //Clear imput
+        setName(null);
+        setEmail(null);
+        setPassword(null);
     }
     return (
         <div className="img-login">
@@ -59,17 +43,19 @@ export default function SignIn() {
                         <div className="card shadow-lg mb-5">
                             <div className="card-body">
                                 <form method="POST" onSubmit={onSubmit}>
-                                    <h2 className="h3 text-dark text-center pb-2">Acceder</h2>
+                                    <h2 className="h3 text-dark text-center pb-2">Registrate</h2>
                                     { result == null ? "" : <Alert msg={result} /> }
-                                    
+                                    <div className="form-group">
+                                        <input name="name" value={name} onChange={(e) => { setName(e.target.value) }} type="text" className="form-control" placeholder="Nombre" />
+                                    </div>
                                     <div className="form-group">
                                         <input name="email" value={email} type="text" onChange={(e) => { setEmail(e.target.value) }} className="form-control" placeholder="Correo electrónico" />
                                     </div>
                                     <div className="form-group">
                                         <input name="password" value={password} onChange={(e) => { setPassword(e.target.value) }} type="password" className="form-control" placeholder="Clave" />
                                     </div>
-                                    <button className="btn btn-success btn-block">Acceder</button>
-                                    <Link to={"/registrarse"} className="text-muted text-secondary mt-3">Registrate</Link>
+                                    <button className="btn btn-success btn-block">SignUp</button>
+                                    <Link to={"/login"} className="text-muted text-secondary mt-3">Acceder</Link>
                                 </form>
                             </div>
                         </div>

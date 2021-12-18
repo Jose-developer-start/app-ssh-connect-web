@@ -16,6 +16,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::resource('posts','PostController');
 
-
+//Rutas Api
 Route::get('websockets','WebsocketAccountController@index');
 Route::post('websockets','WebsocketAccountController@store');
+
+//Rutas Users Api
+Route::get('users','UserController@index');
+Route::post('register','UserController@register');
+Route::post('login','UserController@login');
+//Route::get('users','UserController@index');

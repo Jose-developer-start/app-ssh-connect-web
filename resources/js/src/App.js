@@ -15,6 +15,7 @@ import AccountSSH from "./pages/AccountSSH";
 import Home from "./pages/Home";
 import SignIn from "./pages/SignIn";
 import Panel from "./pages/Panel";
+import SignUp from "./pages/SignUp";
 
 function App() {
     return (
@@ -25,6 +26,8 @@ function App() {
                     <Route exact path="/" element={<Home />} />
                     <Route path="/websocket/us1" element={<AccountSSH />} />
                     <Route path="/login" element={<SignIn />} />
+                    <Route path="/registrarse" element={<SignUp />} />
+                    
                     <Route path="/panel" element={<Panel />} />
                     <Route path="/edit/:id" element={<Edit />} />
                 </Routes>
