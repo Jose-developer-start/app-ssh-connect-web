@@ -24,9 +24,9 @@ class UserSeeder extends Seeder
             'password' => Hash::make("javier")
         ]);
         User::create([
-            'name' => "Sandra",
-            'email' => "omar@hive-vpn.tk",
-            'password' => Hash::make("omar")
+            'name' => "miguel",
+            'email' => "miguel@hive-vpn.tk",
+            'password' => Hash::make("miguel")
         ]);
         User::create([
             'name' => "ruben",
@@ -42,6 +42,11 @@ class UserSeeder extends Seeder
             'name' => "rikelme",
             'email' => "rikelme@hive-vpn.tk",
             'password' => Hash::make("rikelme")
+        ]);
+        User::create([
+            'name' => "omar",
+            'email' => "omar@hive-vpn.tk",
+            'password' => Hash::make("omar")
         ]);
     }
 }
