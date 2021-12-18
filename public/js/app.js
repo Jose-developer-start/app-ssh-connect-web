@@ -69629,8 +69629,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _websocketAccount_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./websocketAccount.css */ "./resources/js/src/components/home/websocketAccount.css");
-/* harmony import */ var _websocketAccount_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_websocketAccount_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var _websocketAccount_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./websocketAccount.css */ "./resources/js/src/components/home/websocketAccount.css");
+/* harmony import */ var _websocketAccount_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_websocketAccount_css__WEBPACK_IMPORTED_MODULE_3__);
 
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -69651,26 +69652,32 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
 function WebsocketAccount() {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(""),
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(sessionStorage.getItem('user') || ""),
       _useState2 = _slicedToArray(_useState, 2),
-      user = _useState2[0],
-      setUser = _useState2[1];
+      auth = _useState2[0],
+      setAuth = _useState2[1];
 
   var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(""),
       _useState4 = _slicedToArray(_useState3, 2),
-      passwd = _useState4[0],
-      setPasswd = _useState4[1];
+      user = _useState4[0],
+      setUser = _useState4[1];
 
-  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false),
+  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(""),
       _useState6 = _slicedToArray(_useState5, 2),
-      loading = _useState6[0],
-      setLoading = _useState6[1];
+      passwd = _useState6[0],
+      setPasswd = _useState6[1];
 
-  var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]),
+  var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false),
       _useState8 = _slicedToArray(_useState7, 2),
-      account = _useState8[0],
-      setAccount = _useState8[1];
+      loading = _useState8[0],
+      setLoading = _useState8[1];
+
+  var _useState9 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]),
+      _useState10 = _slicedToArray(_useState9, 2),
+      account = _useState10[0],
+      setAccount = _useState10[1];
 
   var today = new Date();
   var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
@@ -69887,10 +69894,13 @@ function WebsocketAccount() {
     htmlFor: "openv2ray.com"
   }, "internet-vip.cf ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
     className: "badge bg-success"
-  }, "Valid SSL")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+  }, "Valid SSL")))), auth != "" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
     type: "submit",
     className: "btn btn-primary btn-sm w-100 subb"
-  }, "Create")))))))));
+  }, "Create") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    to: "/login",
+    className: "btn btn-secondary btn-block"
+  }, "Login")))))))));
 }
 
 /***/ }),

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 import "./websocketAccount.css"
 export default function WebsocketAccount() {
+    const [auth, setAuth] = useState(sessionStorage.getItem('user') || "");
     const [user, setUser] = useState("");
     const [passwd, setPasswd] = useState("");
     const [loading, setLoading] = useState(false);
@@ -132,7 +134,13 @@ export default function WebsocketAccount() {
                                             </div>
                                         </div>
 
-                                        <button type="submit" className="btn btn-primary btn-sm w-100 subb">Create</button>
+                                        {
+                                            (auth != "") ? (
+                                                <button type="submit" className="btn btn-primary btn-sm w-100 subb">Create</button>
+                                            ): (
+                                                <Link to="/login" className="btn btn-secondary btn-block" >Login</Link>
+                                            )
+                                        }
 
                                     </form>
                                 </div>
