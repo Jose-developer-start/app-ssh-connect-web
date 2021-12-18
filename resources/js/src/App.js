@@ -30,6 +30,7 @@ function App() {
                     
                     <Route path="/panel" element={<Panel />} />
                     <Route path="/edit/:id" element={<Edit />} />
+                    
                 </Routes>
             
             <Footer />

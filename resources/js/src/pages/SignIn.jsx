@@ -14,7 +14,8 @@ export default function SignIn() {
     const onSubmit = (e) => {
         e.preventDefault();
         const fetchPost = async () => {
-            const BASE_API_URL = "http://localhost:8000/api/login";
+            
+            const BASE_API_URL = location.origin +"/api/login";
             let data = {
                 'email': email,
                 'password': password
@@ -34,7 +35,7 @@ export default function SignIn() {
             } else {
                 setResult(postJson.data.result)
             }
-            console.log(postJson.data)
+            //console.log(postJson.data)
         }
         fetchPost();
     }

@@ -22,6 +22,10 @@ Route::post('websockets','WebsocketAccountController@store');
 
 //Rutas Users Api
 Route::get('users','UserController@index');
+//Obtener usuario indiviual
+Route::get('users/{id}','UserController@getUser');
+
+
 Route::post('register','UserController@register');
 Route::post('login','UserController@login');
 //Route::get('users','UserController@index');

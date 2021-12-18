@@ -22,7 +22,7 @@ class WebsocketAccountController extends Controller
         $ip = '143.198.170.229';
         //$ip = '192.168.43.89';
         $clave = 'vps_2021';
-        //$clave = 'jose002';
+        $clave = 'jose002';
         if (!($connection = ssh2_connect($ip, 22))) {
             die('No se puede conectar con el servidor VPS.'); 
         }
@@ -51,7 +51,7 @@ class WebsocketAccountController extends Controller
             'passwd' => $passwd,
             'date' => $date,
             'status' => 1,
-            'user_id' => 1
+            'user_id' => $request->user_id
         ]);
 
         return response()->json($account);

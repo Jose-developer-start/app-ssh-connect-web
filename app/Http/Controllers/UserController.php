@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Http\Resources\User as UserResource;
+use App\Http\Resources\WebsocketAccount as ResourcesWebsocketAccount;
 use App\User;
+use App\WebsocketAccount;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
@@ -16,9 +18,14 @@ class UserController extends Controller
      */
     public function index()
     {
-        return response()->json([
-            'data' => 1
-        ]);
+        return [
+            "data" => "conected"
+        ];
+    }
+    public function getUser($id){
+        $account = WebsocketAccount::where('user_id',$id)->get();
+        return ResourcesWebsocketAccount::collection($account);
+        
     }
 
     /**

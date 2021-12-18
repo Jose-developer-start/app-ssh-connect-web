@@ -7,12 +7,13 @@ export default function WebsocketAccount() {
     const [passwd, setPasswd] = useState("");
     const [loading, setLoading] = useState(false);
     const [account, setAccount] = useState([]);
-
+    const authData = JSON.parse(auth)
     var today = new Date();
     let date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
     const onSubmit = (e) => {
         e.preventDefault();
         let data = {
+            "user_id" : authData.id,
             "date": date,
             "user": user,
             "passwd": passwd

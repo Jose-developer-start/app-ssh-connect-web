@@ -18,6 +18,7 @@ class WebsocketAccount extends JsonResource
             'id' => $this->id,
             'user' => $this->user,
             'passwd' => $this->passwd,
+            'date' => $this->date
         ];
     }
 }
