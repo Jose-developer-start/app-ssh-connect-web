@@ -5,7 +5,7 @@ import Alert from '../components/Alert';
 export default function SignIn() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const [authUser,setAuthUser] = useState(
+    const [authUser, setAuthUser] = useState(
         sessionStorage.getItem('user') || ''
     )
 
@@ -28,10 +28,10 @@ export default function SignIn() {
                 }
             })
             const postJson = await postsFetch.json();
-            if(postJson.data.name != ""){
+            if (postJson.data.name != "") {
 
-                setAuthUser(sessionStorage.setItem('user',JSON.stringify(postJson.data)));
-            }else{
+                setAuthUser(sessionStorage.setItem('user', JSON.stringify(postJson.data)));
+            } else {
                 setResult(postJson.data.result)
             }
             console.log(postJson.data)
@@ -40,15 +40,19 @@ export default function SignIn() {
     }
 
     //sessionStorage.removeItem('user')
-    if(authUser != ""){
-        setTimeout(()=>{
+    if (authUser != "") {
+        setTimeout(() => {
             location.href = location.origin
 
-        },1000);
+        }, 1000);
         return (
-            <h3>Validando datos...</h3>
+            <div className="bg-login">
+                <div className="container">
+                    <h2 className="text-center py-5">Validando tu información...</h2>
+                </div>
+            </div>
         )
-        
+
     }
     return (
         <div className="img-login">
@@ -60,8 +64,8 @@ export default function SignIn() {
                             <div className="card-body">
                                 <form method="POST" onSubmit={onSubmit}>
                                     <h2 className="h3 text-dark text-center pb-2">Acceder</h2>
-                                    { result == null ? "" : <Alert msg={result} /> }
-                                    
+                                    {result == null ? "" : <Alert msg={result} />}
+
                                     <div className="form-group">
                                         <input name="email" value={email} type="text" onChange={(e) => { setEmail(e.target.value) }} className="form-control" placeholder="Correo electrónico" />
                                     </div>
