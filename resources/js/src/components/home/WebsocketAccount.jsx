@@ -3,11 +3,13 @@ import { Link } from 'react-router-dom';
 import "./websocketAccount.css"
 export default function WebsocketAccount() {
     const [auth, setAuth] = useState(sessionStorage.getItem('user') || "");
+    if(auth != ""){
+        const authData = JSON.parse(auth)
+    }
     const [user, setUser] = useState("");
     const [passwd, setPasswd] = useState("");
     const [loading, setLoading] = useState(false);
     const [account, setAccount] = useState([]);
-    const authData = JSON.parse(auth)
     var today = new Date();
     let date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
     const onSubmit = (e) => {
