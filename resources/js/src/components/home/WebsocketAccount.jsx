@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 import "./websocketAccount.css"
 export default function WebsocketAccount() {
     const [auth, setAuth] = useState(sessionStorage.getItem('user') || "");
+    var authData = null;
     if(auth != ""){
-        var authData = JSON.parse(auth)
+        authData = JSON.parse(auth)
     }
     const [user, setUser] = useState("");
     const [passwd, setPasswd] = useState("");
