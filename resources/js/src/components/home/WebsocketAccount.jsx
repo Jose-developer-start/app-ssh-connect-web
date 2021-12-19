@@ -122,14 +122,14 @@ export default function WebsocketAccount() {
                                             <label htmlFor="username" className="form-label">Username</label>
                                             <div className="input-group">
                                                 <span className="input-group-text">Hive VPN</span>
-                                                <input type="text" onChange={(e) => { setUser(e.target.value); }} className="form-control" name="user" id="username" placeholder="username" required />
+                                                <input disabled type="text" onChange={(e) => { setUser(e.target.value); }} className="form-control" name="user" id="username" placeholder="username" required />
                                             </div>
                                         </div>
                                         <div className="mb-3">
                                             <label htmlFor="password" className="form-label">Password</label>
                                             <div className="input-group">
                                                 <span className="input-group-text">Hive VPN</span>
-                                                <input type="text" onChange={(e) => { setPasswd(e.target.value) }} className="form-control" name="passwd" id="password" placeholder="clave" required />
+                                                <input disabled type="text" onChange={(e) => { setPasswd(e.target.value) }} className="form-control" name="passwd" id="password" placeholder="clave" required />
                                             </div>
                                         </div>
                                         <div className="mb-3">
