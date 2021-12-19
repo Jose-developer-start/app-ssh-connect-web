@@ -3,41 +3,43 @@ import { Link } from 'react-router-dom';
 import "./websocketAccount.css"
 export default function WebsocketAccount() {
     const [auth, setAuth] = useState(sessionStorage.getItem('user') || "");
-
+    const [authData, setAuthData] = useState(null)
     const [user, setUser] = useState("");
     const [passwd, setPasswd] = useState("");
     const [loading, setLoading] = useState(false);
     const [account, setAccount] = useState([]);
+
+    if (auth != "") {
+        setAuthData(JSON.parse(auth))
+    }
+
     var today = new Date();
     let date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
-    var authData = "";
     const onSubmit = (e) => {
         e.preventDefault();
-        if (auth != "") {
-            authData = JSON.parse(auth)
 
-            let data = {
-                "user_id": authData.id,
-                "date": date,
-                "user": user,
-                "passwd": passwd
-            }
-            const BASE_URL_API = location.origin;
-            const fetchCreatedAccount = async () => {
-                const result = await fetch(BASE_URL_API + "/api/websockets", {
-                    "method": "POST",
-                    "body": JSON.stringify(data),
-                    "headers": {
-                        "Accept": "application/json",
-                        "Content-Type": "application/json"
-                    }
-                });
-                const dataJson = await result.json();
-                //console.log(dataJson)
-                setAccount(dataJson);
-            }
-            fetchCreatedAccount();
+
+        let data = {
+            "user_id": authData.id,
+            "date": date,
+            "user": user,
+            "passwd": passwd
         }
+        const BASE_URL_API = location.origin;
+        const fetchCreatedAccount = async () => {
+            const result = await fetch(BASE_URL_API + "/api/websockets", {
+                "method": "POST",
+                "body": JSON.stringify(data),
+                "headers": {
+                    "Accept": "application/json",
+                    "Content-Type": "application/json"
+                }
+            });
+            const dataJson = await result.json();
+            //console.log(dataJson)
+            setAccount(dataJson);
+        }
+        fetchCreatedAccount();
     }
     useEffect(() => {
 
