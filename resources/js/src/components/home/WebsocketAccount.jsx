@@ -9,10 +9,6 @@ export default function WebsocketAccount() {
     const [loading, setLoading] = useState(false);
     const [account, setAccount] = useState([]);
 
-    if (auth != "") {
-        setAuthData(JSON.parse(auth))
-    }
-
     var today = new Date();
     let date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
     const onSubmit = (e) => {
@@ -42,7 +38,9 @@ export default function WebsocketAccount() {
         fetchCreatedAccount();
     }
     useEffect(() => {
-
+        if (auth != "") {
+            setAuthData(JSON.parse(auth))
+        }
     }, [account])
     if (account.length != 0) {
         return (
