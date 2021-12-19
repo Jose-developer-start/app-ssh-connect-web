@@ -13,7 +13,7 @@ export default function WebsocketAccount() {
     const onSubmit = (e) => {
         e.preventDefault();
         if (auth != "") {
-            const authData = JSON.parse(auth)
+            var authData = JSON.parse(auth)
 
             let data = {
                 "user_id": authData.id,
