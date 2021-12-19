@@ -4,7 +4,7 @@ import "./websocketAccount.css"
 export default function WebsocketAccount() {
     const [auth, setAuth] = useState(sessionStorage.getItem('user') || "");
     if(auth != ""){
-        const authData = JSON.parse(auth)
+        var authData = JSON.parse(auth)
     }
     const [user, setUser] = useState("");
     const [passwd, setPasswd] = useState("");
