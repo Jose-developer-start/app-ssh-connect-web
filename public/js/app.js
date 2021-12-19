@@ -69659,29 +69659,30 @@ function WebsocketAccount() {
       auth = _useState2[0],
       setAuth = _useState2[1];
 
-  if (auth != "") {
-    var _authData = JSON.parse(auth);
-  }
-
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(""),
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(null),
       _useState4 = _slicedToArray(_useState3, 2),
-      user = _useState4[0],
-      setUser = _useState4[1];
+      authData = _useState4[0],
+      setAuthData = _useState4[1];
 
   var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(""),
       _useState6 = _slicedToArray(_useState5, 2),
-      passwd = _useState6[0],
-      setPasswd = _useState6[1];
+      user = _useState6[0],
+      setUser = _useState6[1];
 
-  var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false),
+  var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(""),
       _useState8 = _slicedToArray(_useState7, 2),
-      loading = _useState8[0],
-      setLoading = _useState8[1];
+      passwd = _useState8[0],
+      setPasswd = _useState8[1];
 
-  var _useState9 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]),
+  var _useState9 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false),
       _useState10 = _slicedToArray(_useState9, 2),
-      account = _useState10[0],
-      setAccount = _useState10[1];
+      loading = _useState10[0],
+      setLoading = _useState10[1];
+
+  var _useState11 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]),
+      _useState12 = _slicedToArray(_useState11, 2),
+      account = _useState12[0],
+      setAccount = _useState12[1];
 
   var today = new Date();
   var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
@@ -69739,7 +69740,11 @@ function WebsocketAccount() {
     fetchCreatedAccount();
   };
 
-  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {}, [account]);
+  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
+    if (auth != "") {
+      setAuthData(JSON.parse(auth));
+    }
+  }, [account]);
 
   if (account.length != 0) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
