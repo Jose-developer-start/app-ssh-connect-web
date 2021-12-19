@@ -3,10 +3,7 @@ import { Link } from 'react-router-dom';
 import "./websocketAccount.css"
 export default function WebsocketAccount() {
     const [auth, setAuth] = useState(sessionStorage.getItem('user') || "");
-    var authData = null;
-    if(auth != ""){
-        authData = JSON.parse(auth)
-    }
+
     const [user, setUser] = useState("");
     const [passwd, setPasswd] = useState("");
     const [loading, setLoading] = useState(false);
@@ -15,27 +12,31 @@ export default function WebsocketAccount() {
     let date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
     const onSubmit = (e) => {
         e.preventDefault();
-        let data = {
-            "user_id" : authData.id,
-            "date": date,
-            "user": user,
-            "passwd": passwd
+        if (auth != "") {
+            const authData = JSON.parse(auth)
+
+            let data = {
+                "user_id": authData.id,
+                "date": date,
+                "user": user,
+                "passwd": passwd
+            }
+            const BASE_URL_API = location.origin;
+            const fetchCreatedAccount = async () => {
+                const result = await fetch(BASE_URL_API + "/api/websockets", {
+                    "method": "POST",
+                    "body": JSON.stringify(data),
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    }
+                });
+                const dataJson = await result.json();
+                //console.log(dataJson)
+                setAccount(dataJson);
+            }
+            fetchCreatedAccount();
         }
-        const BASE_URL_API = location.origin;
-        const fetchCreatedAccount = async () => {
-            const result = await fetch(BASE_URL_API +"/api/websockets", {
-                "method": "POST",
-                "body": JSON.stringify(data),
-                "headers": {
-                    "Accept": "application/json",
-                    "Content-Type": "application/json"
-                }
-            });
-            const dataJson = await result.json();
-            //console.log(dataJson)
-            setAccount(dataJson);
-        }
-        fetchCreatedAccount();
     }
     useEffect(() => {
 
@@ -133,7 +134,7 @@ export default function WebsocketAccount() {
                                         <div className="mb-3">
                                             <label htmlFor="hostname" className="form-label">Domain: </label>
                                             <div className="form-check">
-                                                
+
                                                 <label className="form-check-label" htmlFor="openv2ray.com">internet-vip.cf <span className="badge bg-success">Valid SSL</span></label>
                                             </div>
                                         </div>
@@ -141,7 +142,7 @@ export default function WebsocketAccount() {
                                         {
                                             (auth != "") ? (
                                                 <button type="submit" className="btn btn-primary btn-sm w-100 subb">Create</button>
-                                            ): (
+                                            ) : (
                                                 <Link to="/login" className="btn btn-secondary btn-block" >Login</Link>
                                             )
                                         }
