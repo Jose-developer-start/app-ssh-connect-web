@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import Alert from '../components/Alert';
 
@@ -7,8 +7,16 @@ export default function SignUp() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [result, setResult] = useState(null);
+    const [loading, setLoading] = useState(false); //Button State
+
     const onSubmit = (e) => {
         e.preventDefault();
+        
+        if(name == "" || email == "" || password == ""){
+            setResult("Rellena todos los campos!!")
+            return 0;
+        }
+
         const fetchPost = async () => {
             const BASE_API_URL = location.origin + "/api/register";
             let data = {
@@ -28,12 +36,16 @@ export default function SignUp() {
             //console.log(postJson.data);
             setResult(postJson.data); //useState Result
         }
+        setLoading(true)
         fetchPost();
         //Clear imput
-        setName(null);
-        setEmail(null);
-        setPassword(null);
+        setName("");
+        setEmail("");
+        setPassword("");
     }
+    useEffect(()=>{
+        setLoading(false)
+    },[onSubmit])
     return (
         <div className="img-login">
             <div className="container">
@@ -54,7 +66,7 @@ export default function SignUp() {
                                     <div className="form-group">
                                         <input name="password" value={password} onChange={(e) => { setPassword(e.target.value) }} type="password" className="form-control" placeholder="Clave" />
                                     </div>
-                                    <button className="btn btn-success btn-block">SignUp</button>
+                                    <button disabled={loading} className="btn btn-success btn-block"> {loading ? "Creando tu cuenta...": "SignUp"} </button>
                                     <Link to={"/login"} className="text-muted text-secondary mt-3">Acceder</Link>
                                 </form>
                             </div>

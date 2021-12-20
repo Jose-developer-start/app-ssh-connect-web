@@ -23,7 +23,7 @@ export default function WebsocketAccount() {
         }
         const BASE_URL_API = location.origin;
         const fetchCreatedAccount = async () => {
-            const result = await fetch(BASE_URL_API + "/api/websockets", {
+            const result = await fetch(BASE_URL_API + "/api/websockets/us/us1", {
                 "method": "POST",
                 "body": JSON.stringify(data),
                 "headers": {
@@ -35,6 +35,7 @@ export default function WebsocketAccount() {
             //console.log(dataJson)
             setAccount(dataJson);
         }
+        setLoading(true);
         fetchCreatedAccount();
     }
     useEffect(() => {
@@ -142,7 +143,7 @@ export default function WebsocketAccount() {
 
                                         {
                                             (auth != "") ? (
-                                                <button type="submit" className="btn btn-primary btn-sm w-100 subb">Create</button>
+                                                <button type="submit" disabled={loading} className="btn btn-primary btn-sm w-100 subb">{loading ? "Creando...": "Create"}</button>
                                             ) : (
                                                 <Link to="/login" className="btn btn-secondary btn-block" >Login</Link>
                                             )

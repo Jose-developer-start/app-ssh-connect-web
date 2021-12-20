@@ -55,7 +55,7 @@ export default function Panel() {
 
                 <div className="card-body shadow-sm">
                     <div className="row">
-                        <h2>Para visualizar tus cuentas debes de hacer acceder al sistema</h2>
+                        <h2>Para visualizar tus cuentas debes de acceder al sistema</h2>
 
                     </div>
                 </div>

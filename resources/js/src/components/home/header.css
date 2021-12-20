@@ -1,8 +1,11 @@
 
 header {
-    height: 50vh;
+    height: 60vh;
     width: 100%;
-    background: #2a6591 !important;
+    background-color: #232e3c;
+    background-image: url('../../../../../public/images/banner.jpg') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   header h1 {

@@ -18,7 +18,9 @@ Route::resource('posts','PostController');
 
 //Rutas Api
 Route::get('websockets','WebsocketAccountController@index');
-Route::post('websockets','WebsocketAccountController@store');
+Route::post('websockets/us/us1','WebsocketAccountController@store');
+//Canada
+Route::post('websockets/canada/toronto','WebsocketAccountController@canada');
 
 //Rutas Users Api
 Route::get('users','UserController@index');
@@ -29,3 +31,7 @@ Route::get('users/{id}','UserController@getUser');
 Route::post('register','UserController@register');
 Route::post('login','UserController@login');
 //Route::get('users','UserController@index');
+
+//Payment
+Route::post('/payment', ['as' => 'payment', 'uses' => 'PaymentController@payWithpaypal']);
+Route::get('/payment/status',['as' => 'status', 'uses' => 'PaymentController@getPaymentStatus']);

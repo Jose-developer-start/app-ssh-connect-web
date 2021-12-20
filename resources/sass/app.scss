@@ -15,6 +15,10 @@ h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
+h4{
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
 
 a,
 b {
@@ -44,7 +48,7 @@ p{
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
-    width: 500px;
+    width: 700px;
     height: 300px;
   }
 
@@ -54,5 +58,13 @@ p{
 
 .img-login{
   background-color: #232e3c;
-  background-image: url(https://client.opentunnel.net/assets/img/bg-pattern.png);
+  background-image: url("../../public/images/bg-patter.png");
 }
+/**COLOR BUTTON**/
+.btn-green{
+  background-color: #004346 !important;
+  color: #f1f1f1;
+}
+
+
+/**END COLOR BUTTON**/

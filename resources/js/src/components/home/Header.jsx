@@ -7,13 +7,13 @@ export default function Header() {
                 <div className="container d-flex h-100 flex-column justify-content-center align-items-around">
                     <div className="row">
                         <div className="col-sm-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
-                            <h1>SSH SSL + WEBSOCKET</h1>
+                            <h1>SSH + WEBSOCKET</h1>
                             <p>Cuentas gratis y premium</p>
                         </div>
                         <div className="col-sm-12 col-md-6 d-flex justify-content-center">
                             <div className="ticket shadow-lg">
                                 <div className="ticket__header">
-                                    <h3>1</h3>
+                                    <h3>2</h3>
                                 </div>
                                 <div className="ticket__footer">
                                     <p>Un pais</p>

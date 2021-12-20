@@ -56,6 +56,31 @@ class WebsocketAccountController extends Controller
 
         return response()->json($account);
     }
+    public function canada(Request $request)
+    {
+        $request->validate([
+            "user" => "required",
+            "passwd" => "required",
+        ]);
+
+        $user = $request->user;
+        $passwd = $request->passwd;
+        $date = $this->getDate();
+
+        $comand = 'useradd -e '.$date.' -p "$(mkpasswd --method=sha-512 '.$passwd.')" '.$user;
+        
+        $exec = ssh2_exec($this->connectSSH(), $comand);
+
+        $account = WebsocketAccount::create([
+            'user' => $user,
+            'passwd' => $passwd,
+            'date' => $date,
+            'status' => 1,
+            'user_id' => $request->user_id
+        ]);
+
+        return response()->json($account);
+    }
     public function getDate(){
         date_default_timezone_set('America/El_Salvador');
         $year = date('Y');

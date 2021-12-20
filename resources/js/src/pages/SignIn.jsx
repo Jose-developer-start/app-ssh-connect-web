@@ -13,6 +13,12 @@ export default function SignIn() {
 
     const onSubmit = (e) => {
         e.preventDefault();
+
+        if(email == "" || password == ""){
+            setResult("Rellena todos los campos!!");
+            return 0;
+        }
+
         const fetchPost = async () => {
             
             const BASE_API_URL = location.origin +"/api/login";
@@ -73,7 +79,7 @@ export default function SignIn() {
                                     <div className="form-group">
                                         <input name="password" value={password} onChange={(e) => { setPassword(e.target.value) }} type="password" className="form-control" placeholder="Clave" />
                                     </div>
-                                    <button className="btn btn-success btn-block">Acceder</button>
+                                    <button className="btn btn-green btn-secondary btn-block">Acceder</button>
                                     <Link to={"/registrarse"} className="text-muted text-secondary mt-3">Registrate</Link>
                                 </form>
                             </div>

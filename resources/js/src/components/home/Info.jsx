@@ -1,6 +1,18 @@
-import React from 'react'
+import { set } from 'lodash'
+import React, { useState } from 'react'
 
 export default function Info() {
+    const [count, setCount] = useState(1)
+    const incrementMegas = ()=>{
+        if(count > 25){
+            setCount(1);
+        }else{
+            setCount(count + 1)
+        }
+    }
+    setTimeout(()=>{
+        incrementMegas()
+    },1000)
     return (
         <div className="container my-4">
             <h2 className="text-muted text-dark text-center mb-4">Soporte para juegos y llamadas</h2>
@@ -8,10 +20,10 @@ export default function Info() {
                 <div className="col-lg-3 col-sm-6 mb-3">
                     <div className="d-flex align-items-center">
                         <div className="">
-                            <h5 className="h1 font-weight-bolder mb-0">15</h5>
+                            <h5 className="h1 font-weight-bolder mb-0">{count}</h5>
                         </div>
                         <div className="pl-3">
-                            <h6 className="mb-0">Velocidad hasta de 15 megas por segundo</h6>
+                            <h6 className="mb-0">Velocidad hasta de {count} megas por segundo</h6>
                         </div>
                     </div>
                 </div>

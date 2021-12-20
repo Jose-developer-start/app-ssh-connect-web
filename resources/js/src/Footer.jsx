@@ -26,8 +26,7 @@ export default function Footer() {
                         </div>
                         <div className="col-md-6">
                             <ul className="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
-                                <li className="nav-item"><a className="nav-link" href="#">Terms</a></li>
-                                <li className="nav-item"><a className="nav-link" href="#">Privacy</a></li>
+                                <li className="nav-item"><a className="nav-link" href="#">Telegram</a></li>
                                 <li className="nav-item"><a className="nav-link" href="#">Cookies</a></li>
                             </ul>
                         </div>

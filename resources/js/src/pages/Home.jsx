@@ -1,15 +1,19 @@
 import React from 'react'
+import Accounts from '../components/accountSSH/Accounts'
+
 import Header from '../components/home/Header'
 import Info from '../components/home/Info'
-import ListAccount from '../components/home/ListAccount'
-import WebsocketAccount from '../components/home/WebsocketAccount'
+import Info_ssh from '../components/home/Info_ssh'
 
 export default function Home() {
     return (
         <>
             <Header />
             <Info />
-            <ListAccount />
+            
+            <Accounts />
+
+            <Info_ssh />
         </>
     )
 }

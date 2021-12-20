@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import AppContainer from "../AppContainer";
+import AppContainer from "../../AppContainer";
 
 export default function Edit() {
     const [title, setTitle] = useState(null);
