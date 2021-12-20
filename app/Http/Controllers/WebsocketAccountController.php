@@ -31,6 +31,22 @@ class WebsocketAccountController extends Controller
         }
         return $connection;
     }
+    public function connectSSH_CA(){
+        if (!function_exists('ssh2_connect')) {
+            die('No existe la funcion ssh2_connect.'); 
+        }
+        $ip = '134.122.44.205';
+        //$ip = '192.168.43.89';
+        $clave = 'vps_2021';
+        //$clave = 'jose002';
+        if (!($connection = ssh2_connect($ip, 22))) {
+            die('No se puede conectar con el servidor VPS.'); 
+        }
+        if (!ssh2_auth_password($connection, 'root', $clave)) {
+            die('No se puede autenticar con el usuario y clave suministrados.'); 
+        }
+        return $connection;
+    }
     public function store(Request $request)
     {
         $request->validate([
@@ -69,7 +85,7 @@ class WebsocketAccountController extends Controller
 
         $comand = 'useradd -e '.$date.' -p "$(mkpasswd --method=sha-512 '.$passwd.')" '.$user;
         
-        $exec = ssh2_exec($this->connectSSH(), $comand);
+        $exec = ssh2_exec($this->connectSSH_CA(), $comand);
 
         $account = WebsocketAccount::create([
             'user' => $user,
