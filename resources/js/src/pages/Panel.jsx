@@ -22,6 +22,7 @@ export default function Panel() {
     useEffect(() => {
         fetchPost();
     }, [])
+    
     if (auth != "") {
 
         return (
