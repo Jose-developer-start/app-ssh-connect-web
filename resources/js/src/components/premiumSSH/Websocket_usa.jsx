@@ -41,7 +41,7 @@ export default function Websocket_usa() {
                 <div className="card shadow-lg mb-3">
                     <div className="card-header">
                         <h3 className="text-center text-dark">New York</h3>
-                        <h5 className="text-center">VPS</h5>
+                        <h5 className="text-center">VPS - <b>$1.50</b></h5>
                     </div>
                     <div className="card-body">
                         <div className="row g-2">
