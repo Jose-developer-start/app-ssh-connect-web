@@ -19,6 +19,7 @@ export default function Table({ accounts }) {
                 <thead>
                     <tr>
                         <th>#</th>
+                        <th>País</th>
                         <th>Usuario</th>
                         <th>Clave</th>
                         <th>Fecha vecimiento</th>
@@ -29,8 +30,9 @@ export default function Table({ accounts }) {
                         items.map((account) => (
                             <tr key={account.id}>
                                 <td>{id++}</td>
-                                <td>{account.passwd}</td>
+                                <td>{account.country}</td>
                                 <td>{account.user}</td>
+                                <td>{account.passwd}</td>
                                 <td>{account.date}</td>
                                 <td>
                                     Online

@@ -3,15 +3,22 @@
 namespace App\Http\Controllers;
 
 use App\Http\Resources\WebsocketAccount as ResourcesWebsocketAccount;
+use App\User;
 use App\WebsocketAccount;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+
 class WebsocketAccountController extends Controller
 {
     public function index()
     {
+        $users = DB::table('users')->join(
+            "websocket_accounts","users.id", "=","websocket_accounts.user_id"
+        )->get();
         return response()->json( [ 
             "data" => [
-                "account" =>  WebsocketAccount::count()
+                "total" =>  WebsocketAccount::count(),
+                "accounts" => $users
             ]
             ]);
     }
@@ -67,7 +74,8 @@ class WebsocketAccountController extends Controller
             'passwd' => $passwd,
             'date' => $date,
             'status' => 1,
-            'user_id' => $request->user_id
+            'user_id' => $request->user_id,
+            'country' => $request->country
         ]);
 
         return response()->json($account);
@@ -93,7 +101,8 @@ class WebsocketAccountController extends Controller
             'passwd' => $passwd,
             'date' => $date,
             'status' => 1,
-            'user_id' => $request->user_id
+            'user_id' => $request->user_id,
+            'country' => $request->country
         ]);
 
         return response()->json($account);
@@ -118,7 +127,8 @@ class WebsocketAccountController extends Controller
             'passwd' => $passwd,
             'date' => $date,
             'status' => 1,
-            'user_id' => $request->user_id
+            'user_id' => $request->user_id,
+            'country' => $request->country
         ]);
         
         return response()->json($account);

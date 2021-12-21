@@ -35,6 +35,7 @@ export default function SignIn() {
                 }
             })
             const postJson = await postsFetch.json();
+            
             if (postJson.data.name != "") {
 
                 setAuthUser(sessionStorage.setItem('user', JSON.stringify(postJson.data)));

@@ -8,6 +8,6 @@ class WebsocketAccount extends Model
 {
     protected $table = "websocket_accounts";
     protected $fillable = [
-        'user', 'passwd','date','status','user_id'
+        'user', 'passwd','date','status','user_id','country'
     ];
 }

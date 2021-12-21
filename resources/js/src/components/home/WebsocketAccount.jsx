@@ -19,7 +19,8 @@ export default function WebsocketAccount() {
             "user_id": authData.id,
             "date": date,
             "user": user,
-            "passwd": passwd
+            "passwd": passwd,
+            "country": "New York/USA"
         }
         const BASE_URL_API = location.origin;
         const fetchCreatedAccount = async () => {

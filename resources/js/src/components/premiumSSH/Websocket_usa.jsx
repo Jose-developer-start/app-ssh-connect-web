@@ -17,7 +17,8 @@ export default function Websocket_usa() {
             "user_id": authData.id,
             "date": date,
             "user": user,
-            "passwd": passwd
+            "passwd": passwd,
+            "country": "New York/USA"
         }
         setLoading(true);
         sessionStorage.setItem('ssh',JSON.stringify(data));

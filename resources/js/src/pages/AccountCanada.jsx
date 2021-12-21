@@ -18,7 +18,8 @@ export default function AccountCanada() {
             "user_id": authData.id,
             "date": date,
             "user": user,
-            "passwd": passwd
+            "passwd": passwd,
+            "country": "toronto/Ca"
         }
         const BASE_URL_API = location.origin;
         const fetchCreatedAccount = async () => {
