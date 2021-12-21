@@ -6315,13 +6315,12 @@ module.exports = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var escape = __webpack_require__(/*! ../../../../../node_modules/css-loader/lib/url/escape.js */ "./node_modules/css-loader/lib/url/escape.js");
 exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
 // imports
 
 
 // module
-exports.push([module.i, "\nheader {\n    height: 60vh;\n    width: 100%;\n    background-color: #232e3c;\n    background-image: url(" + escape(__webpack_require__(/*! ../../../../../public/images/banner.jpg */ "./public/images/banner.jpg")) + ") !important;\n    background-repeat: no-repeat;\n    background-size: cover;\n  }\n  \n  header h1 {\n    color: #f1f4f4;\n  }\n  \n  header p {\n    color: #beb193;\n    font-size: 20px;\n  }\n  \n\n.ticket {\n    background: #f8aa02;\n    height: 150px;\n    width: 150px;\n    padding: 5px;\n    border-radius: 5px;\n    text-align: center;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    flex-direction: column;\n  }\n  .ticket__header h3 {\n    font-weight: 700;\n    font-size: 40px;\n    color: #f2f2f2;\n    border-bottom: 1px solid #00467a;\n  }\n  \n  .ticket__footer p {\n    font-family: \"Poppins\", \"san-serif\";\n    font-weight: 300;\n    color: #f1f4f4;\n  }", ""]);
+exports.push([module.i, "\nheader {\n    height: 60vh;\n    width: 100%;\n    background-color: #232e3c;\n    background-image: url('https://res.cloudinary.com/hive-vpn/image/upload/v1640102752/earth-g93ef8c2f4_1280_attbls.jpg') !important;\n    background-repeat: no-repeat;\n    background-size: cover;\n  }\n  \n  header h1 {\n    color: #f1f4f4;\n  }\n  \n  header p {\n    color: #beb193;\n    font-size: 20px;\n  }\n  \n\n.ticket {\n    background: #f8aa02;\n    height: 150px;\n    width: 150px;\n    padding: 5px;\n    border-radius: 5px;\n    text-align: center;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    flex-direction: column;\n  }\n  .ticket__header h3 {\n    font-weight: 700;\n    font-size: 40px;\n    color: #f2f2f2;\n    border-bottom: 1px solid #00467a;\n  }\n  \n  .ticket__footer p {\n    font-family: \"Poppins\", \"san-serif\";\n    font-weight: 300;\n    color: #f1f4f4;\n  }", ""]);
 
 // exports
 
@@ -6429,33 +6428,6 @@ function toComment(sourceMap) {
 	var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
 
 	return '/*# ' + data + ' */';
-}
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/lib/url/escape.js":
-/*!***************************************************!*\
-  !*** ./node_modules/css-loader/lib/url/escape.js ***!
-  \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = function escape(url) {
-    if (typeof url !== 'string') {
-        return url
-    }
-    // If url is already wrapped in quotes, remove them
-    if (/^['"].*['"]$/.test(url)) {
-        url = url.slice(1, -1);
-    }
-    // Should url be wrapped?
-    // See https://drafts.csswg.org/css-values-3/#urls
-    if (/["'() \t\n]/.test(url)) {
-        return '"' + url.replace(/"/g, '\\"').replace(/\n/g, '\\n') + '"'
-    }
-
-    return url
 }
 
 
@@ -68730,17 +68702,6 @@ module.exports = function(module) {
 	return module;
 };
 
-
-/***/ }),
-
-/***/ "./public/images/banner.jpg":
-/*!**********************************!*\
-  !*** ./public/images/banner.jpg ***!
-  \**********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/images/banner.jpg?d41d8cd98f00b204e9800998ecf8427e";
 
 /***/ }),
 

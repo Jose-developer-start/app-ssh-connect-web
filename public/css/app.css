@@ -11000,7 +11000,7 @@ p {
 }
 
 .freefire__logo {
-  background-image: url(/images/freefire.png?d41d8cd98f00b204e9800998ecf8427e);
+  background-image: url("https://res.cloudinary.com/hive-vpn/image/upload/v1640102866/Garena-Free-Fire_zrpviv.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11015,7 +11015,7 @@ p {
 
 .img-login {
   background-color: #232e3c;
-  background-image: url(/images/bg-patter.png?d41d8cd98f00b204e9800998ecf8427e);
+  background-image: url("https://res.cloudinary.com/hive-vpn/image/upload/v1640102569/bg-pattern_bnikze.png");
 }
 
 /**COLOR BUTTON**/

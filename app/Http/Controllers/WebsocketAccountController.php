@@ -120,7 +120,7 @@ class WebsocketAccountController extends Controller
             'status' => 1,
             'user_id' => $request->user_id
         ]);
-
+        
         return response()->json($account);
     }
     public function getDate(){
