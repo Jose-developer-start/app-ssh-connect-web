@@ -11,7 +11,7 @@ export default function Footer() {
                             <div className="row align-items-center">
                                 <div className="col-lg-7">
                                     <h3 className="text-secondary mb-2">Hive VPN</h3>
-                                    <p className="lead mb-0 text-white opacity-8">Este proyecto aún se encuentra en desarrollo</p>
+                                    <p className="lead mb-0 text-white opacity-8">Contáctame en Telegram: <a href="https://t.me/noscriptsh">Click aquí</a></p>
                                 </div>
 
                             </div>
@@ -26,7 +26,7 @@ export default function Footer() {
                         </div>
                         <div className="col-md-6">
                             <ul className="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
-                                <li className="nav-item"><a className="nav-link" href="#">Telegram</a></li>
+                                <li className="nav-item"><a className="nav-link" href="https://t.me/noscriptsh">Telegram</a></li>
                                 <li className="nav-item"><a className="nav-link" href="#">Cookies</a></li>
                             </ul>
                         </div>

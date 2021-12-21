@@ -22,6 +22,9 @@ Route::post('websockets/us/us1','WebsocketAccountController@store');
 //Canada
 Route::post('websockets/canada/toronto','WebsocketAccountController@canada');
 
+//Paga
+Route::post('websockets/premium/usa/us1','WebsocketAccountController@premium_usa1');
+
 //Rutas Users Api
 Route::get('users','UserController@index');
 //Obtener usuario indiviual
@@ -33,5 +36,5 @@ Route::post('login','UserController@login');
 //Route::get('users','UserController@index');
 
 //Payment
-Route::post('/payment', ['as' => 'payment', 'uses' => 'PaymentController@payWithpaypal']);
+Route::post('/payment','PaymentController@createPayment');
 Route::get('/payment/status',['as' => 'status', 'uses' => 'PaymentController@getPaymentStatus']);

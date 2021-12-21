@@ -1,14 +1,11 @@
 import React from 'react'
 import ListAccount from '../home/ListAccount'
-import Toronto from './Toronto'
 import Usa1 from './Usa1'
 
-export default function Accounts() {
+export default function AccountPremiun() {
     return (
-
-        <ListAccount title={"Servidores gratis 3 días"}>
+        <ListAccount title={"Servidores premium 15 días"}>
             <Usa1 />
-            <Toronto />
         </ListAccount>
     )
 }

@@ -2,6 +2,8 @@ import React from 'react'
 
 export default function Table({ accounts }) {
     const items = Array.from(accounts) //Funciom que convierte en array para usar map
+    //Contador de id
+    let id = 1;
     if (!items.length) {
         return (
             <div className="d-flex justify-content-center">
@@ -26,7 +28,7 @@ export default function Table({ accounts }) {
                     {
                         items.map((account) => (
                             <tr key={account.id}>
-                                <td>{account.user}</td>
+                                <td>{id++}</td>
                                 <td>{account.passwd}</td>
                                 <td>{account.user}</td>
                                 <td>{account.date}</td>

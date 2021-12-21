@@ -72,6 +72,32 @@ class WebsocketAccountController extends Controller
 
         return response()->json($account);
     }
+    
+    public function premium_usa1(Request $request)
+    {
+        $request->validate([
+            "user" => "required",
+            "passwd" => "required",
+        ]);
+
+        $user = $request->user;
+        $passwd = $request->passwd;
+        $date = $this->getDate_day15();
+
+        $comand = 'useradd -e '.$date.' -p "$(mkpasswd --method=sha-512 '.$passwd.')" '.$user;
+        
+        $exec = ssh2_exec($this->connectSSH(), $comand);
+
+        $account = WebsocketAccount::create([
+            'user' => $user,
+            'passwd' => $passwd,
+            'date' => $date,
+            'status' => 1,
+            'user_id' => $request->user_id
+        ]);
+
+        return response()->json($account);
+    }
     public function canada(Request $request)
     {
         $request->validate([
@@ -116,6 +142,32 @@ class WebsocketAccountController extends Controller
             //7 DAYS
             $days = date('j') + 3;
             $day = $days - 31;
+        }
+        return $date = strval($year."-".$month."-".$day);
+    }
+    public function getDate_day15(){
+        date_default_timezone_set('America/El_Salvador');
+        $year = date('Y');
+        $month = date('n');
+        $day = date('j');
+
+        if($day < 16){
+            $day = date('j') + 15;
+        }else{
+            if($day > 16 && $month > 11){
+                $month = 1;
+                $year = $year + 1;
+            }else{
+                if($month < 12){
+                    $month++;
+                }
+            }
+            //15 DAYS
+            $days = date('j') + 15;
+            $day = $days - 31;
+            if($day == 0){
+                $day = 1;
+            }
         }
         return $date = strval($year."-".$month."-".$day);
     }

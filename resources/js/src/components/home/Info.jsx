@@ -65,7 +65,7 @@ export default function Info() {
                 <div className="col-12 col-lg-6 d-flex align-items-center">
                     <div className="pl-0 pl-xl-7 pr-0 pr-xl-16">
                         <h1 className="mb-0">Testeado en Free fire y WhatSapp</h1>
-                        <p className="mt-8 mb-0">Estos servidores que ofrecemos ofrecen estabilidad y sopote con ping bajo para Videojuegos y estan ubicados en Norte America, así, disponemos de mas paises. Disfruta de la navegación por VPN.</p>
+                        <p className="mt-8 mb-0">Estos servidores que ofrecemos ofrecen estabilidad y ping bajo para Videojuegos y estan ubicados en Norte America, así, disponemos de mas paises. Disfruta de la navegación por VPN.</p>
                     </div>
                 </div>
             </div>
