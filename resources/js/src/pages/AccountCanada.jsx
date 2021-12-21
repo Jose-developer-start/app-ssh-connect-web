@@ -75,9 +75,9 @@ export default function AccountCanada() {
                     <div className="col-sm-12 col-md-6">
 
                         <div className="alert alert-warning alert-dismissible fade show" role="alert">
-                            <p>GET wss://host.com HTTP/1.1
-                                Host: canada.internet-vps.tk
-                                Upgrade: websocket[crlf][crlf]</p>
+                            <p>
+                                GET shi://host.com HTTP/1.1[crlf]Host: canada.internet-vps.tk[crlf]Upgrade: websocket[crlf][crlf]
+                            </p>
 
                             <p>Usuario: {account.user}</p>
                             <p>Clave: {account.passwd} </p>

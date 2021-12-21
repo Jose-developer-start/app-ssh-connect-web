@@ -74,9 +74,11 @@ export default function WebsocketAccount() {
                     <div className="col-sm-12 col-md-6">
 
                         <div className="alert alert-warning alert-dismissible fade show" role="alert">
-                            <p>GET shi://host.com HTTP/1.1
-                                Host: internet-vip.cf
-                                Upgrade: websocket[crlf][crlf]</p>
+                        <p>
+                            GET shi://host.com HTTP/1.1[crlf]Host: ssh-ws.tk[crlf]Upgrade: websocket[crlf][crlf]
+                        </p>
+
+                                
 
                             <p>Usuario: {account.user}</p>
                             <p>Clave: {account.passwd} </p>
