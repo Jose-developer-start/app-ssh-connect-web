@@ -3,14 +3,16 @@ import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Routes, Link, Route } from "react-router-dom";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
-import AccountSSH from "./pages/AccountSSH";
+
 import Home from "./pages/Home";
 import SignIn from "./pages/SignIn";
 import Panel from "./pages/Panel";
 import SignUp from "./pages/SignUp";
-import AccountCanada from "./pages/AccountCanada";
+
 import Payment from "./pages/Payment";
 import Websocket_usa from "./components/premiumSSH/Websocket_usa";
+import AccountCanada from "./components/accountsFree/AccountCanada";
+import WebsocketAccount from "./components/accountsFree/WebsocketAccount";
 
 function App() {
     return (
@@ -21,7 +23,7 @@ function App() {
                 <Routes>
                     <Route exact path="/" element={<Home />} />
                     
-                    <Route path="/websocket/us1" element={<AccountSSH />} />
+                    <Route path="/websocket/us1" element={<WebsocketAccount />} />
                     <Route path="/canada/toronto/1" element={<AccountCanada />} />
 
                     <Route path="/login" element={<SignIn />} />

@@ -1,16 +1,30 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import InfoIP from './components/InfoIP';
 
 export default function Navbar() {
     const [auth, setauth] = useState(
         sessionStorage.getItem('user') || ""
     )
+    const [infoIP, setInfoIP] = useState({})
     const logout = () => {
         sessionStorage.removeItem('user');
         location.href = location.origin
     }
+    const fetchIP = async ()=>{
+        const response = await fetch("https://ipinfo.io/json?token=3dcbe47dedccdb");
+        const result = await response.json();
+        //console.log(result.country)
+        setInfoIP({...result});
+    }
+    useEffect(()=>{
+        fetchIP()
+    },[])
     return (
+        <>
+        <InfoIP data={infoIP} />
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+            <p className="text-light">Ip</p>
             <div className="container">
                 <Link className="navbar-brand" to="/">HIVE VPN</Link>
                 <button className="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,5 +64,6 @@ export default function Navbar() {
                 </div>
             </div>
         </nav>
+        </>
     )
 }
