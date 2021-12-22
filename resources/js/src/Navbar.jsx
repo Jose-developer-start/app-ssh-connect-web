@@ -24,7 +24,6 @@ export default function Navbar() {
         <>
         <InfoIP data={infoIP} />
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-            <p className="text-light">Ip</p>
             <div className="container">
                 <Link className="navbar-brand" to="/">HIVE VPN</Link>
                 <button className="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
