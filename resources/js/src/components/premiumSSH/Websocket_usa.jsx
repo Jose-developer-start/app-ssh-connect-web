@@ -13,6 +13,12 @@ export default function Websocket_usa() {
     let date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
     const onSubmit = (e) => {
         e.preventDefault();
+
+        if(/\s/.test(user) || /\s/.test(passwd)){
+            swal('Error','No puede contener espacios','error');
+            return 0;
+        }
+
         let data = {
             "user_id": authData.id,
             "date": date,

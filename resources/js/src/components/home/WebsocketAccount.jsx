@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
+import swal from 'sweetalert';
 import "./websocketAccount.css"
 export default function WebsocketAccount() {
     const [auth, setAuth] = useState(sessionStorage.getItem('user') || "");
@@ -13,7 +14,10 @@ export default function WebsocketAccount() {
     let date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
     const onSubmit = (e) => {
         e.preventDefault();
-
+        if(/\s/.test(user) || /\s/.test(passwd)){
+            swal('Error','No puede contener espacios','error');
+            return 0;
+        }
 
         let data = {
             "user_id": authData.id,
