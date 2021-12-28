@@ -10,7 +10,7 @@ export default function Payload() {
                     <p className="card-header">Toronto/Ca Domain</p>
                         <div className="card-body">
                             <p>
-                                GET shi://host.com HTTP/1.1[crlf]Host: canada.internet-vps.tk[crlf]Upgrade: websocket[crlf][crlf]
+                                GET / HTTP/1.1[crlf]Host: canada.internet-vps.tk[crlf]Upgrade: websocket[crlf][crlf]
                             </p>
                         </div>
                     </div>
@@ -20,7 +20,7 @@ export default function Payload() {
                     <p className="card-header">Unite State Domain</p>
                         <div className="card-body">
                             <p>
-                                GET shi://host.com HTTP/1.1[crlf]Host: ssh-ws.tk[crlf]Upgrade: websocket[crlf][crlf]
+                                GET / HTTP/1.1[crlf]Host: ssh-ws.tk[crlf]Upgrade: websocket[crlf][crlf]
                             </p>
                         </div>
                     </div>
@@ -30,7 +30,7 @@ export default function Payload() {
                         <p className="card-header">Unite State Domain</p>
                         <div className="card-body">
                             <p>
-                                GET shi://host.com HTTP/1.1[crlf]Host: internet-vip.cf[crlf]Upgrade: websocket[crlf][crlf]
+                                GET / HTTP/1.1[crlf]Host: internet-vip.cf[crlf]Upgrade: websocket[crlf][crlf]
                             </p>
                         </div>
                     </div>

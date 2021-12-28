@@ -32,7 +32,7 @@ export default function InfoAccount({data}) {
 
                     <div className="alert alert-warning alert-dismissible fade show" role="alert">
                         <p>
-                            GET shi://host.com HTTP/1.1[crlf]Host: ssh-ws.tk[crlf]Upgrade: websocket[crlf][crlf]
+                            GET / HTTP/1.1[crlf]Host: ssh-ws.tk[crlf]Upgrade: websocket[crlf][crlf]
                         </p>
 
                         <p>Usuario: {data.user}</p>
