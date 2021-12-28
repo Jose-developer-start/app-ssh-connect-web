@@ -7,7 +7,7 @@ export default function Header() {
                 <div className="container d-flex h-100 flex-column justify-content-center align-items-around">
                     <div className="row">
                         <div className="col-sm-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
-                            <h1>SSH + WEBSOCKET</h1>
+                            <h1 className="header__title">SSH + WEBSOCKET</h1>
                             <p>Cuentas gratis y premium</p>
                         </div>
                         <div className="col-sm-12 col-md-6 d-flex justify-content-center">
