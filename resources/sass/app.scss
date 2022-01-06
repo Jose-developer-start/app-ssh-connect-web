@@ -1,37 +1,37 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url("https://fonts.googleapis.com/css?family=Nunito");
 
 // Variables
-@import 'variables';
+@import "variables";
 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap");
 
 h1,
 h2,
 h3 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
 }
-h4{
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
+h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
 }
 
 a,
 b {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
 }
 
 a {
-  color: #f1f1f1 !important;
+    color: #f1f1f1 !important;
 }
-p{
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
+p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
 }
 .content__title {
     position: absolute;
@@ -40,31 +40,54 @@ p{
     font-weight: 700;
     left: -150px;
     top: 140px;
-  }
-  
-  .freefire__logo {
-    background-image: url("https://res.cloudinary.com/hive-vpn/image/upload/v1640102866/Garena-Free-Fire_zrpviv.jpg");
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
+}
+
+.img__freefire {
+    width: 90%;
     border-radius: 10px;
-    width: 700px;
-    height: 300px;
-  }
-
-  .font-weight-bolder:hover{
+    box-shadow: 0px 0px 5px rgba(0,0,0, 0.10);
+}
+.img__freefire:hover{
+  filter: blur(1px);
+}
+.font-weight-bolder:hover {
     color: rgb(117, 199, 128);
-  }
+}
 
-.img-login{
-  background-color: #232e3c;
-  background-image: url("https://res.cloudinary.com/hive-vpn/image/upload/v1640102569/bg-pattern_bnikze.png");
+.img-login {
+    background-color: #232e3c;
+    background-image: url("https://res.cloudinary.com/hive-vpn/image/upload/v1640102569/bg-pattern_bnikze.png");
 }
 /**COLOR BUTTON**/
-.btn-green{
-  background-color: #004346 !important;
-  color: #f1f1f1;
+.btn-green {
+    background-color: #004346 !important;
+    color: #f1f1f1;
 }
 
-
 /**END COLOR BUTTON**/
+/*
+=================CARD-INFO=================
+*/
+
+/*
+=================END CARD-INFO=================
+*/
+
+/*
+=====================FOOTER======================
+*/
+.footer__content-title{
+  color: #ddc8c8;
+}
+.footer__text{
+  color: #ddc8c8;
+  font-family: "Poppins", sans-serif;
+
+}
+.footer__icon{
+  font-size: 30px;
+  color: #66f;
+}
+/*
+=====================END FOOTER======================
+*/

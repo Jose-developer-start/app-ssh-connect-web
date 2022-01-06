@@ -18,9 +18,9 @@ Route::resource('posts','PostController');
 
 //Rutas Api
 Route::get('websockets','WebsocketAccountController@index');
-Route::post('websockets/us/us1','WebsocketAccountController@store');
+Route::post('websockets/us/us1','WebsocketAccountController@create_server_usa');
 //Canada
-Route::post('websockets/canada/toronto','WebsocketAccountController@canada');
+Route::post('websockets/canada/toronto','WebsocketAccountController@create_server_canada');
 
 //Paga
 Route::post('websockets/premium/usa/us1','WebsocketAccountController@premium_usa1');

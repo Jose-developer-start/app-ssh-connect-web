@@ -1,4 +1,6 @@
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap");
+
 header {
     height: 60vh;
     width: 100%;
@@ -7,14 +9,22 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
   }
-  
+  .header__content{
+    height: 60vh;
+    width: 100%;
+    background-color: rgba(145, 177, 221, 0.2);
+  }
   header h1 {
     color: #f1f4f4;
+    font-family: 'Poppins',sans-serif;
   }
   
   header p {
     color: #beb193;
     font-size: 20px;
+    font-family: 'Poppins',sans-serif;
+    color: #4dcb44 !important;
+    font-weight: 500;
   }
   
 
@@ -47,9 +57,9 @@ header {
   font-family: "Poppins", "san-serif";
   white-space: nowrap;
   border-right: 4px solid;
-  width: 19ch;
-  animation: typing 2s steps(19),
-  blink .5s infinite step-end alternate;
+  width: 14.5ch;
+  animation: typing 6s steps(19),
+  blink .5s step-end alternate;
   overflow: hidden;
 }
 @keyframes typing{

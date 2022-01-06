@@ -63,7 +63,7 @@ export default function Info_ssh() {
                         <div className="card-body">
                             <div className="row">
                                 <div className="col">
-                                    <h5 className="card-title text-uppercase text-muted mb-0">Sguridad SSL/TLS</h5>
+                                    <h5 className="card-title text-uppercase text-muted mb-0">Seguridad SSL/TLS</h5>
                                     <p className="small font-weight-bold mb-0">hive-vpn.tk no usa ningún registro para monitorear su actividad. Podemos garantizar que se mantenga la seguridad de sus datos.</p>
                                 </div>
                                 <div className="col-auto">

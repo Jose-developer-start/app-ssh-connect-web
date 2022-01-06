@@ -1,38 +1,36 @@
-import React from 'react'
-
+import React, { useEffect, useState } from 'react'
+import InfoIP from './components/InfoIP';
 export default function Footer() {
+    const [infoIP, setInfoIP] = useState({})
+    const fetchIP = async ()=>{
+        const response = await fetch("https://ipinfo.io/json?token=3dcbe47dedccdb");
+        const result = await response.json();
+        //console.log(result.country)
+        setInfoIP({...result});
+    }
+    useEffect(()=>{
+        fetchIP()
+    },[])
     return (
-        <footer className="position-relative" id="footer-main">
-            <div className="footer pt-lg-7 footer-dark bg-dark">
-
-                <div className="container pt-4">
-                    <div className="row justify-content-center">
-                        <div className="col-lg-12">
-                            <div className="row align-items-center">
-                                <div className="col-lg-7">
-                                    <h3 className="text-secondary mb-2">Hive VPN</h3>
-                                    <p className="lead mb-0 text-white opacity-8">Contáctame en Telegram: <a href="https://t.me/noscriptsh">Click aquí</a></p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <hr className="divider divider-fade divider-dark my-4" />
-                    <div className="row align-items-center justify-content-md-between pb-4">
-                        <div className="col-md-6">
-                            <div className="copyright text-sm font-weight-bold text-center text-md-left">©
-                                <a href="https://webpixels.io" className="font-weight-bold" target="_blank">Hive VPN | @noscriptsh</a>.All rights reserved</div>
-                        </div>
-                        <div className="col-md-6">
-                            <ul className="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
-                                <li className="nav-item"><a className="nav-link" href="https://t.me/noscriptsh">Telegram</a></li>
-                                <li className="nav-item"><a className="nav-link" href="#">Cookies</a></li>
-                            </ul>
-                        </div>
-                    </div>
+        <footer className="bg-dark" id="footer-main">
+            <div className="footer__content-main">
+                <h3 className="footer__content-title text-center py-4 m-0">CONECTADOS A HIVE VPN</h3>
+            </div>
+            <div className="container">
+            <hr className="text-light opacity-8" />
+            <div className="row">
+                <div className="col-sm-12 col-md-4 d-flex justify-content-center align-items-center">
+                    <p className="footer__text footer__copy">All reserved a HIVE-VPN.tk</p>
+                </div>
+                <div className="col-sm-12 col-md-4 d-flex justify-content-center align-items-center">
+                    <a href="https://t.me/noscriptsh"><i class="uil uil-telegram footer__icon"></i></a>
+                </div>
+                <div className="col-sm-12 col-md-4 d-flex justify-content-center align-items-center">
+                    <p className="footer__power footer__text m-0 p-0">By @noscriptsh</p>
                 </div>
             </div>
+            </div>
+            <InfoIP data={infoIP} />
         </footer>
     )
 }

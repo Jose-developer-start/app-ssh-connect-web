@@ -10999,14 +10999,14 @@ p {
   top: 140px;
 }
 
-.freefire__logo {
-  background-image: url("https://res.cloudinary.com/hive-vpn/image/upload/v1640102866/Garena-Free-Fire_zrpviv.jpg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
+.img__freefire {
+  width: 90%;
   border-radius: 10px;
-  width: 700px;
-  height: 300px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.img__freefire:hover {
+  filter: blur(1px);
 }
 
 .font-weight-bolder:hover {
@@ -11026,4 +11026,34 @@ p {
 }
 
 /**END COLOR BUTTON**/
+
+/*
+=================CARD-INFO=================
+*/
+
+/*
+=================END CARD-INFO=================
+*/
+
+/*
+=====================FOOTER======================
+*/
+
+.footer__content-title {
+  color: #ddc8c8;
+}
+
+.footer__text {
+  color: #ddc8c8;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer__icon {
+  font-size: 30px;
+  color: #66f;
+}
+
+/*
+=====================END FOOTER======================
+*/
 
