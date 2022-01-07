@@ -94,7 +94,7 @@ export default function Websocket_usa() {
                                             <label htmlFor="hostname" className="form-label">Domain: </label>
                                             <div className="form-check">
 
-                                                <label className="form-check-label" htmlFor="openv2ray.com">internet-vip.cf <span className="badge bg-success">Valid SSL</span></label>
+                                                <label className="form-check-label" htmlFor="openv2ray.com">v2ray-usa.tk <span className="badge bg-success">Valid SSL</span></label>
                                             </div>
                                         </div>
 
