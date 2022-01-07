@@ -70696,6 +70696,59 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./resources/js/src/components/panel/AddUser.jsx":
+/*!*******************************************************!*\
+  !*** ./resources/js/src/components/panel/AddUser.jsx ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return AddUser; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+function AddUser() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-sm-12 col-md-8"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "card-header"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    className: "text-muted text-dark text-center"
+  }, "Agregar SSH")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "card-body"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+    action: ""
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-sm-12 col-md-6"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "form-group"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    className: "form-control",
+    type: "text",
+    placeholder: "Usuario"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "form-group"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    className: "form-control",
+    type: "text",
+    placeholder: "clave"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-sm-12 col-md-6"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
+    className: "form-control"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+    value: ""
+  }, "Email")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "btn btn-success btn-sm"
+  }, "Agregar"))));
+}
+
+/***/ }),
+
 /***/ "./resources/js/src/components/panel/Icon.css":
 /*!****************************************************!*\
   !*** ./resources/js/src/components/panel/Icon.css ***!
@@ -70773,8 +70826,21 @@ function PanelIcon(_ref) {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "card-body"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    "class": "fas fa-globe fa-2x"
-  }), "Payload"))))));
+    className: "fas fa-globe fa-2x"
+  }), "Payload")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-sm-6 col-md-5"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    onClick: function onClick() {
+      return setMenu(3);
+    },
+    className: "text-dark mb-3 tarj-icon"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "card"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "card-body"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "uil uil-user-plus"
+  }), "Usuario"))))));
 }
 
 /***/ }),
@@ -71323,9 +71389,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_panel_PanelIcon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/panel/PanelIcon */ "./resources/js/src/components/panel/PanelIcon.jsx");
-/* harmony import */ var _components_panel_Payload__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/panel/Payload */ "./resources/js/src/components/panel/Payload.jsx");
-/* harmony import */ var _components_panel_Table__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/panel/Table */ "./resources/js/src/components/panel/Table.jsx");
+/* harmony import */ var _components_panel_AddUser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/panel/AddUser */ "./resources/js/src/components/panel/AddUser.jsx");
+/* harmony import */ var _components_panel_PanelIcon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/panel/PanelIcon */ "./resources/js/src/components/panel/PanelIcon.jsx");
+/* harmony import */ var _components_panel_Payload__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/panel/Payload */ "./resources/js/src/components/panel/Payload.jsx");
+/* harmony import */ var _components_panel_Table__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/panel/Table */ "./resources/js/src/components/panel/Table.jsx");
 
 
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
@@ -71351,6 +71418,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
 
 
@@ -71430,15 +71498,15 @@ function Panel() {
       className: "card-body shadow-sm"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       className: "row"
-    }, authData.rol_id == 1 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_panel_PanelIcon__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    }, authData.rol_id == 1 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_panel_PanelIcon__WEBPACK_IMPORTED_MODULE_3__["default"], {
       setMenu: setMenu
-    }), menu == 1 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_panel_Table__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    }), menu == 1 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_panel_Table__WEBPACK_IMPORTED_MODULE_5__["default"], {
       accounts: accounts
-    }), menu == 2 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_panel_Payload__WEBPACK_IMPORTED_MODULE_3__["default"], null)) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_panel_PanelIcon__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    }), menu == 2 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_panel_Payload__WEBPACK_IMPORTED_MODULE_4__["default"], null), menu == 3 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_panel_AddUser__WEBPACK_IMPORTED_MODULE_2__["default"], null)) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_panel_PanelIcon__WEBPACK_IMPORTED_MODULE_3__["default"], {
       setMenu: setMenu
-    }), menu == 1 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_panel_Table__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    }), menu == 1 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_panel_Table__WEBPACK_IMPORTED_MODULE_5__["default"], {
       accounts: accounts
-    }), menu == 2 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_panel_Payload__WEBPACK_IMPORTED_MODULE_3__["default"], null)))));
+    }), menu == 2 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_panel_Payload__WEBPACK_IMPORTED_MODULE_4__["default"], null)))));
   } else {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       className: "container my-4"

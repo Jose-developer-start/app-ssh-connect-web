@@ -35,6 +35,16 @@ export default function Payload() {
                         </div>
                     </div>
                 </div>
+                <div className="col-sm-12 col-md-6">
+                    <div className="card mb-3 shadow-lg">
+                    <p className="card-header">Unite State Domain New</p>
+                        <div className="card-body">
+                            <p>
+                                GET / HTTP/1.1[crlf]Host: v2ray-usa.tk[crlf]Upgrade: websocket[crlf][crlf]
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 

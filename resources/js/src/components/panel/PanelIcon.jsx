@@ -18,8 +18,18 @@ export default function PanelIcon({setMenu}) {
                     <div  onClick={()=>setMenu(2)} className="text-dark mb-3 tarj-icon">
                         <div className="card">
                             <div className="card-body">
-                                <i class="fas fa-globe fa-2x"></i>
+                                <i className="fas fa-globe fa-2x"></i>
                                 Payload
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-sm-6 col-md-5">
+                    <div  onClick={()=>setMenu(3)} className="text-dark mb-3 tarj-icon">
+                        <div className="card">
+                            <div className="card-body">
+                            <i className="uil uil-user-plus"></i>
+                                Usuario
                             </div>
                         </div>
                     </div>

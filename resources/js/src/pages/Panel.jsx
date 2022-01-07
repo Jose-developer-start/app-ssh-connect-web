@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import AddUser from '../components/panel/AddUser';
 import PanelIcon from '../components/panel/PanelIcon'
 import Payload from '../components/panel/Payload';
 import Table from '../components/panel/Table'
@@ -49,6 +50,10 @@ export default function Panel() {
                                     }
                                     {(menu == 2) && (
                                         <Payload />                                        
+                                    )
+                                    } 
+                                    {(menu == 3) && (
+                                        <AddUser />                                        
                                     )
                                     }  
                                 </>
