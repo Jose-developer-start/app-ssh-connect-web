@@ -7,7 +7,7 @@ read -p "[PROMPT] - Write \"yes\" but separated if you're ready: " ANSW
 if [ "$ANSW" == "y" ]; then
     git add .
     git commit -m "HIVE-VPN-$(($RANDOM * 50))"
-    #git push origin master
+    git push origin main
     echo "[INFO] - Upload script done!"
 else
     echo "[ERROR] - Aborting..."

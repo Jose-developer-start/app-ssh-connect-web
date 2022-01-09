@@ -59,7 +59,9 @@ export default function Panel() {
         }
     }
     useEffect(() => {
-        fetchPost();
+        setInterval(()=>{
+            fetchPost()
+        },5000)
     }, [])
     
     if (auth != "") {

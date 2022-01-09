@@ -41,3 +41,9 @@ Route::post('login','UserController@login');
 //Payment
 Route::post('/payment','PaymentController@createPayment');
 Route::get('/payment/status',['as' => 'status', 'uses' => 'PaymentController@getPaymentStatus']);
+
+/**
+ * =========NEW MODULE PERSONALITY SSH=========
+ * 
+*/
+Route::post('/create_ssh','WSAccountController@create_ssh');
