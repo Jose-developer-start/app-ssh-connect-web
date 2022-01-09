@@ -1,32 +1,30 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap");
 
 header {
     height: 60vh;
     width: 100%;
     background-color: #232e3c;
-    background-image: url('https://res.cloudinary.com/hive-vpn/image/upload/v1640102752/earth-g93ef8c2f4_1280_attbls.jpg') !important;
+    background-image: url("https://res.cloudinary.com/hive-vpn/image/upload/v1640102752/earth-g93ef8c2f4_1280_attbls.jpg") !important;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-  .header__content{
+}
+.header__content {
     height: 60vh;
     width: 100%;
     background-color: rgba(145, 177, 221, 0.2);
-  }
-  header h1 {
+}
+header h1 {
     color: #f1f4f4;
-    font-family: 'Poppins',sans-serif;
-  }
-  
-  header p {
+    font-family: "Poppins", sans-serif;
+}
+
+header p {
     color: #beb193;
     font-size: 20px;
-    font-family: 'Poppins',sans-serif;
+    font-family: "Poppins", sans-serif;
     color: #4dcb44 !important;
     font-weight: 500;
-  }
-  
+}
 
 .ticket {
     background: #f8aa02;
@@ -39,37 +37,35 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  }
-  .ticket__header h3 {
+}
+.ticket__header h3 {
     font-weight: 700;
     font-size: 40px;
     color: #f2f2f2;
     border-bottom: 1px solid #00467a;
-  }
-  
-  .ticket__footer p {
-    font-family: "Poppins", "san-serif";
-    font-weight: 300;
-    color: #f1f4f4;
-  }
-.header__title{
-  display: block;
-  font-family: "Poppins", "san-serif";
-  white-space: nowrap;
-  border-right: 4px solid;
-  width: 14.5ch;
-  animation: typing 6s steps(19),
-  blink .5s step-end alternate;
-  overflow: hidden;
-}
-@keyframes typing{
-  from {
-    width: 0;
-  }
-}
-@keyframes blink{
-  50% {
-    border-color: transparent;
-  }
 }
 
+.ticket__footer p {
+    font-family: "Poppins", "san-serif";
+    font-weight: 300;
+    color: rgb(66, 35, 66) !important;
+}
+.header__title {
+    display: block;
+    font-family: "Poppins", "san-serif";
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 14.5ch;
+    animation: typing 6s steps(19), blink 0.5s step-end alternate;
+    overflow: hidden;
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}

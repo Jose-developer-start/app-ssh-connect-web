@@ -55,7 +55,7 @@ export default function Info() {
                 </div>
             </div>
             <div className="row justify-content-center">
-                <div className="col-sm-12 col-md-6">
+                <div className="col-sm-12 col-md-6 d-flex justify-content-center">
 
 
                     <img src="https://res.cloudinary.com/hive-vpn/image/upload/v1640102866/Garena-Free-Fire_zrpviv.jpg" alt="free fire" className="img__freefire" />
