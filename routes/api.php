@@ -21,6 +21,9 @@ Route::get('websockets','WebsocketAccountController@index');
 Route::post('websockets/us/us1','WebsocketAccountController@create_server_usa');
 //Canada
 Route::post('websockets/canada/toronto','WebsocketAccountController@create_server_canada');
+//Delete SSH
+
+Route::delete('websockets/{websocketAccount}','WebsocketAccountController@destroy');
 
 //Paga
 Route::post('websockets/premium/usa/us1','WebsocketAccountController@premium_usa1');

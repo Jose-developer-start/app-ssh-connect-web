@@ -5,15 +5,17 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 
 import Home from "./pages/Home";
-import SignIn from "./pages/SignIn";
+
 import Panel from "./pages/Panel";
-import SignUp from "./pages/SignUp";
+
 
 import Payment from "./pages/Payment";
 import Websocket_usa from "./components/premiumSSH/Websocket_usa";
 import AccountCanada from "./components/accountsFree/AccountCanada";
 import WebsocketAccount from "./components/accountsFree/WebsocketAccount";
 import ScannerHost from "./pages/ScannerHost";
+import SignIn from "./pages/auth/SignIn";
+import SignUp from "./pages/auth/SignUp";
 
 function App() {
     return (

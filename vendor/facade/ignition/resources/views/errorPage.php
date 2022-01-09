@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="theme-<?=$config['theme']?>">
+<html className="theme-<?=$config['theme']?>">
 <!--
 <?=$throwableString?>
 -->
@@ -24,7 +24,7 @@
     <?php endforeach; ?>
 
 </head>
-<body class="scrollbar-lg">
+<body className="scrollbar-lg">
 
 <script>
     window.data = <?=

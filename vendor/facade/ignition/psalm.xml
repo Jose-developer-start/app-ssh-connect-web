@@ -42,6 +42,6 @@
     </issueHandlers>
 
     <plugins>
-        <pluginClass class="Psalm\LaravelPlugin\Plugin"/>
+        <pluginClass className="Psalm\LaravelPlugin\Plugin"/>
     </plugins>
 </psalm>

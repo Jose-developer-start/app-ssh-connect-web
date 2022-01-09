@@ -7,7 +7,7 @@
          convertErrorsToExceptions="true"
          convertNoticesToExceptions="true"
          convertWarningsToExceptions="true"
-         testSuiteLoaderClass="PHPUnit_Runner_StandardTestSuiteLoader">
+         testSuiteLoaderclassName="PHPUnit_Runner_StandardTestSuiteLoader">
 
     <php>
         <env name="REST_MODE" value="sandbox"/>

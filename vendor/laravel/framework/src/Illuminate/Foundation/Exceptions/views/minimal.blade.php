@@ -49,12 +49,12 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-            <div class="code">
+        <div className="flex-center position-ref full-height">
+            <div className="code">
                 @yield('code')
             </div>
 
-            <div class="message" style="padding: 10px;">
+            <div className="message" style="padding: 10px;">
                 @yield('message')
             </div>
         </div>

@@ -23,7 +23,7 @@ export default function Footer() {
                     <p className="footer__text footer__copy">All reserved a HIVE-VPN.tk</p>
                 </div>
                 <div className="col-sm-12 col-md-4 d-flex justify-content-center align-items-center">
-                    <a href="https://t.me/noscriptsh"><i class="uil uil-telegram footer__icon"></i></a>
+                    <a href="https://t.me/noscriptsh"><i className="uil uil-telegram footer__icon"></i></a>
                 </div>
                 <div className="col-sm-12 col-md-4 d-flex justify-content-center align-items-center">
                     <p className="footer__power footer__text m-0 p-0">By @noscriptsh</p>

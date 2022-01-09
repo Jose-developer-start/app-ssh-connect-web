@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import swal from 'sweetalert';
 import AddUser from '../components/panel/AddUser';
 import PanelIcon from '../components/panel/PanelIcon'
 import Payload from '../components/panel/Payload';
@@ -23,6 +24,40 @@ export default function Panel() {
         const result = await response.json();
         setAccounts([...result.data])
     }
+    const deleteSSH = (id)=>{
+        //FETCH A API
+        const BASE_API_URL = location.origin + "/api/websockets/" + id;
+
+        swal({
+            title: "¿Estas seguro de realizar esta acción?",
+            text: "Esta acción eliminara la cuenta SSH!",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+          })
+          .then((willDelete) => {
+            if (willDelete) {
+              swal("Cuenta eliminado!", {
+                icon: "success",
+              });
+              fetchDelete()
+            } else {
+              swal("Cancelado!");
+            }
+          });
+
+        const fetchDelete = async () => {
+            const response = await fetch(BASE_API_URL, {
+                "method": "DELETE",
+                "headers": {
+                    "Accept": "application/json",
+                    "Content-Type": "application/json"
+                }
+            })
+            const result = await response.json();
+            fetchPost();
+        }
+    }
     useEffect(() => {
         fetchPost();
     }, [])
@@ -45,7 +80,7 @@ export default function Panel() {
                                 <>
                                     <PanelIcon setMenu={setMenu} />
                                     {(menu == 1) && (
-                                        <Table accounts={accounts} />
+                                        <Table accounts={accounts} deleteSSH={deleteSSH} />
                                     )
                                     }
                                     {(menu == 2) && (
@@ -62,7 +97,7 @@ export default function Panel() {
                                 <>
                                     <PanelIcon setMenu={setMenu} />
                                     {(menu == 1) && (
-                                        <Table accounts={accounts} />
+                                        <Table accounts={accounts} deleteSSH={deleteSSH} />
                                     )
                                     }
                                     {(menu == 2) && (

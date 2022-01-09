@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Table({ accounts }) {
+export default function Table({ accounts,deleteSSH }) {
     const items = Array.from(accounts) //Funciom que convierte en array para usar map
     //Contador de id
     let id = 1;
@@ -35,7 +35,9 @@ export default function Table({ accounts }) {
                                 <td>{account.passwd}</td>
                                 <td>{account.date}</td>
                                 <td>
-                                    Online
+                                    <button onClick={()=>deleteSSH(account.id)} className="btn btn-danger btn-sm">
+                                        <i className="uil uil-trash-alt"></i>
+                                    </button>
                                 </td>
                             </tr>
                         ))

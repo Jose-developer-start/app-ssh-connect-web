@@ -1,11 +1,11 @@
 <template>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">Example Component</div>
+    <div className="container">
+        <div className="row justify-content-center">
+            <div className="col-md-8">
+                <div className="card">
+                    <div className="card-header">Example Component</div>
 
-                    <div class="card-body">
+                    <div className="card-body">
                         I'm an example component.
                     </div>
                 </div>
