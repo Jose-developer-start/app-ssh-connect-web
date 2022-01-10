@@ -35,12 +35,12 @@ class WSAccountController extends Controller
 
         //$exec = ssh2_exec($this->connect('192.168.49.186','jose002',22), $comand);
         $account = WebsocketAccount::create([
-            'user' => $user,
-            'passwd' => $passwd,
-            'date' => $date,
+            'user' => "helloword",
+            'passwd' => "helloword",
+            'date' => "2021-12-12",
             'status' => 1,
             'user_id' => request()->user_id,
-            'country' => request()->country
+            'country' => "US"
         ]);
 
         return response()->json($account);
