@@ -39,7 +39,7 @@ export default function AddUser() {
             setUser('')
             setPasswd('')
             setDate('')
-            swal('Exito!','Su usuarios se a instanciado!','success');
+            swal('Exito!','Usuario creado con exito!','success');
         }
         fetchPost();
         

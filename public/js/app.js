@@ -70805,7 +70805,7 @@ function AddUser() {
                 setUser('');
                 setPasswd('');
                 setDate('');
-                sweetalert__WEBPACK_IMPORTED_MODULE_2___default()('Exito!', 'Su usuarios se a instanciado!', 'success');
+                sweetalert__WEBPACK_IMPORTED_MODULE_2___default()('Exito!', 'Usuario creado con exito!', 'success');
 
               case 10:
               case "end":
