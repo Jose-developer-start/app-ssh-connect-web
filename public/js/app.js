@@ -70743,12 +70743,19 @@ function AddUser() {
       passwd = _useState4[0],
       setPasswd = _useState4[1];
 
-  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(''),
+  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(sessionStorage.getItem('user') || ""),
       _useState6 = _slicedToArray(_useState5, 2),
-      date = _useState6[0],
-      setDate = _useState6[1];
+      auth = _useState6[0],
+      setAuth = _useState6[1];
+
+  var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(''),
+      _useState8 = _slicedToArray(_useState7, 2),
+      date = _useState8[0],
+      setDate = _useState8[1];
 
   var handleSubmit = function handleSubmit(e) {
+    var dataUser = JSON.parse(auth); //SESSION DE USUARIO LOGEADO
+
     e.preventDefault();
 
     if (!user || !passwd) {
@@ -70766,7 +70773,7 @@ function AddUser() {
       "user": user,
       "passwd": passwd,
       "date": date,
-      "user_id": 1,
+      "user_id": dataUser.id,
       "country": "US"
     };
 

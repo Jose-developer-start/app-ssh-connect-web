@@ -23,11 +23,11 @@ class WSAccountController extends Controller
         //Return conexion
         return $connection;
     }
-    public function create_ssh()
+    public function create_ssh(Request $request)
     {
-        $user = request()->user;
-        $passwd = request()->passwd;
-        $date = request()->date;
+        $user = $request->user;
+        $passwd = $request->passwd;
+        $date = $request->date;
 
         $comand = 'useradd -e '.$date.' -p "$(mkpasswd --method=sha-512 '.$passwd.')" '.$user;
         
@@ -35,12 +35,12 @@ class WSAccountController extends Controller
 
         //$exec = ssh2_exec($this->connect('192.168.49.186','jose002',22), $comand);
         $account = WebsocketAccount::create([
-            'user' => "helloword",
-            'passwd' => "helloword",
-            'date' => "2021-12-12",
+            'user' => $user,
+            'passwd' => $passwd,
+            'date' => $date,
             'status' => 1,
-            'user_id' => request()->user_id,
-            'country' => "US"
+            'user_id' => $request->user_id,
+            'country' => $request->country
         ]);
 
         return response()->json($account);

@@ -4,9 +4,10 @@ import swal from 'sweetalert';
 export default function AddUser() {
     const [user,setUser] = useState('');
     const [passwd,setPasswd] = useState('');
+    const [auth,setAuth] = useState(sessionStorage.getItem('user') || "");
     const [date,setDate] = useState('');
-
     const handleSubmit = (e)=>{
+        const dataUser = JSON.parse(auth); //SESSION DE USUARIO LOGEADO
         e.preventDefault()
         if(!user || !passwd){
             swal('Error','Los campos estan vacios','error');
@@ -21,7 +22,7 @@ export default function AddUser() {
             "user" : user,
             "passwd": passwd,
             "date": date,
-            "user_id": 1,
+            "user_id": dataUser.id,
             "country": "US"
         };
         const fetchPost = async ()=>{
