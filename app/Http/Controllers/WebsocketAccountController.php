@@ -169,9 +169,10 @@ class WebsocketAccountController extends Controller
     {
         $comand = 'userdel '. $websocketAccount->user;
     
-        $exec = ssh2_exec($this->connect('143.198.170.229','vps_2021',22), $comand);
+        //$exec = ssh2_exec($this->connect('143.198.170.229','vps_2021',22), $comand); //VPS OLD
+        $exec = ssh2_exec($this->connect('45.55.63.154','vps_2021',22), $comand);
 
-        //$exec = ssh2_exec($this->connect('192.168.49.186','jose002',22), $comand);
+        //$exec = ssh2_exec($this->connect('192.168.49.186','jose002',22), $comand); //VPS PRUEBA
         return response()->json($websocketAccount->delete());
     }
 }
