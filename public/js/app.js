@@ -70801,13 +70801,13 @@ function AddUser() {
 
               case 5:
                 result = _context.sent;
-                console.log(result);
+                //console.log(result)
                 setUser('');
                 setPasswd('');
                 setDate('');
                 sweetalert__WEBPACK_IMPORTED_MODULE_2___default()('Exito!', 'Su usuarios se a instanciado!', 'success');
 
-              case 11:
+              case 10:
               case "end":
                 return _context.stop();
             }
