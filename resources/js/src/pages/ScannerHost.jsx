@@ -12,7 +12,7 @@ export default function ScannerHost() {
     return (
         <>
             <div className="container">
-                <h1>ESCANEAR HOST</h1>
+                <h2 className="my-5">En desarrollo...</h2>
 
             </div>
         </>

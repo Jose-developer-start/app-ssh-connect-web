@@ -33,6 +33,16 @@ p {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
 }
+/*
+========STYLE GENERAL=========
+*/
+.vh-100{
+    min-height: 100vh;
+}
+
+/*
+======END STYLE GENERAL=======
+*/
 .content__title {
     position: absolute;
     font-size: 50px;
@@ -53,10 +63,12 @@ p {
 .font-weight-bolder:hover {
     color: rgb(117, 199, 128);
 }
-
+/*=============STYLE LOGIN================
+*/
 .img-login {
     background-color: #232e3c;
     background-image: url("https://res.cloudinary.com/hive-vpn/image/upload/v1640102569/bg-pattern_bnikze.png");
+    height: 100vh;
 }
 /**COLOR BUTTON**/
 .btn-green {

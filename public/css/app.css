@@ -10990,6 +10990,18 @@ p {
   font-weight: 300;
 }
 
+/*
+========STYLE GENERAL=========
+*/
+
+.vh-100 {
+  min-height: 100vh;
+}
+
+/*
+======END STYLE GENERAL=======
+*/
+
 .content__title {
   position: absolute;
   font-size: 50px;
@@ -11013,9 +11025,13 @@ p {
   color: #75c780;
 }
 
+/*=============STYLE LOGIN================
+*/
+
 .img-login {
   background-color: #232e3c;
   background-image: url("https://res.cloudinary.com/hive-vpn/image/upload/v1640102569/bg-pattern_bnikze.png");
+  height: 100vh;
 }
 
 /**COLOR BUTTON**/

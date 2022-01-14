@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Loading({ title }) {
     return (
-        <div className="bg-login">
+        <div className="bg-login vh-100">
             <div className="container d-flex flex-column justify-content-center">
                 <h2 className="text-center py-5">{ title }</h2>
                 <div className="d-flex justify-content-center">
