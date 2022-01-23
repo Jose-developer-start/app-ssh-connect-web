@@ -1,6 +1,6 @@
 import React from 'react'
 import ListAccount from '../home/ListAccount'
-import Usa1 from './Usa1'
+import Usa1 from '../cardsAccount/CardPremUsa1'
 
 export default function AccountPremiun() {
     return (

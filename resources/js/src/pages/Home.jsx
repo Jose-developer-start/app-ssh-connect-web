@@ -1,9 +1,9 @@
 import React from 'react'
-import Accounts from '../components/accountSSH/Accounts'
+import Accounts from '../components/accountsFree/Accounts'
+import Cards from '../components/home/Cards'
 
 import Header from '../components/home/Header'
 import Info from '../components/home/Info'
-import Info_ssh from '../components/home/Info_ssh'
 import AccountPremiun from '../components/premiumSSH/AccountPremiun'
 
 export default function Home() {
@@ -15,7 +15,7 @@ export default function Home() {
             <AccountPremiun />
             <Accounts />
 
-            <Info_ssh />
+            <Cards />
         </>
     )
 }

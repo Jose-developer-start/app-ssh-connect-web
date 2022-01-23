@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
+import CreatedAccount from './CreatedAccount';
 export default function AccountCanada() {
     const [auth, setAuth] = useState(sessionStorage.getItem('user') || "");
     const [authData, setAuthData] = useState(null)
@@ -13,8 +14,8 @@ export default function AccountCanada() {
     const onSubmit = (e) => {
         e.preventDefault();
 
-        if(/\s/.test(user) || /\s/.test(passwd)){
-            swal('Error','No puede contener espacios','error');
+        if (/\s/.test(user) || /\s/.test(passwd)) {
+            swal('Error', 'No puede contener espacios', 'error');
             return 0;
         }
 
@@ -49,48 +50,7 @@ export default function AccountCanada() {
     }, [account])
     if (account.length != 0) {
         return (
-            <div className="container">
-                <h4 className="py-3 text-center text-dark">Su cuenta SSH y Websocket se a creado, {account.user}</h4>
-                <div className="row">
-                    <div className="col-sm-12 col-md-6">
-
-                        <div className="p-2 bg-white rounded shadow-sm mb-2">
-                            <ul className="list-group list-group-flush">
-                                <li className="list-group-item py-2">WS Domain : canada.internet-vps.tk
-                                    <span className="badge badge-primary badge-pill" /><i className="far fa-check-circle"></i>
-                                </li>
-                                <li className="list-group-item py-2">Host : 134.122.44.205
-                                    <span className="badge badge-primary badge-pill" /><i className="far fa-check-circle"></i>
-                                </li>
-                                <li className="list-group-item py-2">Port: TLS 443, HTTP 80 <span className="badge badge-primary badge-pill" /><i className="far fa-check-circle"></i></li>
-                                <li className="list-group-item py-2">Port SSH: 22
-                                    <span className="badge badge-primary badge-pill" /><i className="far fa-check-circle"></i>
-                                </li>
-                                <li className="list-group-item py-2">Proxy Squid: 8080 3128</li>
-                                <li className="list-group-item py-2">SSL/TLS: 443</li>
-                                <li className="list-group-item py-2">Limit Acc: 100</li>
-                                <li className="list-group-item py-2">Active: 3 Dias</li>
-                                <li className="list-group-item py-2">Port UDP: 7400
-                                    <span className="badge badge-primary badge-pill" /><i className="far fa-check-circle"></i>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="col-sm-12 col-md-6">
-
-                        <div className="alert alert-warning alert-dismissible fade show" role="alert">
-                            <p>
-                                GET / HTTP/1.1[crlf]Host: canada.internet-vps.tk[crlf]Upgrade: websocket[crlf][crlf]
-                            </p>
-
-                            <p>Usuario: {account.user}</p>
-                            <p>Clave: {account.passwd} </p>
-                            <p>fecha de expiración: {account.date}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <CreatedAccount user={account.user} passwd={account.passwd} date={account.date} payload={"GET / HTTP/1.1[crlf]Host: canada.internet-vps.tk[crlf]Upgrade: websocket[crlf][crlf]"} dominio1={"canada.internet-vps.tk"} ip={"134.122.44.205"} />
         )
     }
     return (
@@ -154,7 +114,7 @@ export default function AccountCanada() {
 
                                         {
                                             (auth != "") ? (
-                                                <button type="submit" disabled={loading} className="btn btn-primary btn-sm w-100 subb">{loading ? "Creando...": "Create"}</button>
+                                                <button type="submit" disabled={loading} className="btn btn-primary btn-sm w-100 subb">{loading ? "Creando..." : "Create"}</button>
                                             ) : (
                                                 <Link to="/login" className="btn btn-secondary btn-block" >Login</Link>
                                             )

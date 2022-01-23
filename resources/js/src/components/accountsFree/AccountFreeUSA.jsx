@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import swal from 'sweetalert';
-import "./websocketAccount.css"
-export default function WebsocketAccount() {
+import "./AccountFreeUSA.css"
+import CreatedAccount from './CreatedAccount';
+export default function AccountFreeUSA() {
     const [auth, setAuth] = useState(sessionStorage.getItem('user') || "");
     const [authData, setAuthData] = useState(null)
     const [user, setUser] = useState("");
@@ -50,48 +51,7 @@ export default function WebsocketAccount() {
     }, [account])
     if (account.length != 0) {
         return (
-            <div className="container">
-                <h4 className="py-3 text-center text-dark">Su cuenta SSH y Websocket se a creado, {account.user}</h4>
-                <div className="row">
-                    <div className="col-sm-12 col-md-6">
-
-                        <div className="p-2 bg-white rounded shadow-sm mb-2">
-                            <ul className="list-group list-group-flush">
-                                <li className="list-group-item py-2">WS Domain 1: internet-vip.cf
-                                    <span className="badge badge-primary badge-pill" /><i className="far fa-check-circle"></i>
-                                </li>
-                                <li className="list-group-item py-2">WS Domain 2: ssh-ws.tk
-                                            <span className="badge badge-primary badge-pill" /><i className="far fa-check-circle"></i>
-                                        </li>
-                                <li className="list-group-item py-2">Port: TLS 443, HTTP 80 <span className="badge badge-primary badge-pill" /><i className="far fa-check-circle"></i></li>
-                                <li className="list-group-item py-2">Port SSH: 22
-                                    <span className="badge badge-primary badge-pill" /><i className="far fa-check-circle"></i>
-                                </li>
-                                <li className="list-group-item py-2">Limit Acc: 100</li>
-                                <li className="list-group-item py-2">Active: 3 Dias</li>
-                                <li className="list-group-item py-2">Port UDP: 7400
-                                    <span className="badge badge-primary badge-pill" /><i className="far fa-check-circle"></i>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="col-sm-12 col-md-6">
-
-                        <div className="alert alert-warning alert-dismissible fade show" role="alert">
-                        <p>
-                            GET / HTTP/1.1[crlf]Host: ssh-ws.tk[crlf]Upgrade: websocket[crlf][crlf]
-                        </p>
-
-                                
-
-                            <p>Usuario: {account.user}</p>
-                            <p>Clave: {account.passwd} </p>
-                            <p>fecha de expiración: {account.date}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <CreatedAccount user={account.user} passwd={account.passwd} date={account.date} payload={"GET / HTTP/1.1[crlf]Host: ssh-ws.tk[crlf]Upgrade: websocket[crlf][crlf]"} dominio1={"internet-vip.cf"} ip={""} />
         )
     }
     return (

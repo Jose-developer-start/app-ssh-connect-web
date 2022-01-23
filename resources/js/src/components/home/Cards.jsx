@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Info_ssh() {
+export default function Cards() {
     return (
         <div className="container my-2">
             <h4 className="text-center my-4"> ¿SOBRE HIVE VPN? </h4>
@@ -10,8 +10,8 @@ export default function Info_ssh() {
                         <div className="card-body">
                             <div className="row">
                                 <div className="col">
-                                    <h2 className="card-title text-uppercase text-muted mb-0 h5">VELOCIDAD MÁS RÁPIDA</h2>
-                                    <p className="small font-weight-bold mb-0">hive-vpn.tk le ofrece el mejor servidor. Sentirás una nueva experiencia que no encontrarás en ningún otro lugar.
+                                    <h2 className="card-title text-uppercase text-muted mb-2 h5">VELOCIDAD MÁS RÁPIDA</h2>
+                                    <p className="small font-weight-bold mb-2">hive-vpn.tk le ofrece el mejor servidor. Sentirás una nueva experiencia que no encontrarás en ningún otro lugar.
                                     </p>
                                 </div>
                                 <div className="col-auto">
@@ -28,8 +28,8 @@ export default function Info_ssh() {
                         <div className="card-body">
                             <div className="row">
                                 <div className="col">
-                                    <h2 className="card-title text-uppercase text-muted mb-0 h5">Gratis y Premium</h2>
-                                    <p className="small font-weight-bold mb-0">hive-vpn.tk ofrece servidores gratis y premium, este ultimo ofrece soporte 24 horas.
+                                    <h2 className="card-title text-uppercase text-muted mb-2 h5">Gratis y Premium</h2>
+                                    <p className="small font-weight-bold mb-2">hive-vpn.tk ofrece servidores gratis y premium, este ultimo ofrece soporte 24 horas.
                                     </p>
                                 </div>
                                 <div className="col-auto">
@@ -46,8 +46,8 @@ export default function Info_ssh() {
                         <div className="card-body">
                             <div className="row">
                                 <div className="col">
-                                    <h2 className="card-title text-uppercase text-muted mb-0 h5">Con amor</h2>
-                                    <p className="small font-weight-bold mb-0">hive-vpn.tk es administrado por nuestro equipo que constantemente fomenta el mantenimiento del servicio.</p>
+                                    <h2 className="card-title text-uppercase text-muted mb-2 h5">Con amor</h2>
+                                    <p className="small font-weight-bold mb-2">hive-vpn.tk es administrado por nuestro equipo que constantemente fomenta el mantenimiento del servicio.</p>
                                 </div>
                                 <div className="col-auto">
                                     <div className="icon icon-shape bg-danger text-white rounded-circle shadow">
@@ -63,8 +63,8 @@ export default function Info_ssh() {
                         <div className="card-body">
                             <div className="row">
                                 <div className="col">
-                                    <h5 className="card-title text-uppercase text-muted mb-0">Seguridad SSL/TLS</h5>
-                                    <p className="small font-weight-bold mb-0">hive-vpn.tk no usa ningún registro para monitorear su actividad. Podemos garantizar que se mantenga la seguridad de sus datos.</p>
+                                    <h5 className="card-title text-uppercase text-muted mb-2">Seguridad SSL/TLS</h5>
+                                    <p className="small font-weight-bold mb-2">hive-vpn.tk no usa ningún registro para monitorear su actividad. Podemos garantizar que se mantenga la seguridad de sus datos.</p>
                                 </div>
                                 <div className="col-auto">
                                     <div className="icon icon-shape bg-info text-white rounded-circle shadow">

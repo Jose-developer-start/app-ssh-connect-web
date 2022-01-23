@@ -11,11 +11,11 @@ import Panel from "./pages/Panel";
 
 import Payment from "./pages/Payment";
 import Websocket_usa from "./components/premiumSSH/Websocket_usa";
-import AccountCanada from "./components/accountsFree/AccountCanada";
-import WebsocketAccount from "./components/accountsFree/WebsocketAccount";
+import AccountCanada from "./components/accountsFree/AccountFreeCanada";
 import ScannerHost from "./pages/ScannerHost";
 import SignIn from "./pages/auth/SignIn";
 import SignUp from "./pages/auth/SignUp";
+import AccountFreeUSA from "./components/accountsFree/AccountFreeUSA";
 
 function App() {
     return (
@@ -26,7 +26,7 @@ function App() {
                 <Routes>
                     <Route exact path="/" element={<Home />} />
                     
-                    <Route path="/websocket/us1" element={<WebsocketAccount />} />
+                    <Route path="/websocket/us1" element={<AccountFreeUSA />} />
                     <Route path="/canada/toronto/1" element={<AccountCanada />} />
 
                     <Route path="/login" element={<SignIn />} />
