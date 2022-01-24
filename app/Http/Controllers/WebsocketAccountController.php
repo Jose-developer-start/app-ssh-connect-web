@@ -49,7 +49,7 @@ class WebsocketAccountController extends Controller
 
         $comand = 'useradd -e '.$date.' -p "$(mkpasswd --method=sha-512 '.$passwd.')" '.$user;
         
-        $exec = ssh2_exec($this->connect('143.198.170.229','vps_2021',22), $comand);
+        $exec = ssh2_exec($this->connect('142.93.72.65','vps_2021',22), $comand);
 
         //$exec = ssh2_exec($this->connect('192.168.49.186','jose002',22), $comand);
 

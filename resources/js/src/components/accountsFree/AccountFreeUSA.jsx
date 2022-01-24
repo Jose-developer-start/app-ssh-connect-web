@@ -51,7 +51,7 @@ export default function AccountFreeUSA() {
     }, [account])
     if (account.length != 0) {
         return (
-            <CreatedAccount user={account.user} passwd={account.passwd} date={account.date} payload={"GET / HTTP/1.1[crlf]Host: ssh-ws.tk[crlf]Upgrade: websocket[crlf][crlf]"} dominio1={"internet-vip.cf"} ip={""} />
+            <CreatedAccount user={account.user} passwd={account.passwd} date={account.date} payload={"GET / HTTP/1.1[crlf]Host: ssh-ws.tk[crlf]Upgrade: websocket[crlf][crlf]"} dominio1={"internet-vip.cf"} ip={"0.0.0.0"} />
         )
     }
     return (
