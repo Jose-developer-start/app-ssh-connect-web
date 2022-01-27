@@ -38,9 +38,6 @@ export default function Navbar() {
                             (
                                 <>
                                     <li className="nav-item active">
-                                        <Link className="nav-link" to="/escanear-host">Buscar HOST <span className="sr-only">(current)</span></Link>
-                                    </li>
-                                    <li className="nav-item active">
                                         <Link className="nav-link" to="/login">Login <span className="sr-only">(current)</span></Link>
                                     </li>
                                     <li className="nav-item active">

@@ -12,7 +12,6 @@ import Panel from "./pages/Panel";
 import Payment from "./pages/Payment";
 import Websocket_usa from "./components/premiumSSH/Websocket_usa";
 import AccountCanada from "./components/accountsFree/AccountFreeCanada";
-import ScannerHost from "./pages/ScannerHost";
 import SignIn from "./pages/auth/SignIn";
 import SignUp from "./pages/auth/SignUp";
 import AccountFreeUSA from "./components/accountsFree/AccountFreeUSA";
@@ -34,7 +33,6 @@ function App() {
 
                     <Route path="/panel" element={<Panel />} />
                     <Route path="/payment" element={<Payment />} />
-                    <Route path="/escanear-host" element={<ScannerHost />} />
 
                     {/**Rutas de servidores premium**/}
                     
