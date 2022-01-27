@@ -17,7 +17,7 @@ export default function Header() {
                                         <h3>2</h3>
                                     </div>
                                     <div className="ticket__footer">
-                                        <p>Un pais</p>
+                                        <p>Paises</p>
                                     </div>
                                 </div>
                             </div>

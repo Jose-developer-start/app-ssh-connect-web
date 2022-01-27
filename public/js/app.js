@@ -69951,7 +69951,7 @@ function AccountFreeUSA() {
       user: account.user,
       passwd: account.passwd,
       date: account.date,
-      payload: "GET / HTTP/1.1[crlf]Host: ssh-ws.tk[crlf]Upgrade: websocket[crlf][crlf]",
+      payload: "GET / HTTP/1.1[crlf]Host: internet-vip.cf[crlf]Upgrade: websocket[crlf][crlf]",
       dominio1: "internet-vip.cf",
       ip: "0.0.0.0"
     });
@@ -70650,7 +70650,7 @@ function Header() {
     className: "ticket__header"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "2")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "ticket__footer"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Un pais")))))))));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Paises")))))))));
 }
 
 /***/ }),
@@ -70703,7 +70703,7 @@ function Info() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "container my-4"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
-    className: "text-muted text-dark text-center mb-4"
+    className: "text-muted text-dark text-center my-4"
   }, "Soporte para juegos y llamadas"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "row mb-4"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
@@ -70771,7 +70771,7 @@ function Info() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "pl-0 pl-xl-7 pr-0 pr-xl-16"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
-    className: "mb-3"
+    className: "my-sm-4 text-sm-center"
   }, "Soporte para Juegos Online"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
     className: "mt-8 mb-0"
   }, "Los servidores estan testeado para jugar juegos en linea. Los juegos testeados son: Free fire, Clash royale y Clash Of Clan")))));
@@ -70796,7 +70796,7 @@ function ListAccount(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
-    className: "text-center title-server mb-3"
+    className: "text-center title-server my-4"
   }, props.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "row"
   }, props.children));

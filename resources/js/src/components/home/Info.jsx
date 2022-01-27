@@ -15,7 +15,7 @@ export default function Info() {
     }, 1000)
     return (
         <div className="container my-4">
-            <h2 className="text-muted text-dark text-center mb-4">Soporte para juegos y llamadas</h2>
+            <h2 className="text-muted text-dark text-center my-4">Soporte para juegos y llamadas</h2>
             <div className="row mb-4">
                 <div className="col-lg-3 col-sm-6 mb-3">
                     <div className="d-flex align-items-center">
@@ -62,7 +62,7 @@ export default function Info() {
                 </div>
                 <div className="col-12 col-lg-6 d-flex align-items-center">
                     <div className="pl-0 pl-xl-7 pr-0 pr-xl-16">
-                        <h1 className="mb-3">Soporte para Juegos Online</h1>
+                        <h1 className="my-sm-4 text-sm-center">Soporte para Juegos Online</h1>
                         <p className="mt-8 mb-0">Los servidores estan testeado para jugar juegos en linea. Los juegos testeados son: Free fire, Clash royale y Clash Of Clan</p>
                     </div>
                 </div>
