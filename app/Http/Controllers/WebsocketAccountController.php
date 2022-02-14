@@ -91,6 +91,32 @@ class WebsocketAccountController extends Controller
 
         return response()->json($account);
     }
+    public function premium_usa2(Request $request)
+    {
+        $request->validate([
+            "user" => "required",
+            "passwd" => "required",
+        ]);
+
+        $user = $request->user;
+        $passwd = $request->passwd;
+        $date = $this->getDate_day31();
+
+        $comand = 'useradd -e '.$date.' -p "$(mkpasswd --method=sha-512 '.$passwd.')" '.$user;
+        
+        $exec = ssh2_exec($this->connect('45.55.63.154','vps_2021',22), $comand);
+
+        $account = WebsocketAccount::create([
+            'user' => $user,
+            'passwd' => $passwd,
+            'date' => $date,
+            'status' => 1,
+            'user_id' => $request->user_id,
+            'country' => $request->country
+        ]);
+
+        return response()->json($account);
+    }
     public function create_server_canada(Request $request)
     {
         $request->validate([
@@ -147,6 +173,8 @@ class WebsocketAccountController extends Controller
 
         if($day < 16){
             $day = date('j') + 15;
+            //Caso febrero //Evitar error de MySQL type DATE
+            $day = $day - 1;
         }else{
             if($day > 16 && $month > 11){
                 $month = 1;
@@ -159,6 +187,32 @@ class WebsocketAccountController extends Controller
             //15 DAYS
             $days = date('j') + 15;
             $day = $days - 31;
+            if($day == 0){
+                $day = 1;
+            }
+        }
+        return $date = strval($year."-".$month."-".$day);
+    }
+    public function getDate_day31(){
+        date_default_timezone_set('America/El_Salvador');
+        $year = date('Y');
+        $month = date('n');
+        $day = date('j');
+
+        if($day < 3){
+            $day = date('j') + 30;
+        }else{
+            if($day > 3 && $month > 11){
+                $month = 1;
+                $year = $year + 1;
+            }else{
+                if($month < 12){
+                    $month++;
+                }
+            }
+            //31 DAYS
+            $days = $day + 30;
+            $day = $days - 30;
             if($day == 0){
                 $day = 1;
             }

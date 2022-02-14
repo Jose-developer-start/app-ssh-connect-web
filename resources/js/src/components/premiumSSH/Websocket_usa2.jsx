@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
-export default function Websocket_usa() {
+export default function Websocket_usa2() {
     const [auth, setAuth] = useState(sessionStorage.getItem('user') || "");
     const [authData, setAuthData] = useState(null)
     const [user, setUser] = useState("");
@@ -29,7 +29,7 @@ export default function Websocket_usa() {
         setLoading(true);
         sessionStorage.setItem('ssh',JSON.stringify(data));
         //Session para el pago $4.0
-        sessionStorage.setItem('payment', 2.00);
+        sessionStorage.setItem('payment', 4.00);
         setAccount(data);
         setTimeout(()=>{
             location.href= location.origin + "/payment";
@@ -46,11 +46,11 @@ export default function Websocket_usa() {
     return (
         <>
             <div className="container">
-                <h2 className="text-center title-server my-5">SERVER</h2>
+                <h2 className="text-center title-server my-5">SERVIDOR</h2>
                 <div className="card shadow-lg mb-3">
                     <div className="card-header">
                         <h3 className="text-center text-dark">New York</h3>
-                        <h5 className="text-center">VPS - <b>$ 2.00</b></h5>
+                        <h5 className="text-center">VPS - <b>$4.00</b></h5>
                     </div>
                     <div className="card-body">
                         <div className="row g-2">
@@ -64,8 +64,9 @@ export default function Websocket_usa() {
                                         <li className="list-group-item py-2">Port SSH: 22
                                             <span className="badge badge-primary badge-pill" /><i className="far fa-check-circle"></i>
                                         </li>
-                                        <li className="list-group-item py-2">Limit Acc: 100</li>
-                                        <li className="list-group-item py-2">Active: 15 Dias</li>
+                                        <li className="list-group-item py-2">Limit Acc: 10</li>
+                                        <li className="list-group-item py-2">Active: 31 Dias</li>
+                                        <li className="list-group-item py-2">Soporte para juegos</li>
                                         <li className="list-group-item py-2">Port UDP: 7400
                                             <span className="badge badge-primary badge-pill" /><i className="far fa-check-circle"></i>
                                         </li>

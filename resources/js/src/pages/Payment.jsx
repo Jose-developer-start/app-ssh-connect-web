@@ -6,12 +6,10 @@ const Payment = () => {
     const [accountCreate, setAccountCreate] = useState("");
     const [ssh, setSsh] = useState(sessionStorage.getItem('ssh') || "")
     let payPalRef = useRef()
-
     const product = {
-        price: '1.50',
+        price: sessionStorage.getItem('payment') + '.00',
         description: 'Pagó de cuenta SSH + Websocket a hive-vpn.tk'
     }
-
     useEffect(() => {
         const script = document.createElement('script')
         script.src =
@@ -43,20 +41,38 @@ const Payment = () => {
                                 
                                 let data = sessionStorage.getItem('ssh');
                                 const BASE_URL_API = location.origin;
-                                const fetchCreatedAccount = async () => {
-                                    const result = await fetch(BASE_URL_API + "/api/websockets/premium/usa/us1", {
-                                        "method": "POST",
-                                        "body": data,
-                                        "headers": {
-                                            "Accept": "application/json",
-                                            "Content-Type": "application/json"
-                                        }
-                                    });
-                                    const dataJson = await result.json();
-                                    setAccountCreate(dataJson);
-                                    //console.log('CREATED')
+                                //Validation create server
+                                if(product.price === "2.00"){
+                                    const fetchCreatedAccount = async () => {
+                                        const result = await fetch(BASE_URL_API + "/api/websockets/premium/usa/us1", {
+                                            "method": "POST",
+                                            "body": data,
+                                            "headers": {
+                                                "Accept": "application/json",
+                                                "Content-Type": "application/json"
+                                            }
+                                        });
+                                        const dataJson = await result.json();
+                                        setAccountCreate(dataJson);
+                                        //console.log('CREATED')
+                                    }
+                                    fetchCreatedAccount();
+                                }else{
+                                    const fetchCreatedAccount = async () => {
+                                        const result = await fetch(BASE_URL_API + "/api/websockets/premium/usa/us2", {
+                                            "method": "POST",
+                                            "body": data,
+                                            "headers": {
+                                                "Accept": "application/json",
+                                                "Content-Type": "application/json"
+                                            }
+                                        });
+                                        const dataJson = await result.json();
+                                        setAccountCreate(dataJson);
+                                        //console.log('CREATED')
+                                    }
+                                    fetchCreatedAccount();
                                 }
-                                fetchCreatedAccount();
                                 sessionStorage.removeItem('ssh');
                                 setSsh("");
                             }
@@ -66,7 +82,7 @@ const Payment = () => {
             })
         }
     }, [loaded, product.price, product.description])
-    
+    console.log(accountCreate)
     if(accountCreate != ""){
         return (
             <InfoAccount data={accountCreate} />

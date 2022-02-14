@@ -15,6 +15,7 @@ import AccountCanada from "./components/accountsFree/AccountFreeCanada";
 import SignIn from "./pages/auth/SignIn";
 import SignUp from "./pages/auth/SignUp";
 import AccountFreeUSA from "./components/accountsFree/AccountFreeUSA";
+import Websocket_usa2 from "./components/premiumSSH/Websocket_usa2";
 
 function App() {
     return (
@@ -32,11 +33,13 @@ function App() {
                     <Route path="/registrarse" element={<SignUp />} />
 
                     <Route path="/panel" element={<Panel />} />
+                    
                     <Route path="/payment" element={<Payment />} />
 
                     {/**Rutas de servidores premium**/}
                     
                     <Route path="/websocket/unit-state/usa1" element={<Websocket_usa />} />
+                    <Route path="/websocket/unit-state/usa2" element={<Websocket_usa2 />} />
                 </Routes>
 
                 <Footer />
