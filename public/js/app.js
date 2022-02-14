@@ -69129,6 +69129,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_auth_SignUp__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pages/auth/SignUp */ "./resources/js/src/pages/auth/SignUp.jsx");
 /* harmony import */ var _components_accountsFree_AccountFreeUSA__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/accountsFree/AccountFreeUSA */ "./resources/js/src/components/accountsFree/AccountFreeUSA.jsx");
 /* harmony import */ var _components_premiumSSH_Websocket_usa2__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/premiumSSH/Websocket_usa2 */ "./resources/js/src/components/premiumSSH/Websocket_usa2.jsx");
+/* harmony import */ var _components_premiumSSH_Websocket_ca1__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/premiumSSH/Websocket_ca1 */ "./resources/js/src/components/premiumSSH/Websocket_ca1.jsx");
+
 
 
 
@@ -69173,6 +69175,9 @@ function App() {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
     path: "/websocket/unit-state/usa2",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_premiumSSH_Websocket_usa2__WEBPACK_IMPORTED_MODULE_13__["default"], null)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+    path: "/websocket/canada/toronto1",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_premiumSSH_Websocket_ca1__WEBPACK_IMPORTED_MODULE_14__["default"], null)
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null)));
 }
 
@@ -70363,6 +70368,101 @@ function Usa1() {
 
 /***/ }),
 
+/***/ "./resources/js/src/components/cardsAccount/CardPremCA.jsx":
+/*!*****************************************************************!*\
+  !*** ./resources/js/src/components/cardsAccount/CardPremCA.jsx ***!
+  \*****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return CardPremCA; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+
+
+function CardPremCA() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-sm-12 col-md-6 mb-3"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "my-2 p-2 bg-white rounded shadow-sm"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "d-flex text-muted"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "d-flex justify-content-between"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "me-3",
+    src: "./images/accounts/ca.png",
+    alt: "Canada Toronto",
+    width: "48",
+    height: "35"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "pb-2 mb-0 small lh-sm w-100"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "d-flex justify-content-between"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    className: "text-gray-dark"
+  }, "Canada - Toronto 31 d\xEDas")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "badge bg-primary mt-1"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+    viewBox: "0 0 24 24",
+    width: "12",
+    height: "12",
+    stroke: "currentColor",
+    "stroke-width": "2",
+    fill: "none",
+    "stroke-linecap": "round",
+    "stroke-linejoin": "round",
+    className: "css-i6dzq1"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("circle", {
+    cx: "12",
+    cy: "12",
+    r: "10"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("polyline", {
+    points: "12 6 12 12 16 14"
+  })), " 31 D\xEDas"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "badge bg-primary mt-1"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+    viewBox: "0 0 24 24",
+    width: "12",
+    height: "12",
+    stroke: "currentColor",
+    "stroke-width": "2",
+    fill: "none",
+    "stroke-linecap": "round",
+    "stroke-linejoin": "round",
+    className: "css-i6dzq1"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("circle", {
+    cx: "9",
+    cy: "7",
+    r: "4"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M23 21v-2a4 4 0 0 0-3-3.87"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M16 3.13a4 4 0 0 1 0 7.75"
+  })), " 10")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "mt-auto p-2 bd-highlight"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/websocket/canada/toronto1",
+    className: " text-dark btn btn-outline-primary",
+    role: "button"
+  }, "Crear"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "small border-top"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "badge bg-success"
+  }, "Online"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "badge bg-primary"
+  }, "Host: canada.v2ray-usa.tk"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "badge bg-dark text-white"
+  }, "DNS Host: 1.1.1.1"))));
+}
+
+/***/ }),
+
 /***/ "./resources/js/src/components/cardsAccount/CardPremUsa1.jsx":
 /*!*******************************************************************!*\
   !*** ./resources/js/src/components/cardsAccount/CardPremUsa1.jsx ***!
@@ -71320,6 +71420,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _home_ListAccount__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../home/ListAccount */ "./resources/js/src/components/home/ListAccount.jsx");
 /* harmony import */ var _cardsAccount_CardPremUsa1__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../cardsAccount/CardPremUsa1 */ "./resources/js/src/components/cardsAccount/CardPremUsa1.jsx");
 /* harmony import */ var _cardsAccount_CardPremUsa2__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../cardsAccount/CardPremUsa2 */ "./resources/js/src/components/cardsAccount/CardPremUsa2.jsx");
+/* harmony import */ var _cardsAccount_CardPremCA__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../cardsAccount/CardPremCA */ "./resources/js/src/components/cardsAccount/CardPremCA.jsx");
+
 
 
 
@@ -71327,7 +71429,7 @@ __webpack_require__.r(__webpack_exports__);
 function AccountPremiun() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_home_ListAccount__WEBPACK_IMPORTED_MODULE_1__["default"], {
     title: "Servidores premium 31 días"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_cardsAccount_CardPremUsa2__WEBPACK_IMPORTED_MODULE_3__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_home_ListAccount__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_cardsAccount_CardPremUsa2__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_cardsAccount_CardPremCA__WEBPACK_IMPORTED_MODULE_4__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_home_ListAccount__WEBPACK_IMPORTED_MODULE_1__["default"], {
     title: "Servidores premium 15 días"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_cardsAccount_CardPremUsa1__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
 }
@@ -71363,7 +71465,13 @@ function InfoAccount(_ref) {
     className: "list-group list-group-flush"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: "list-group-item py-2"
-  }, "WS Domain 1: v2ray-usa.tk", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+  }, "WS Domain USA: v2ray-usa.tk", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "badge badge-primary badge-pill"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "far fa-check-circle"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "list-group-item py-2"
+  }, "WS Domain canada: canada.v2ray-usa.tk", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "badge badge-primary badge-pill"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "far fa-check-circle"
@@ -71392,7 +71500,223 @@ function InfoAccount(_ref) {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "alert alert-warning alert-dismissible fade show",
     role: "alert"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "GET / HTTP/1.1[crlf]Host: v2ray-usa.tk[crlf]Upgrade: websocket[crlf][crlf]"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Usuario: ", data.user), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Clave: ", data.passwd, " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "fecha de expiraci\xF3n: ", data.date)))));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Payload para server de Unite State"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "GET / HTTP/1.1[crlf]Host: v2ray-usa.tk[crlf]Upgrade: websocket[crlf][crlf]"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Payload para server de Canada - Toronto"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "GET / HTTP/1.1[crlf]Host: canada.v2ray-usa.tk[crlf]Upgrade: websocket[crlf][crlf]"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Usuario: ", data.user), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Clave: ", data.passwd, " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "fecha de expiraci\xF3n: ", data.date)))));
+}
+
+/***/ }),
+
+/***/ "./resources/js/src/components/premiumSSH/Websocket_ca1.jsx":
+/*!******************************************************************!*\
+  !*** ./resources/js/src/components/premiumSSH/Websocket_ca1.jsx ***!
+  \******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Websocket_ca1; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+function Websocket_ca1() {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(sessionStorage.getItem('user') || ""),
+      _useState2 = _slicedToArray(_useState, 2),
+      auth = _useState2[0],
+      setAuth = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null),
+      _useState4 = _slicedToArray(_useState3, 2),
+      authData = _useState4[0],
+      setAuthData = _useState4[1];
+
+  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(""),
+      _useState6 = _slicedToArray(_useState5, 2),
+      user = _useState6[0],
+      setUser = _useState6[1];
+
+  var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(""),
+      _useState8 = _slicedToArray(_useState7, 2),
+      passwd = _useState8[0],
+      setPasswd = _useState8[1];
+
+  var _useState9 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      _useState10 = _slicedToArray(_useState9, 2),
+      loading = _useState10[0],
+      setLoading = _useState10[1];
+
+  var _useState11 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+      _useState12 = _slicedToArray(_useState11, 2),
+      account = _useState12[0],
+      setAccount = _useState12[1];
+
+  var today = new Date();
+  var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+
+  var onSubmit = function onSubmit(e) {
+    e.preventDefault();
+
+    if (/\s/.test(user) || /\s/.test(passwd)) {
+      swal('Error', 'No puede contener espacios', 'error');
+      return 0;
+    }
+
+    var data = {
+      "user_id": authData.id,
+      "date": date,
+      "user": user,
+      "passwd": passwd,
+      "country": "New York/USA"
+    };
+    setLoading(true);
+    sessionStorage.setItem('ssh', JSON.stringify(data)); //Session para el pago $4.0
+
+    sessionStorage.setItem('payment', 4.00); //Session verify country
+
+    sessionStorage.setItem('country', 'canada');
+    setAccount(data);
+    setTimeout(function () {
+      location.href = location.origin + "/payment";
+    }, 1000);
+  };
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    if (auth != "") {
+      setAuthData(JSON.parse(auth));
+    }
+
+    setLoading(false);
+  }, [account]);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    className: "text-center title-server my-5"
+  }, "SERVER"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "card shadow-lg mb-3"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "card-header"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    className: "text-center text-dark"
+  }, "Canada - Toronto"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
+    className: "text-center"
+  }, "VPS - ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, "$ 4.00"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "card-body"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "row g-2"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-md-4"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "p-2 bg-white rounded shadow-sm mb-2"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+    className: "list-group list-group-flush"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "list-group-item py-2"
+  }, "WS Domain 1: canada.v2ray-usa.tk", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "badge badge-primary badge-pill"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "far fa-check-circle"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "list-group-item py-2"
+  }, "Port: TLS 443, HTTP 80 ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "badge badge-primary badge-pill"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "far fa-check-circle"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "list-group-item py-2"
+  }, "Port SSH: 22", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "badge badge-primary badge-pill"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "far fa-check-circle"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "list-group-item py-2"
+  }, "Limit Acc: 100"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "list-group-item py-2"
+  }, "Active: 31 Dias"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "list-group-item py-2"
+  }, "Port UDP: 7400", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "badge badge-primary badge-pill"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "far fa-check-circle"
+  }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-md-8"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "p-2 bg-white rounded shadow-sm mb-2"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "textad"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+    method: "post",
+    onSubmit: onSubmit
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "mb-3"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    htmlFor: "username",
+    className: "form-label"
+  }, "Username"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "input-group"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "input-group-text"
+  }, "Hive VPN"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "text",
+    onChange: function onChange(e) {
+      setUser(e.target.value);
+    },
+    className: "form-control",
+    name: "user",
+    id: "username",
+    placeholder: "username",
+    required: true
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "mb-3"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    htmlFor: "password",
+    className: "form-label"
+  }, "Password"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "input-group"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "input-group-text"
+  }, "Hive VPN"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "text",
+    onChange: function onChange(e) {
+      setPasswd(e.target.value);
+    },
+    className: "form-control",
+    name: "passwd",
+    id: "password",
+    placeholder: "clave",
+    required: true
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "mb-3"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    htmlFor: "hostname",
+    className: "form-label"
+  }, "Domain: "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "form-check"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    className: "form-check-label",
+    htmlFor: "openv2ray.com"
+  }, "canada.v2ray-usa.tk ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "badge bg-success"
+  }, "Valid SSL")))), auth != "" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    type: "submit",
+    disabled: loading,
+    className: "btn btn-primary btn-sm w-100 subb"
+  }, loading ? "Creando..." : "Create") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/login",
+    className: "btn btn-secondary btn-block"
+  }, "Login")))))))));
 }
 
 /***/ }),
@@ -72131,7 +72455,7 @@ var Payment = function Payment() {
   };
   Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
     var script = document.createElement('script');
-    script.src = 'https://www.paypal.com/sdk/js?client-id=ATYhHQHQmLSuWb91fq6uAIBQXW3vmnAPbKJvVkdz9o85qsoI4MB0sG9QOk6IWPBbSj3BkrWrp0hFdsZ4';
+    script.src = 'https://www.paypal.com/sdk/js?client-id=AS8C2bl-A1NT_UcVZslKOPezeUTjzc2s-BNi10YjypRQmH5z_w1RWYlY8Xx-C0QyDNSzJ784nrNsK1_k';
     script.addEventListener('load', function () {
       return setLoaded(true);
     });
@@ -72152,18 +72476,18 @@ var Payment = function Payment() {
             });
           },
           onApprove: function () {
-            var _onApprove = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee3(data, actions) {
-              var order, _data, BASE_URL_API, fetchCreatedAccount, _fetchCreatedAccount;
+            var _onApprove = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee4(data, actions) {
+              var order, _data, BASE_URL_API, fetchCreatedAccount, _fetchCreatedAccount, _fetchCreatedAccount2;
 
-              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee3$(_context3) {
+              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee4$(_context4) {
                 while (1) {
-                  switch (_context3.prev = _context3.next) {
+                  switch (_context4.prev = _context4.next) {
                     case 0:
-                      _context3.next = 2;
+                      _context4.next = 2;
                       return actions.order.capture();
 
                     case 2:
-                      order = _context3.sent;
+                      order = _context4.sent;
 
                       if (order.status === 'COMPLETED') {
                         //console.log(order)
@@ -72212,46 +72536,89 @@ var Payment = function Payment() {
 
                           fetchCreatedAccount();
                         } else {
-                          _fetchCreatedAccount = /*#__PURE__*/function () {
-                            var _ref2 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2() {
-                              var result, dataJson;
-                              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
-                                while (1) {
-                                  switch (_context2.prev = _context2.next) {
-                                    case 0:
-                                      _context2.next = 2;
-                                      return fetch(BASE_URL_API + "/api/websockets/premium/usa/us2", {
-                                        "method": "POST",
-                                        "body": _data,
-                                        "headers": {
-                                          "Accept": "application/json",
-                                          "Content-Type": "application/json"
-                                        }
-                                      });
+                          if (sessionStorage.getItem('country') === "canada") {
+                            _fetchCreatedAccount = /*#__PURE__*/function () {
+                              var _ref2 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2() {
+                                var result, dataJson;
+                                return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
+                                  while (1) {
+                                    switch (_context2.prev = _context2.next) {
+                                      case 0:
+                                        _context2.next = 2;
+                                        return fetch(BASE_URL_API + "/api/websockets/premium/ca/toronto1", {
+                                          "method": "POST",
+                                          "body": _data,
+                                          "headers": {
+                                            "Accept": "application/json",
+                                            "Content-Type": "application/json"
+                                          }
+                                        });
 
-                                    case 2:
-                                      result = _context2.sent;
-                                      _context2.next = 5;
-                                      return result.json();
+                                      case 2:
+                                        result = _context2.sent;
+                                        _context2.next = 5;
+                                        return result.json();
 
-                                    case 5:
-                                      dataJson = _context2.sent;
-                                      setAccountCreate(dataJson); //console.log('CREATED')
+                                      case 5:
+                                        dataJson = _context2.sent;
+                                        setAccountCreate(dataJson); //console.log('CREATED')
 
-                                    case 7:
-                                    case "end":
-                                      return _context2.stop();
+                                      case 7:
+                                      case "end":
+                                        return _context2.stop();
+                                    }
                                   }
-                                }
-                              }, _callee2);
-                            }));
+                                }, _callee2);
+                              }));
 
-                            return function _fetchCreatedAccount() {
-                              return _ref2.apply(this, arguments);
-                            };
-                          }();
+                              return function _fetchCreatedAccount() {
+                                return _ref2.apply(this, arguments);
+                              };
+                            }();
 
-                          _fetchCreatedAccount();
+                            _fetchCreatedAccount();
+                          } else {
+                            _fetchCreatedAccount2 = /*#__PURE__*/function () {
+                              var _ref3 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee3() {
+                                var result, dataJson;
+                                return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee3$(_context3) {
+                                  while (1) {
+                                    switch (_context3.prev = _context3.next) {
+                                      case 0:
+                                        _context3.next = 2;
+                                        return fetch(BASE_URL_API + "/api/websockets/premium/usa/us2", {
+                                          "method": "POST",
+                                          "body": _data,
+                                          "headers": {
+                                            "Accept": "application/json",
+                                            "Content-Type": "application/json"
+                                          }
+                                        });
+
+                                      case 2:
+                                        result = _context3.sent;
+                                        _context3.next = 5;
+                                        return result.json();
+
+                                      case 5:
+                                        dataJson = _context3.sent;
+                                        setAccountCreate(dataJson); //console.log('CREATED')
+
+                                      case 7:
+                                      case "end":
+                                        return _context3.stop();
+                                    }
+                                  }
+                                }, _callee3);
+                              }));
+
+                              return function _fetchCreatedAccount2() {
+                                return _ref3.apply(this, arguments);
+                              };
+                            }();
+
+                            _fetchCreatedAccount2();
+                          }
                         }
 
                         sessionStorage.removeItem('ssh');
@@ -72260,10 +72627,10 @@ var Payment = function Payment() {
 
                     case 4:
                     case "end":
-                      return _context3.stop();
+                      return _context4.stop();
                   }
                 }
-              }, _callee3);
+              }, _callee4);
             }));
 
             function onApprove(_x, _x2) {

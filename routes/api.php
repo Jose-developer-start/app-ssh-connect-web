@@ -28,6 +28,8 @@ Route::delete('websockets/{websocketAccount}','WebsocketAccountController@destro
 //Paga
 Route::post('websockets/premium/usa/us1','WebsocketAccountController@premium_usa1');
 Route::post('websockets/premium/usa/us2','WebsocketAccountController@premium_usa2');
+//Paga Canada 1
+Route::post('websockets/premium/ca/toronto1','WebsocketAccountController@premium_ca1');
 
 //Rutas Users Api
 Route::get('users','UserController@index');

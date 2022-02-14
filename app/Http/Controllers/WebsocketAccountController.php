@@ -117,6 +117,33 @@ class WebsocketAccountController extends Controller
 
         return response()->json($account);
     }
+
+    public function premium_ca1(Request $request)
+    {
+        $request->validate([
+            "user" => "required",
+            "passwd" => "required",
+        ]);
+
+        $user = $request->user;
+        $passwd = $request->passwd;
+        $date = $this->getDate_day31();
+
+        $comand = 'useradd -e '.$date.' -p "$(mkpasswd --method=sha-512 '.$passwd.')" '.$user;
+        
+        $exec = ssh2_exec($this->connect('147.182.146.77','vps-2021-hive',22), $comand);
+
+        $account = WebsocketAccount::create([
+            'user' => $user,
+            'passwd' => $passwd,
+            'date' => $date,
+            'status' => 1,
+            'user_id' => $request->user_id,
+            'country' => $request->country
+        ]);
+
+        return response()->json($account);
+    }
     public function create_server_canada(Request $request)
     {
         $request->validate([

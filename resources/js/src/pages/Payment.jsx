@@ -13,7 +13,7 @@ const Payment = () => {
     useEffect(() => {
         const script = document.createElement('script')
         script.src =
-            'https://www.paypal.com/sdk/js?client-id=ATYhHQHQmLSuWb91fq6uAIBQXW3vmnAPbKJvVkdz9o85qsoI4MB0sG9QOk6IWPBbSj3BkrWrp0hFdsZ4'
+            'https://www.paypal.com/sdk/js?client-id=AS8C2bl-A1NT_UcVZslKOPezeUTjzc2s-BNi10YjypRQmH5z_w1RWYlY8Xx-C0QyDNSzJ784nrNsK1_k'
         script.addEventListener('load', () => setLoaded(true))
         document.body.appendChild(script)
 
@@ -58,20 +58,38 @@ const Payment = () => {
                                     }
                                     fetchCreatedAccount();
                                 }else{
-                                    const fetchCreatedAccount = async () => {
-                                        const result = await fetch(BASE_URL_API + "/api/websockets/premium/usa/us2", {
-                                            "method": "POST",
-                                            "body": data,
-                                            "headers": {
-                                                "Accept": "application/json",
-                                                "Content-Type": "application/json"
-                                            }
-                                        });
-                                        const dataJson = await result.json();
-                                        setAccountCreate(dataJson);
-                                        //console.log('CREATED')
+                                    if(sessionStorage.getItem('country') === "canada"){
+                                        const fetchCreatedAccount = async () => {
+                                            const result = await fetch(BASE_URL_API + "/api/websockets/premium/ca/toronto1", {
+                                                "method": "POST",
+                                                "body": data,
+                                                "headers": {
+                                                    "Accept": "application/json",
+                                                    "Content-Type": "application/json"
+                                                }
+                                            });
+                                            const dataJson = await result.json();
+                                            setAccountCreate(dataJson);
+                                            //console.log('CREATED')
+                                        }
+                                        fetchCreatedAccount();
+                                    }else{
+                                        const fetchCreatedAccount = async () => {
+                                            const result = await fetch(BASE_URL_API + "/api/websockets/premium/usa/us2", {
+                                                "method": "POST",
+                                                "body": data,
+                                                "headers": {
+                                                    "Accept": "application/json",
+                                                    "Content-Type": "application/json"
+                                                }
+                                            });
+                                            const dataJson = await result.json();
+                                            setAccountCreate(dataJson);
+                                            //console.log('CREATED')
+                                        }
+                                        fetchCreatedAccount();
                                     }
-                                    fetchCreatedAccount();
+                                    
                                 }
                                 sessionStorage.removeItem('ssh');
                                 setSsh("");
