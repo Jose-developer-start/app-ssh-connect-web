@@ -30,15 +30,23 @@ export default function InfoAccount({data}) {
                 <div className="col-sm-12 col-md-6">
 
                     <div className="alert alert-warning alert-dismissible fade show" role="alert">
-                        <h3>Payload para server de Unite State</h3>
+                        {
+                            (sessionStorage.getItem('country') == "canada") ?
+                            <p>
+                                GET / HTTP/1.1[crlf]Host: canada.v2ray-usa.tk[crlf]Upgrade: websocket[crlf][crlf]
+                            </p>
+                            : 
+                            <p>
+                                GET / HTTP/1.1[crlf]Host: v2ray-usa.tk[crlf]Upgrade: websocket[crlf][crlf]
+                            </p>
+                        }
+
+                        <h5>Payload para Estados Unidos - server</h5>
+
                         <p>
                             GET / HTTP/1.1[crlf]Host: v2ray-usa.tk[crlf]Upgrade: websocket[crlf][crlf]
                         </p>
-                        <h3>Payload para server de Canada - Toronto</h3>
-                        <p>
-                            GET / HTTP/1.1[crlf]Host: canada.v2ray-usa.tk[crlf]Upgrade: websocket[crlf][crlf]
-                        </p>
-
+                    
                         <p>Usuario: {data.user}</p>
                         <p>Clave: {data.passwd} </p>
                         <p>fecha de expiración: {data.date}</p>
