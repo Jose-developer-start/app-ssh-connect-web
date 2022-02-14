@@ -69630,8 +69630,8 @@ function AccountCanada() {
       user: account.user,
       passwd: account.passwd,
       date: account.date,
-      payload: "GET / HTTP/1.1[crlf]Host: canada.internet-vps.tk[crlf]Upgrade: websocket[crlf][crlf]",
-      dominio1: "canada.internet-vps.tk",
+      payload: "GET / HTTP/1.1[crlf]Host: sf.vpn-internet.tk[crlf]Upgrade: websocket[crlf][crlf]",
+      dominio1: "sf.vpn-internet.tk",
       ip: "134.122.44.205"
     });
   }
@@ -69646,7 +69646,7 @@ function AccountCanada() {
     className: "card-header"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", {
     className: "text-center text-dark"
-  }, "Canada"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h5", {
+  }, "USA-San Francisco"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h5", {
     className: "text-center"
   }, "1")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "card-body"
@@ -69660,7 +69660,7 @@ function AccountCanada() {
     className: "list-group list-group-flush"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
     className: "list-group-item py-2"
-  }, "WS Domain : canada.internet-vps.tk", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+  }, "WS Domain : sf.vpn-internet.tk", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
     className: "badge badge-primary badge-pill"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
     className: "far fa-check-circle"
@@ -69747,7 +69747,7 @@ function AccountCanada() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
     className: "form-check-label",
     htmlFor: "openv2ray.com"
-  }, "canada.internet-vps.tk ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+  }, "sf.vpn-internet.tk ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
     className: "badge bg-success"
   }, "Valid SSL")))), auth != "" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
     type: "submit",
@@ -70199,7 +70199,7 @@ function Toronto() {
     className: "d-flex justify-content-between"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "me-3",
-    src: "./images/accounts/ca.png",
+    src: "./images/accounts/us.png",
     alt: "United States",
     width: "48",
     height: "35"
@@ -70209,7 +70209,7 @@ function Toronto() {
     className: "d-flex justify-content-between"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
     className: "text-gray-dark"
-  }, "Toronto Canada  1 ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+  }, "Unit State - San Francisco  1 ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "badge bg-primary mt-1"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
     viewBox: "0 0 24 24",
@@ -70261,7 +70261,7 @@ function Toronto() {
     className: "badge bg-success"
   }, "Online"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "badge bg-primary"
-  }, "Host: canada.internet-vps.tk"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+  }, "Host: sf.vpn-internet.tk"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "badge bg-dark text-white"
   }, "DNS Host: 1.1.1.1"))));
 }
@@ -70304,7 +70304,7 @@ function Usa1() {
     className: "d-flex justify-content-between"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     className: "text-gray-dark"
-  }, "United States  1 ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+  }, "United States - New York 1 ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "badge bg-primary mt-1"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
     viewBox: "0 0 24 24",
@@ -70439,7 +70439,7 @@ function Usa1() {
     d: "M23 21v-2a4 4 0 0 0-3-3.87"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
     d: "M16 3.13a4 4 0 0 1 0 7.75"
-  })), " 150")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  })), " 10")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "mt-auto p-2 bd-highlight"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/websocket/unit-state/usa1",
@@ -70512,7 +70512,7 @@ function CardPremUsa2() {
     r: "10"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("polyline", {
     points: "12 6 12 12 16 14"
-  })), " 15 D\xEDas"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+  })), " 31 D\xEDas"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "badge bg-primary mt-1"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
     viewBox: "0 0 24 24",
@@ -70534,7 +70534,7 @@ function CardPremUsa2() {
     d: "M23 21v-2a4 4 0 0 0-3-3.87"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
     d: "M16 3.13a4 4 0 0 1 0 7.75"
-  })), " 150")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  })), " 10")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "mt-auto p-2 bd-highlight"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/websocket/unit-state/usa2",
@@ -72168,7 +72168,7 @@ var Payment = function Payment() {
                       if (order.status === 'COMPLETED') {
                         //console.log(order)
                         _data = sessionStorage.getItem('ssh');
-                        BASE_URL_API = location.origin; //Validation create server
+                        BASE_URL_API = location.origin; //Validation create server $2 or $4
 
                         if (product.price === "2.00") {
                           fetchCreatedAccount = /*#__PURE__*/function () {

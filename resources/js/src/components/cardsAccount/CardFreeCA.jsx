@@ -6,11 +6,11 @@ export default function Toronto() {
             <div className="my-2 p-2 bg-white rounded shadow-sm">
                 <div className="d-flex text-muted">
                     <div className="d-flex justify-content-between">
-                        <img className="me-3" src="./images/accounts/ca.png" alt="United States" width="48" height="35" />
+                        <img className="me-3" src="./images/accounts/us.png" alt="United States" width="48" height="35" />
                     </div>
                     <div className="pb-2 mb-0 small lh-sm w-100">
                         <div className="d-flex justify-content-between">
-                            <b className="text-gray-dark">Toronto Canada  1 </b>
+                            <b className="text-gray-dark">Unit State - San Francisco  1 </b>
                         </div>
                         <span className="badge bg-primary mt-1"><svg viewBox="0 0 24 24" width="12" height="12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" className="css-i6dzq1"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 3 Días</span>
                         <span className="badge bg-primary mt-1">
@@ -22,7 +22,7 @@ export default function Toronto() {
                 </div>
                 <div className="small border-top">
                     <span className="badge bg-success">Online</span>
-                    <span className="badge bg-primary">Host: canada.internet-vps.tk</span>
+                    <span className="badge bg-primary">Host: sf.vpn-internet.tk</span>
                     <span className="badge bg-dark text-white">DNS Host: 1.1.1.1</span>
                 </div>
             </div>

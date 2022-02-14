@@ -50,7 +50,7 @@ export default function AccountCanada() {
     }, [account])
     if (account.length != 0) {
         return (
-            <CreatedAccount user={account.user} passwd={account.passwd} date={account.date} payload={"GET / HTTP/1.1[crlf]Host: canada.internet-vps.tk[crlf]Upgrade: websocket[crlf][crlf]"} dominio1={"canada.internet-vps.tk"} ip={"134.122.44.205"} />
+            <CreatedAccount user={account.user} passwd={account.passwd} date={account.date} payload={"GET / HTTP/1.1[crlf]Host: sf.vpn-internet.tk[crlf]Upgrade: websocket[crlf][crlf]"} dominio1={"sf.vpn-internet.tk"} ip={"134.122.44.205"} />
         )
     }
     return (
@@ -59,7 +59,7 @@ export default function AccountCanada() {
                 <h2 className="text-center title-server my-5">SERVER</h2>
                 <div className="card shadow-lg mb-3">
                     <div className="card-header">
-                        <h3 className="text-center text-dark">Canada</h3>
+                        <h3 className="text-center text-dark">USA-San Francisco</h3>
                         <h5 className="text-center">1</h5>
                     </div>
                     <div className="card-body">
@@ -67,7 +67,7 @@ export default function AccountCanada() {
                             <div className="col-md-4">
                                 <div className="p-2 bg-white rounded shadow-sm mb-2">
                                     <ul className="list-group list-group-flush">
-                                        <li className="list-group-item py-2">WS Domain : canada.internet-vps.tk
+                                        <li className="list-group-item py-2">WS Domain : sf.vpn-internet.tk
                                             <span className="badge badge-primary badge-pill" /><i className="far fa-check-circle"></i>
                                         </li>
                                         <li className="list-group-item py-2">Port: SSL 443, HTTP 81 <span className="badge badge-primary badge-pill" /><i className="far fa-check-circle"></i></li>
@@ -108,7 +108,7 @@ export default function AccountCanada() {
                                             <label htmlFor="hostname" className="form-label">Domain: </label>
                                             <div className="form-check">
 
-                                                <label className="form-check-label" htmlFor="openv2ray.com">canada.internet-vps.tk <span className="badge bg-success">Valid SSL</span></label>
+                                                <label className="form-check-label" htmlFor="openv2ray.com">sf.vpn-internet.tk <span className="badge bg-success">Valid SSL</span></label>
                                             </div>
                                         </div>
 

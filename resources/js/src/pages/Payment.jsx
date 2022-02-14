@@ -41,7 +41,7 @@ const Payment = () => {
                                 
                                 let data = sessionStorage.getItem('ssh');
                                 const BASE_URL_API = location.origin;
-                                //Validation create server
+                                //Validation create server $2 or $4
                                 if(product.price === "2.00"){
                                     const fetchCreatedAccount = async () => {
                                         const result = await fetch(BASE_URL_API + "/api/websockets/premium/usa/us1", {

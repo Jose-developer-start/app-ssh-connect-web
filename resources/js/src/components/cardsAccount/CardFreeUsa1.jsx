@@ -12,7 +12,7 @@ export default function Usa1() {
                     </div>
                     <div className="pb-2 mb-0 small lh-sm w-100">
                         <div className="d-flex justify-content-between">
-                            <strong className="text-gray-dark">United States  1 </strong>
+                            <strong className="text-gray-dark">United States - New York 1 </strong>
                         </div>
                         <span className="badge bg-primary mt-1"><svg viewBox="0 0 24 24" width="12" height="12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" className="css-i6dzq1"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 3 Días</span>
                         <span className="badge bg-primary mt-1">
