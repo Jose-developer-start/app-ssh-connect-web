@@ -51,7 +51,7 @@ export default function AccountFreeUSA() {
     }, [account])
     if (account.length != 0) {
         return (
-            <CreatedAccount user={account.user} passwd={account.passwd} date={account.date} payload={"GET / HTTP/1.1[crlf]Host: internet-vip.cf[crlf]Upgrade: websocket[crlf][crlf]"} dominio1={"internet-vip.cf"} ip={"0.0.0.0"} />
+            <CreatedAccount user={account.user} passwd={account.passwd} date={account.date} payload={"GET / HTTP/1.1[crlf]Host: usa1.v2ray-usa.tk[crlf]Upgrade: websocket[crlf][crlf]"} dominio1={"usa1.v2ray-usa.tk"} ip={"159.203.170.193"} />
         )
     }
     return (
@@ -68,7 +68,7 @@ export default function AccountFreeUSA() {
                             <div className="col-md-4">
                                 <div className="p-2 bg-white rounded shadow-sm mb-2">
                                     <ul className="list-group list-group-flush">
-                                        <li className="list-group-item py-2">WS Domain : internet-vip.cf
+                                        <li className="list-group-item py-2">WS Domain : usa1.v2ray-usa.tk
                                             <span className="badge badge-primary badge-pill" /><i className="far fa-check-circle"></i>
                                         </li>
                                         <li className="list-group-item py-2">Port: TLS 443, HTTP 80 <span className="badge badge-primary badge-pill" /><i className="far fa-check-circle"></i></li>
@@ -107,7 +107,7 @@ export default function AccountFreeUSA() {
                                             <label htmlFor="hostname" className="form-label">Domain: </label>
                                             <div className="form-check">
 
-                                                <label className="form-check-label" htmlFor="openv2ray.com">internet-vip.cf <span className="badge bg-success">Valid SSL</span></label>
+                                                <label className="form-check-label" htmlFor="openv2ray.com">usa1.v2ray-usa.tk <span className="badge bg-success">Valid SSL</span></label>
                                             </div>
                                         </div>
 
