@@ -20,7 +20,7 @@ export default function Footer() {
             <hr className="text-light opacity-8" />
             <div className="row">
                 <div className="col-sm-12 col-md-4 d-flex justify-content-center align-items-center">
-                    <p className="footer__text footer__copy">All reserved a HIVE-VPN.tk</p>
+                    <p className="footer__text footer__copy">All reserved a hive-vpn.tk</p>
                 </div>
                 <div className="col-sm-12 col-md-4 d-flex justify-content-center align-items-center">
                     <a href="https://t.me/noscriptsh"><i className="uil uil-telegram footer__icon"></i></a>
