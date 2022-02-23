@@ -69143,7 +69143,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_Panel__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/Panel */ "./resources/js/src/pages/Panel.jsx");
 /* harmony import */ var _pages_Payment__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/Payment */ "./resources/js/src/pages/Payment.jsx");
 /* harmony import */ var _components_premiumSSH_Websocket_usa__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/premiumSSH/Websocket_usa */ "./resources/js/src/components/premiumSSH/Websocket_usa.jsx");
-/* harmony import */ var _components_accountsFree_AccountFreeCanada__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/accountsFree/AccountFreeCanada */ "./resources/js/src/components/accountsFree/AccountFreeCanada.jsx");
+/* harmony import */ var _components_accountsFree_AccountFreeUSA2__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/accountsFree/AccountFreeUSA2 */ "./resources/js/src/components/accountsFree/AccountFreeUSA2.jsx");
 /* harmony import */ var _pages_auth_SignIn__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/auth/SignIn */ "./resources/js/src/pages/auth/SignIn.jsx");
 /* harmony import */ var _pages_auth_SignUp__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pages/auth/SignUp */ "./resources/js/src/pages/auth/SignUp.jsx");
 /* harmony import */ var _components_accountsFree_AccountFreeUSA__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/accountsFree/AccountFreeUSA */ "./resources/js/src/components/accountsFree/AccountFreeUSA.jsx");
@@ -69176,8 +69176,8 @@ function App() {
     path: "/websocket/us1",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_accountsFree_AccountFreeUSA__WEBPACK_IMPORTED_MODULE_12__["default"], null)
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
-    path: "/canada/toronto/1",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_accountsFree_AccountFreeCanada__WEBPACK_IMPORTED_MODULE_9__["default"], null)
+    path: "/websocket/usa2",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_accountsFree_AccountFreeUSA2__WEBPACK_IMPORTED_MODULE_9__["default"], null)
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
     path: "/login",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_pages_auth_SignIn__WEBPACK_IMPORTED_MODULE_10__["default"], null)
@@ -69523,280 +69523,6 @@ function InfoIP(_ref) {
 
 /***/ }),
 
-/***/ "./resources/js/src/components/accountsFree/AccountFreeCanada.jsx":
-/*!************************************************************************!*\
-  !*** ./resources/js/src/components/accountsFree/AccountFreeCanada.jsx ***!
-  \************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return AccountCanada; });
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
-/* harmony import */ var _CreatedAccount__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./CreatedAccount */ "./resources/js/src/components/accountsFree/CreatedAccount.jsx");
-
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
-
-
-function AccountCanada() {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(sessionStorage.getItem('user') || ""),
-      _useState2 = _slicedToArray(_useState, 2),
-      auth = _useState2[0],
-      setAuth = _useState2[1];
-
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(null),
-      _useState4 = _slicedToArray(_useState3, 2),
-      authData = _useState4[0],
-      setAuthData = _useState4[1];
-
-  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(""),
-      _useState6 = _slicedToArray(_useState5, 2),
-      user = _useState6[0],
-      setUser = _useState6[1];
-
-  var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(""),
-      _useState8 = _slicedToArray(_useState7, 2),
-      passwd = _useState8[0],
-      setPasswd = _useState8[1];
-
-  var _useState9 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false),
-      _useState10 = _slicedToArray(_useState9, 2),
-      loading = _useState10[0],
-      setLoading = _useState10[1];
-
-  var _useState11 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]),
-      _useState12 = _slicedToArray(_useState11, 2),
-      account = _useState12[0],
-      setAccount = _useState12[1];
-
-  var today = new Date();
-  var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
-
-  var onSubmit = function onSubmit(e) {
-    e.preventDefault();
-
-    if (/\s/.test(user) || /\s/.test(passwd)) {
-      swal('Error', 'No puede contener espacios', 'error');
-      return 0;
-    }
-
-    var data = {
-      "user_id": authData.id,
-      "date": date,
-      "user": user,
-      "passwd": passwd,
-      "country": "toronto/Ca"
-    };
-    var BASE_URL_API = location.origin;
-
-    var fetchCreatedAccount = /*#__PURE__*/function () {
-      var _ref = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
-        var result, dataJson;
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.next = 2;
-                return fetch(BASE_URL_API + "/api/websockets/canada/toronto", {
-                  "method": "POST",
-                  "body": JSON.stringify(data),
-                  "headers": {
-                    "Accept": "application/json",
-                    "Content-Type": "application/json"
-                  }
-                });
-
-              case 2:
-                result = _context.sent;
-                _context.next = 5;
-                return result.json();
-
-              case 5:
-                dataJson = _context.sent;
-                //console.log(dataJson)
-                setAccount(dataJson);
-
-              case 7:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee);
-      }));
-
-      return function fetchCreatedAccount() {
-        return _ref.apply(this, arguments);
-      };
-    }();
-
-    setLoading(true);
-    fetchCreatedAccount();
-  };
-
-  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
-    if (auth != "") {
-      setAuthData(JSON.parse(auth));
-    }
-  }, [account]);
-
-  if (account.length != 0) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_CreatedAccount__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      user: account.user,
-      passwd: account.passwd,
-      date: account.date,
-      payload: "GET / HTTP/1.1[crlf]Host: sf.vpn-internet.tk[crlf]Upgrade: websocket[crlf][crlf]",
-      dominio1: "sf.vpn-internet.tk",
-      ip: "134.122.44.205"
-    });
-  }
-
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
-    className: "text-center title-server my-5"
-  }, "SERVER"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "card shadow-lg mb-3"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "card-header"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", {
-    className: "text-center text-dark"
-  }, "USA-San Francisco"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h5", {
-    className: "text-center"
-  }, "1")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "card-body"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "row g-2"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "col-md-4"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "p-2 bg-white rounded shadow-sm mb-2"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
-    className: "list-group list-group-flush"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    className: "list-group-item py-2"
-  }, "WS Domain : sf.vpn-internet.tk", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-    className: "badge badge-primary badge-pill"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
-    className: "far fa-check-circle"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    className: "list-group-item py-2"
-  }, "Port: SSL 443, HTTP 81 ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-    className: "badge badge-primary badge-pill"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
-    className: "far fa-check-circle"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    className: "list-group-item py-2"
-  }, "Port SSH: 22", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-    className: "badge badge-primary badge-pill"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
-    className: "far fa-check-circle"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    className: "list-group-item py-2"
-  }, "Proxy Squid: 8080 3128"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    className: "list-group-item py-2"
-  }, "SSL/TLS: 443"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    className: "list-group-item py-2"
-  }, "Limit Acc: 100"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    className: "list-group-item py-2"
-  }, "Active: 3 Dias"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    className: "list-group-item py-2"
-  }, "Port UDP: 7400", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-    className: "badge badge-primary badge-pill"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
-    className: "far fa-check-circle"
-  }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "col-md-8"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "p-2 bg-white rounded shadow-sm mb-2"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "textad"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("form", {
-    method: "post",
-    onSubmit: onSubmit
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "mb-3"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
-    htmlFor: "username",
-    className: "form-label"
-  }, "Username"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "input-group"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-    className: "input-group-text"
-  }, "Hive VPN"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
-    type: "text",
-    onChange: function onChange(e) {
-      setUser(e.target.value);
-    },
-    className: "form-control",
-    name: "user",
-    id: "username",
-    placeholder: "username",
-    required: true
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "mb-3"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
-    htmlFor: "password",
-    className: "form-label"
-  }, "Password"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "input-group"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-    className: "input-group-text"
-  }, "Hive VPN"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
-    type: "text",
-    onChange: function onChange(e) {
-      setPasswd(e.target.value);
-    },
-    className: "form-control",
-    name: "passwd",
-    id: "password",
-    placeholder: "clave",
-    required: true
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "mb-3"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
-    htmlFor: "hostname",
-    className: "form-label"
-  }, "Domain: "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "form-check"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
-    className: "form-check-label",
-    htmlFor: "openv2ray.com"
-  }, "sf.vpn-internet.tk ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-    className: "badge bg-success"
-  }, "Valid SSL")))), auth != "" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-    type: "submit",
-    disabled: loading,
-    className: "btn btn-primary btn-sm w-100 subb"
-  }, loading ? "Creando..." : "Create") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-    to: "/login",
-    className: "btn btn-secondary btn-block"
-  }, "Login")))))))));
-}
-
-/***/ }),
-
 /***/ "./resources/js/src/components/accountsFree/AccountFreeUSA.css":
 /*!*********************************************************************!*\
   !*** ./resources/js/src/components/accountsFree/AccountFreeUSA.css ***!
@@ -69921,7 +69647,7 @@ function AccountFreeUSA() {
       "date": date,
       "user": user,
       "passwd": passwd,
-      "country": "New York/USA"
+      "country": "New-york/USA"
     };
     var BASE_URL_API = location.origin;
 
@@ -70099,6 +69825,280 @@ function AccountFreeUSA() {
     type: "submit",
     disabled: "true"
   }, _defineProperty(_React$createElement, "disabled", loading), _defineProperty(_React$createElement, "className", "btn btn-primary btn-sm w-100 subb"), _React$createElement), loading ? "Creando..." : "Create") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    to: "/login",
+    className: "btn btn-secondary btn-block"
+  }, "Login")))))))));
+}
+
+/***/ }),
+
+/***/ "./resources/js/src/components/accountsFree/AccountFreeUSA2.jsx":
+/*!**********************************************************************!*\
+  !*** ./resources/js/src/components/accountsFree/AccountFreeUSA2.jsx ***!
+  \**********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return AccountFreeUSA2; });
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var _CreatedAccount__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./CreatedAccount */ "./resources/js/src/components/accountsFree/CreatedAccount.jsx");
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+function AccountFreeUSA2() {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(sessionStorage.getItem('user') || ""),
+      _useState2 = _slicedToArray(_useState, 2),
+      auth = _useState2[0],
+      setAuth = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(null),
+      _useState4 = _slicedToArray(_useState3, 2),
+      authData = _useState4[0],
+      setAuthData = _useState4[1];
+
+  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(""),
+      _useState6 = _slicedToArray(_useState5, 2),
+      user = _useState6[0],
+      setUser = _useState6[1];
+
+  var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(""),
+      _useState8 = _slicedToArray(_useState7, 2),
+      passwd = _useState8[0],
+      setPasswd = _useState8[1];
+
+  var _useState9 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false),
+      _useState10 = _slicedToArray(_useState9, 2),
+      loading = _useState10[0],
+      setLoading = _useState10[1];
+
+  var _useState11 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]),
+      _useState12 = _slicedToArray(_useState11, 2),
+      account = _useState12[0],
+      setAccount = _useState12[1];
+
+  var today = new Date();
+  var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+
+  var onSubmit = function onSubmit(e) {
+    e.preventDefault();
+
+    if (/\s/.test(user) || /\s/.test(passwd)) {
+      swal('Error', 'No puede contener espacios', 'error');
+      return 0;
+    }
+
+    var data = {
+      "user_id": authData.id,
+      "date": date,
+      "user": user,
+      "passwd": passwd,
+      "country": "San-Francisco/USA"
+    };
+    var BASE_URL_API = location.origin;
+
+    var fetchCreatedAccount = /*#__PURE__*/function () {
+      var _ref = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+        var result, dataJson;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.next = 2;
+                return fetch(BASE_URL_API + "/api/websockets/usa2", {
+                  "method": "POST",
+                  "body": JSON.stringify(data),
+                  "headers": {
+                    "Accept": "application/json",
+                    "Content-Type": "application/json"
+                  }
+                });
+
+              case 2:
+                result = _context.sent;
+                _context.next = 5;
+                return result.json();
+
+              case 5:
+                dataJson = _context.sent;
+                //console.log(dataJson)
+                setAccount(dataJson);
+
+              case 7:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee);
+      }));
+
+      return function fetchCreatedAccount() {
+        return _ref.apply(this, arguments);
+      };
+    }();
+
+    setLoading(true);
+    fetchCreatedAccount();
+  };
+
+  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
+    if (auth != "") {
+      setAuthData(JSON.parse(auth));
+    }
+  }, [account]);
+
+  if (account.length != 0) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_CreatedAccount__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      user: account.user,
+      passwd: account.passwd,
+      date: account.date,
+      payload: "GET / HTTP/1.1[crlf]Host: sf.vpn-internet.tk[crlf]Upgrade: websocket[crlf][crlf]",
+      dominio1: "sf.vpn-internet.tk",
+      ip: "134.122.44.205"
+    });
+  }
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
+    className: "text-center title-server my-5"
+  }, "SERVER"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "card shadow-lg mb-3"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "card-header"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", {
+    className: "text-center text-dark"
+  }, "USA-San Francisco"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h5", {
+    className: "text-center"
+  }, "1")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "card-body"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "row g-2"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-md-4"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "p-2 bg-white rounded shadow-sm mb-2"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
+    className: "list-group list-group-flush"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+    className: "list-group-item py-2"
+  }, "WS Domain : sf.vpn-internet.tk", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "badge badge-primary badge-pill"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
+    className: "far fa-check-circle"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+    className: "list-group-item py-2"
+  }, "Port: SSL 443, HTTP 81 ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "badge badge-primary badge-pill"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
+    className: "far fa-check-circle"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+    className: "list-group-item py-2"
+  }, "Port SSH: 22", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "badge badge-primary badge-pill"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
+    className: "far fa-check-circle"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+    className: "list-group-item py-2"
+  }, "Proxy Squid: 8080 3128"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+    className: "list-group-item py-2"
+  }, "SSL/TLS: 443"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+    className: "list-group-item py-2"
+  }, "Limit Acc: 100"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+    className: "list-group-item py-2"
+  }, "Active: 3 Dias"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+    className: "list-group-item py-2"
+  }, "Port UDP: 7400", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "badge badge-primary badge-pill"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
+    className: "far fa-check-circle"
+  }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-md-8"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "p-2 bg-white rounded shadow-sm mb-2"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "textad"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("form", {
+    method: "post",
+    onSubmit: onSubmit
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "mb-3"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
+    htmlFor: "username",
+    className: "form-label"
+  }, "Username"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "input-group"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "input-group-text"
+  }, "Hive VPN"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+    type: "text",
+    onChange: function onChange(e) {
+      setUser(e.target.value);
+    },
+    className: "form-control",
+    name: "user",
+    id: "username",
+    placeholder: "username",
+    required: true
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "mb-3"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
+    htmlFor: "password",
+    className: "form-label"
+  }, "Password"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "input-group"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "input-group-text"
+  }, "Hive VPN"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+    type: "text",
+    onChange: function onChange(e) {
+      setPasswd(e.target.value);
+    },
+    className: "form-control",
+    name: "passwd",
+    id: "password",
+    placeholder: "clave",
+    required: true
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "mb-3"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
+    htmlFor: "hostname",
+    className: "form-label"
+  }, "Domain: "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "form-check"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
+    className: "form-check-label",
+    htmlFor: "openv2ray.com"
+  }, "sf.vpn-internet.tk ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "badge bg-success"
+  }, "Valid SSL")))), auth != "" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+    type: "submit",
+    disabled: loading,
+    className: "btn btn-primary btn-sm w-100 subb"
+  }, loading ? "Creando..." : "Create") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
     to: "/login",
     className: "btn btn-secondary btn-block"
   }, "Login")))))))));
@@ -70288,7 +70288,7 @@ function Toronto() {
   })), " 50")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "mt-auto p-2 bd-highlight"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/canada/toronto/1",
+    to: "/websocket/usa2",
     className: " text-dark btn btn-outline-primary",
     role: "button"
   }, "Crear"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -71139,7 +71139,7 @@ function AddUser() {
       "passwd": passwd,
       "date": date,
       "user_id": dataUser.id,
-      "country": "US"
+      "country": "New-york/USA"
     };
 
     var fetchPost = /*#__PURE__*/function () {
@@ -71539,7 +71539,7 @@ function InfoAccount(_ref) {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "alert alert-warning alert-dismissible fade show",
     role: "alert"
-  }, sessionStorage.getItem('country') == "canada" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "GET / HTTP/1.1[crlf]Host: canada.v2ray-usa.tk[crlf]Upgrade: websocket[crlf][crlf]") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "GET / HTTP/1.1[crlf]Host: usa1.v2ray-usa.tk[crlf]Upgrade: websocket[crlf][crlf]"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "Payload para Estados Unidos - server"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "GET / HTTP/1.1[crlf]Host: usa1.v2ray-usa.tk[crlf]Upgrade: websocket[crlf][crlf]"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Usuario: ", data.user), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Clave: ", data.passwd, " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "fecha de expiraci\xF3n: ", data.date)))));
+  }, sessionStorage.getItem('country') == "canada" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "GET / HTTP/1.1[crlf]Host: canada.v2ray-usa.tk[crlf]Upgrade: websocket[crlf][crlf]") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "GET / HTTP/1.1[crlf]Host: usa1.v2ray-usa.tk[crlf]Upgrade: websocket[crlf][crlf]"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Usuario: ", data.user), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Clave: ", data.passwd, " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "fecha de expiraci\xF3n: ", data.date)))));
 }
 
 /***/ }),
@@ -71618,7 +71618,7 @@ function Websocket_ca1() {
       "date": date,
       "user": user,
       "passwd": passwd,
-      "country": "New York/USA"
+      "country": "Toronto/CA"
     };
     setLoading(true);
     sessionStorage.setItem('ssh', JSON.stringify(data)); //Session para el pago $4.0
@@ -71834,10 +71834,12 @@ function Websocket_usa() {
       "date": date,
       "user": user,
       "passwd": passwd,
-      "country": "New York/USA"
+      "country": "New-york/USA"
     };
     setLoading(true);
-    sessionStorage.setItem('ssh', JSON.stringify(data)); //Session para el pago $4.0
+    sessionStorage.setItem('ssh', JSON.stringify(data)); //Destroy country
+
+    sessionStorage.removeItem('country'); //Session para el pago $4.0
 
     sessionStorage.setItem('payment', 2.00);
     setAccount(data);
@@ -71877,7 +71879,7 @@ function Websocket_usa() {
     className: "list-group list-group-flush"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: "list-group-item py-2"
-  }, "WS Domain 1: v2ray-usa.tk", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+  }, "WS Domain 1: usa1.v2ray-usa.tk", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "badge badge-primary badge-pill"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "far fa-check-circle"
@@ -71960,7 +71962,7 @@ function Websocket_usa() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
     className: "form-check-label",
     htmlFor: "openv2ray.com"
-  }, "v2ray-usa.tk ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+  }, "usa1.v2ray-usa.tk ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "badge bg-success"
   }, "Valid SSL")))), auth != "" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     type: "submit",
@@ -72048,10 +72050,12 @@ function Websocket_usa2() {
       "date": date,
       "user": user,
       "passwd": passwd,
-      "country": "New York/USA"
+      "country": "New-york/USA"
     };
     setLoading(true);
-    sessionStorage.setItem('ssh', JSON.stringify(data)); //Session para el pago $4.0
+    sessionStorage.setItem('ssh', JSON.stringify(data)); //Destroy country
+
+    sessionStorage.removeItem('country'); //Session para el pago $4.0
 
     sessionStorage.setItem('payment', 4.00);
     setAccount(data);
@@ -72581,11 +72585,11 @@ var Payment = function Payment() {
   var payPalRef = Object(react__WEBPACK_IMPORTED_MODULE_1__["useRef"])();
   var product = {
     price: sessionStorage.getItem('payment') + '.00',
-    description: 'Pagó de cuenta SSH + Websocket a hive-vpn.tk'
+    description: 'Pago de usuario SSH a hive-vpn.tk'
   };
   Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
     var script = document.createElement('script');
-    script.src = 'https://www.paypal.com/sdk/js?client-id=ATYhHQHQmLSuWb91fq6uAIBQXW3vmnAPbKJvVkdz9o85qsoI4MB0sG9QOk6IWPBbSj3BkrWrp0hFdsZ4';
+    script.src = 'https://www.paypal.com/sdk/js?client-id=AS8C2bl-A1NT_UcVZslKOPezeUTjzc2s-BNi10YjypRQmH5z_w1RWYlY8Xx-C0QyDNSzJ784nrNsK1_k';
     script.addEventListener('load', function () {
       return setLoaded(true);
     });
@@ -72773,7 +72777,6 @@ var Payment = function Payment() {
       });
     }
   }, [loaded, product.price, product.description]);
-  console.log(accountCreate);
 
   if (accountCreate != "") {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_premiumSSH_InfoAccount__WEBPACK_IMPORTED_MODULE_2__["default"], {

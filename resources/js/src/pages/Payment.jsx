@@ -8,12 +8,13 @@ const Payment = () => {
     let payPalRef = useRef()
     const product = {
         price: sessionStorage.getItem('payment') + '.00',
-        description: 'Pagó de cuenta SSH + Websocket a hive-vpn.tk'
+        description: 'Pago de usuario SSH a hive-vpn.tk'
     }
+    
     useEffect(() => {
         const script = document.createElement('script')
         script.src =
-            'https://www.paypal.com/sdk/js?client-id=ATYhHQHQmLSuWb91fq6uAIBQXW3vmnAPbKJvVkdz9o85qsoI4MB0sG9QOk6IWPBbSj3BkrWrp0hFdsZ4'
+            'https://www.paypal.com/sdk/js?client-id=AS8C2bl-A1NT_UcVZslKOPezeUTjzc2s-BNi10YjypRQmH5z_w1RWYlY8Xx-C0QyDNSzJ784nrNsK1_k'
         script.addEventListener('load', () => setLoaded(true))
         document.body.appendChild(script)
 
@@ -100,7 +101,6 @@ const Payment = () => {
             })
         }
     }, [loaded, product.price, product.description])
-    console.log(accountCreate)
     if(accountCreate != ""){
         return (
             <InfoAccount data={accountCreate} />

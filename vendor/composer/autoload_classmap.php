@@ -13,6 +13,8 @@ return array(
     'App\\Http\\Controllers\\PostController' => $baseDir . '/app/Http/Controllers/PostController.php',
     'App\\Http\\Controllers\\RolController' => $baseDir . '/app/Http/Controllers/RolController.php',
     'App\\Http\\Controllers\\UserController' => $baseDir . '/app/Http/Controllers/UserController.php',
+    'App\\Http\\Controllers\\WSAccountController' => $baseDir . '/app/Http/Controllers/WSAccountController.php',
+    'App\\Http\\Controllers\\WSFreeAccount' => $baseDir . '/app/Http/Controllers/WSFreeAccount.php',
     'App\\Http\\Controllers\\WebsocketAccountController' => $baseDir . '/app/Http/Controllers/WebsocketAccountController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
     'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',

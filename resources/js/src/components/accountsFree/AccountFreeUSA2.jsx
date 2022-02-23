@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import CreatedAccount from './CreatedAccount';
-export default function AccountCanada() {
+export default function AccountFreeUSA2() {
     const [auth, setAuth] = useState(sessionStorage.getItem('user') || "");
     const [authData, setAuthData] = useState(null)
     const [user, setUser] = useState("");
@@ -24,11 +24,11 @@ export default function AccountCanada() {
             "date": date,
             "user": user,
             "passwd": passwd,
-            "country": "toronto/Ca"
+            "country": "San-Francisco/USA"
         }
         const BASE_URL_API = location.origin;
         const fetchCreatedAccount = async () => {
-            const result = await fetch(BASE_URL_API + "/api/websockets/canada/toronto", {
+            const result = await fetch(BASE_URL_API + "/api/websockets/usa2", {
                 "method": "POST",
                 "body": JSON.stringify(data),
                 "headers": {

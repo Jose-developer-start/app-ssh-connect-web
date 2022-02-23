@@ -24,10 +24,12 @@ export default function Websocket_usa() {
             "date": date,
             "user": user,
             "passwd": passwd,
-            "country": "New York/USA"
+            "country": "New-york/USA"
         }
         setLoading(true);
         sessionStorage.setItem('ssh',JSON.stringify(data));
+        //Destroy country
+        sessionStorage.removeItem('country');
         //Session para el pago $4.0
         sessionStorage.setItem('payment', 2.00);
         setAccount(data);
@@ -57,7 +59,7 @@ export default function Websocket_usa() {
                             <div className="col-md-4">
                                 <div className="p-2 bg-white rounded shadow-sm mb-2">
                                     <ul className="list-group list-group-flush">
-                                        <li className="list-group-item py-2">WS Domain 1: v2ray-usa.tk
+                                        <li className="list-group-item py-2">WS Domain 1: usa1.v2ray-usa.tk
                                             <span className="badge badge-primary badge-pill" /><i className="far fa-check-circle"></i>
                                         </li>
                                         <li className="list-group-item py-2">Port: TLS 443, HTTP 80 <span className="badge badge-primary badge-pill" /><i className="far fa-check-circle"></i></li>
@@ -96,7 +98,7 @@ export default function Websocket_usa() {
                                             <label htmlFor="hostname" className="form-label">Domain: </label>
                                             <div className="form-check">
 
-                                                <label className="form-check-label" htmlFor="openv2ray.com">v2ray-usa.tk <span className="badge bg-success">Valid SSL</span></label>
+                                                <label className="form-check-label" htmlFor="openv2ray.com">usa1.v2ray-usa.tk <span className="badge bg-success">Valid SSL</span></label>
                                             </div>
                                         </div>
 

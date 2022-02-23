@@ -24,7 +24,7 @@ export default function Websocket_ca1() {
             "date": date,
             "user": user,
             "passwd": passwd,
-            "country": "New York/USA"
+            "country": "Toronto/CA"
         }
         setLoading(true);
         sessionStorage.setItem('ssh',JSON.stringify(data));

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function InfoAccount({data}) {
+export default function InfoAccount({ data }) {
     return (
         <div className="container">
             <h4 className="py-3 text-center text-dark">Su cuenta SSH y Websocket se a creado, {data.user}</h4>
@@ -32,21 +32,15 @@ export default function InfoAccount({data}) {
                     <div className="alert alert-warning alert-dismissible fade show" role="alert">
                         {
                             (sessionStorage.getItem('country') == "canada") ?
-                            <p>
-                                GET / HTTP/1.1[crlf]Host: canada.v2ray-usa.tk[crlf]Upgrade: websocket[crlf][crlf]
-                            </p>
-                            : 
-                            <p>
-                                GET / HTTP/1.1[crlf]Host: usa1.v2ray-usa.tk[crlf]Upgrade: websocket[crlf][crlf]
-                            </p>
+                                <p>
+                                    GET / HTTP/1.1[crlf]Host: canada.v2ray-usa.tk[crlf]Upgrade: websocket[crlf][crlf]
+                                </p>
+                                :
+                                <p>
+                                    GET / HTTP/1.1[crlf]Host: usa1.v2ray-usa.tk[crlf]Upgrade: websocket[crlf][crlf]
+                                </p>
                         }
 
-                        <h5>Payload para Estados Unidos - server</h5>
-
-                        <p>
-                            GET / HTTP/1.1[crlf]Host: usa1.v2ray-usa.tk[crlf]Upgrade: websocket[crlf][crlf]
-                        </p>
-                    
                         <p>Usuario: {data.user}</p>
                         <p>Clave: {data.passwd} </p>
                         <p>fecha de expiración: {data.date}</p>

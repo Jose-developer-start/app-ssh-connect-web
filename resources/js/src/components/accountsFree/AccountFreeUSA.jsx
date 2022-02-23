@@ -25,7 +25,7 @@ export default function AccountFreeUSA() {
             "date": date,
             "user": user,
             "passwd": passwd,
-            "country": "New York/USA"
+            "country": "New-york/USA"
         }
         const BASE_URL_API = location.origin;
         const fetchCreatedAccount = async () => {

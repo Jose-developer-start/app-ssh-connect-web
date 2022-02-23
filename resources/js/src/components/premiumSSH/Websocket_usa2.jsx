@@ -24,10 +24,12 @@ export default function Websocket_usa2() {
             "date": date,
             "user": user,
             "passwd": passwd,
-            "country": "New York/USA"
+            "country": "New-york/USA"
         }
         setLoading(true);
         sessionStorage.setItem('ssh',JSON.stringify(data));
+        //Destroy country
+        sessionStorage.removeItem('country');
         //Session para el pago $4.0
         sessionStorage.setItem('payment', 4.00);
         setAccount(data);

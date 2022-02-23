@@ -11,7 +11,7 @@ import Panel from "./pages/Panel";
 
 import Payment from "./pages/Payment";
 import Websocket_usa from "./components/premiumSSH/Websocket_usa";
-import AccountCanada from "./components/accountsFree/AccountFreeCanada";
+import AccountFreeUSA2 from "./components/accountsFree/AccountFreeUSA2";
 import SignIn from "./pages/auth/SignIn";
 import SignUp from "./pages/auth/SignUp";
 import AccountFreeUSA from "./components/accountsFree/AccountFreeUSA";
@@ -29,7 +29,7 @@ function App() {
                     <Route exact path="/" element={<Home />} />
                     
                     <Route path="/websocket/us1" element={<AccountFreeUSA />} />
-                    <Route path="/canada/toronto/1" element={<AccountCanada />} />
+                    <Route path="/websocket/usa2" element={<AccountFreeUSA2 />} />
 
                     <Route path="/login" element={<SignIn />} />
                     <Route path="/registrarse" element={<SignUp />} />

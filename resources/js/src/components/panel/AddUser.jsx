@@ -23,7 +23,7 @@ export default function AddUser() {
             "passwd": passwd,
             "date": date,
             "user_id": dataUser.id,
-            "country": "US"
+            "country": "New-york/USA"
         };
         const fetchPost = async ()=>{
             const response = await fetch(BASE_URL_API + "/api/create_ssh",{

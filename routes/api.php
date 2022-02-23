@@ -18,9 +18,9 @@ Route::resource('posts','PostController');
 
 //Rutas Api
 Route::get('websockets','WebsocketAccountController@index');
-Route::post('websockets/us/us1','WebsocketAccountController@create_server_usa');
+Route::post('websockets/us/us1','WSFreeAccountController@create_server_usa1');
 //Canada
-Route::post('websockets/canada/toronto','WebsocketAccountController@create_server_canada');
+Route::post('websockets/usa2','WSFreeAccountController@create_server_usa2');
 //Delete SSH
 
 Route::delete('websockets/{websocketAccount}','WebsocketAccountController@destroy');
