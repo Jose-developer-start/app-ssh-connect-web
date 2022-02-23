@@ -71504,7 +71504,7 @@ function InfoAccount(_ref) {
     className: "list-group list-group-flush"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: "list-group-item py-2"
-  }, "WS Domain USA: v2ray-usa.tk", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+  }, "WS Domain USA: usa1.v2ray-usa.tk", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "badge badge-primary badge-pill"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "far fa-check-circle"
@@ -71539,7 +71539,7 @@ function InfoAccount(_ref) {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "alert alert-warning alert-dismissible fade show",
     role: "alert"
-  }, sessionStorage.getItem('country') == "canada" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "GET / HTTP/1.1[crlf]Host: canada.v2ray-usa.tk[crlf]Upgrade: websocket[crlf][crlf]") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "GET / HTTP/1.1[crlf]Host: v2ray-usa.tk[crlf]Upgrade: websocket[crlf][crlf]"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "Payload para Estados Unidos - server"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "GET / HTTP/1.1[crlf]Host: v2ray-usa.tk[crlf]Upgrade: websocket[crlf][crlf]"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Usuario: ", data.user), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Clave: ", data.passwd, " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "fecha de expiraci\xF3n: ", data.date)))));
+  }, sessionStorage.getItem('country') == "canada" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "GET / HTTP/1.1[crlf]Host: canada.v2ray-usa.tk[crlf]Upgrade: websocket[crlf][crlf]") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "GET / HTTP/1.1[crlf]Host: usa1.v2ray-usa.tk[crlf]Upgrade: websocket[crlf][crlf]"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "Payload para Estados Unidos - server"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "GET / HTTP/1.1[crlf]Host: usa1.v2ray-usa.tk[crlf]Upgrade: websocket[crlf][crlf]"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Usuario: ", data.user), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Clave: ", data.passwd, " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "fecha de expiraci\xF3n: ", data.date)))));
 }
 
 /***/ }),
