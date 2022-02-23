@@ -78,7 +78,7 @@ class WebsocketAccountController extends Controller
 
         $comand = 'useradd -e '.$date.' -p "$(mkpasswd --method=sha-512 '.$passwd.')" '.$user;
         
-        $exec = ssh2_exec($this->connect('45.55.63.154','vps_2021',22), $comand);
+        $exec = ssh2_exec($this->connect('159.203.170.193','vps-2021-hive',22), $comand);
 
         $account = WebsocketAccount::create([
             'user' => $user,
@@ -104,7 +104,7 @@ class WebsocketAccountController extends Controller
 
         $comand = 'useradd -e '.$date.' -p "$(mkpasswd --method=sha-512 '.$passwd.')" '.$user;
         
-        $exec = ssh2_exec($this->connect('45.55.63.154','vps_2021',22), $comand);
+        $exec = ssh2_exec($this->connect('159.203.170.193','vps-2021-hive',22), $comand);
 
         $account = WebsocketAccount::create([
             'user' => $user,
