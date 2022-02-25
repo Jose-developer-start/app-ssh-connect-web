@@ -7,8 +7,8 @@ export default function Accounts() {
     return (
 
         <ListAccount title={"Servidores gratis 3 días"}>
-            <Usa1 />
-            <Toronto />
+            {/* <Usa1 /> */}
+            {/* <Toronto /> */}
         </ListAccount>
     )
 }
