@@ -9,7 +9,7 @@ export default function InfoAccount({ data }) {
 
                     <div className="p-2 bg-white rounded shadow-sm mb-2">
                         <ul className="list-group list-group-flush">
-                            <li className="list-group-item py-2">WS Domain USA: usa1.v2ray-usa.tk
+                            <li className="list-group-item py-2">WS Domain USA: usa2.v2ray-usa.tk
                                 <span className="badge badge-primary badge-pill" /><i className="far fa-check-circle"></i>
                             </li>
                             <li className="list-group-item py-2">WS Domain canada: canada.v2ray-usa.tk
@@ -37,7 +37,7 @@ export default function InfoAccount({ data }) {
                                 </p>
                                 :
                                 <p>
-                                    GET / HTTP/1.1[crlf]Host: usa1.v2ray-usa.tk[crlf]Upgrade: websocket[crlf][crlf]
+                                    GET / HTTP/1.1[crlf]Host: usa2.v2ray-usa.tk[crlf]Upgrade: websocket[crlf][crlf]
                                 </p>
                         }
 

@@ -69573,8 +69573,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _AccountFreeUSA_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./AccountFreeUSA.css */ "./resources/js/src/components/accountsFree/AccountFreeUSA.css");
 /* harmony import */ var _AccountFreeUSA_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_AccountFreeUSA_css__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _CreatedAccount__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./CreatedAccount */ "./resources/js/src/components/accountsFree/CreatedAccount.jsx");
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -69599,8 +69597,6 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 function AccountFreeUSA() {
-  var _React$createElement;
-
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(sessionStorage.getItem('user') || ""),
       _useState2 = _slicedToArray(_useState, 2),
       auth = _useState2[0],
@@ -69706,8 +69702,8 @@ function AccountFreeUSA() {
       user: account.user,
       passwd: account.passwd,
       date: account.date,
-      payload: "GET / HTTP/1.1[crlf]Host: usa1.v2ray-usa.tk[crlf]Upgrade: websocket[crlf][crlf]",
-      dominio1: "usa1.v2ray-usa.tk",
+      payload: "GET / HTTP/1.1[crlf]Host: usa2.v2ray-usa.tk[crlf]Upgrade: websocket[crlf][crlf]",
+      dominio1: "usa2.v2ray-usa.tk",
       ip: "159.203.170.193"
     });
   }
@@ -69736,7 +69732,7 @@ function AccountFreeUSA() {
     className: "list-group list-group-flush"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
     className: "list-group-item py-2"
-  }, "WS Domain : usa1.v2ray-usa.tk", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+  }, "WS Domain : usa2.v2ray-usa.tk", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
     className: "badge badge-primary badge-pill"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
     className: "far fa-check-circle"
@@ -69819,12 +69815,13 @@ function AccountFreeUSA() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
     className: "form-check-label",
     htmlFor: "openv2ray.com"
-  }, "usa1.v2ray-usa.tk ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+  }, "usa2.v2ray-usa.tk ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
     className: "badge bg-success"
-  }, "Valid SSL")))), auth != "" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", (_React$createElement = {
+  }, "Valid SSL")))), auth != "" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
     type: "submit",
-    disabled: "true"
-  }, _defineProperty(_React$createElement, "disabled", loading), _defineProperty(_React$createElement, "className", "btn btn-primary btn-sm w-100 subb"), _React$createElement), loading ? "Creando..." : "Create") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    disabled: "true",
+    className: "btn btn-primary btn-sm w-100 subb"
+  }, loading ? "Creando..." : "Create") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
     to: "/login",
     className: "btn btn-secondary btn-block"
   }, "Login")))))))));
@@ -70096,7 +70093,7 @@ function AccountFreeUSA2() {
     className: "badge bg-success"
   }, "Valid SSL")))), auth != "" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
     type: "submit",
-    disabled: loading,
+    disabled: "true",
     className: "btn btn-primary btn-sm w-100 subb"
   }, loading ? "Creando..." : "Create") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
     to: "/login",
@@ -70392,7 +70389,7 @@ function Usa1() {
     className: "badge bg-success"
   }, "Online"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "badge bg-primary"
-  }, "Host: usa1.v2ray-usa.tk"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+  }, "Host: usa2.v2ray-usa.tk"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "badge bg-dark text-white"
   }, "DNS Host: 1.1.1.1"))));
 }
@@ -70582,7 +70579,7 @@ function Usa1() {
     className: "badge bg-success"
   }, "Online"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "badge bg-primary"
-  }, "Host: usa1.v2ray-usa.tk"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+  }, "Host: usa2.v2ray-usa.tk"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "badge bg-dark text-white"
   }, "DNS Host: 1.1.1.1"))));
 }
@@ -70677,7 +70674,7 @@ function CardPremUsa2() {
     className: "badge bg-success"
   }, "Online"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "badge bg-primary"
-  }, "Host: usa1.v2ray-usa.tk"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+  }, "Host: usa2.v2ray-usa.tk"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "badge bg-dark text-white"
   }, "DNS Host: 1.1.1.1"))));
 }
@@ -70859,6 +70856,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Header() {
+  alert('Hola a todos nuestros usuarios, nos encontramos con un problema en nuestros servicios. Por favor estar pendiente de los cambios en los dominios de los payload');
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "header__content"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -71504,7 +71502,7 @@ function InfoAccount(_ref) {
     className: "list-group list-group-flush"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: "list-group-item py-2"
-  }, "WS Domain USA: usa1.v2ray-usa.tk", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+  }, "WS Domain USA: usa2.v2ray-usa.tk", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "badge badge-primary badge-pill"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "far fa-check-circle"
@@ -71539,7 +71537,7 @@ function InfoAccount(_ref) {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "alert alert-warning alert-dismissible fade show",
     role: "alert"
-  }, sessionStorage.getItem('country') == "canada" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "GET / HTTP/1.1[crlf]Host: canada.v2ray-usa.tk[crlf]Upgrade: websocket[crlf][crlf]") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "GET / HTTP/1.1[crlf]Host: usa1.v2ray-usa.tk[crlf]Upgrade: websocket[crlf][crlf]"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Usuario: ", data.user), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Clave: ", data.passwd, " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "fecha de expiraci\xF3n: ", data.date)))));
+  }, sessionStorage.getItem('country') == "canada" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "GET / HTTP/1.1[crlf]Host: canada.v2ray-usa.tk[crlf]Upgrade: websocket[crlf][crlf]") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "GET / HTTP/1.1[crlf]Host: usa2.v2ray-usa.tk[crlf]Upgrade: websocket[crlf][crlf]"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Usuario: ", data.user), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Clave: ", data.passwd, " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "fecha de expiraci\xF3n: ", data.date)))));
 }
 
 /***/ }),
@@ -71750,7 +71748,7 @@ function Websocket_ca1() {
     className: "badge bg-success"
   }, "Valid SSL")))), auth != "" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     type: "submit",
-    disabled: loading,
+    disabled: "true",
     className: "btn btn-primary btn-sm w-100 subb"
   }, loading ? "Creando..." : "Create") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/login",
@@ -71879,7 +71877,7 @@ function Websocket_usa() {
     className: "list-group list-group-flush"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: "list-group-item py-2"
-  }, "WS Domain 1: usa1.v2ray-usa.tk", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+  }, "WS Domain 1: usa2.v2ray-usa.tk", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "badge badge-primary badge-pill"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "far fa-check-circle"
@@ -71962,11 +71960,11 @@ function Websocket_usa() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
     className: "form-check-label",
     htmlFor: "openv2ray.com"
-  }, "usa1.v2ray-usa.tk ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+  }, "usa2.v2ray-usa.tk ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "badge bg-success"
   }, "Valid SSL")))), auth != "" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     type: "submit",
-    disabled: loading,
+    disabled: "true",
     className: "btn btn-primary btn-sm w-100 subb"
   }, loading ? "Creando..." : "Create") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/login",
@@ -72095,7 +72093,7 @@ function Websocket_usa2() {
     className: "list-group list-group-flush"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: "list-group-item py-2"
-  }, "WS Domain 1: usa1.v2ray-usa.tk", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+  }, "WS Domain 1: usa2.v2ray-usa.tk", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "badge badge-primary badge-pill"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "far fa-check-circle"
@@ -72180,11 +72178,11 @@ function Websocket_usa2() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
     className: "form-check-label",
     htmlFor: "openv2ray.com"
-  }, "usa1.v2ray-usa.tk ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+  }, "usa2.v2ray-usa.tk ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "badge bg-success"
   }, "Valid SSL")))), auth != "" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     type: "submit",
-    disabled: loading,
+    disabled: "true",
     className: "btn btn-primary btn-sm w-100 subb"
   }, loading ? "Creando..." : "Create") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/login",
@@ -73228,7 +73226,7 @@ function SignUp() {
     className: "form-control",
     placeholder: "Clave"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-    disabled: loading,
+    disabled: "true",
     className: "btn btn-success btn-block"
   }, " ", loading ? "Creando tu cuenta..." : "SignUp", " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
     to: "/login",

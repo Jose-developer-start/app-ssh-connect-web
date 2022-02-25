@@ -1,6 +1,7 @@
 import React from 'react'
 import "./header.css"
 export default function Header() {
+    alert('Hola a todos nuestros usuarios, nos encontramos con un problema en nuestros servicios. Por favor estar pendiente de los cambios en los dominios de los payload');
     return (
         <div>
             <header>
