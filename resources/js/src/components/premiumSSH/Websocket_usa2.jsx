@@ -105,7 +105,7 @@ export default function Websocket_usa2() {
 
                                         {
                                             (auth != "") ? (
-                                                <button type="submit" disabled="true" className="btn btn-primary btn-sm w-100 subb">{loading ? "Creando...": "Create"}</button>
+                                                <button type="submit" disabled={loading} className="btn btn-primary btn-sm w-100 subb">{loading ? "Creando...": "Create"}</button>
                                             ) : (
                                                 <Link to="/login" className="btn btn-secondary btn-block" >Login</Link>
                                             )

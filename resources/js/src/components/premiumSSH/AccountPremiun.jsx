@@ -7,6 +7,7 @@ import CardPremCA from '../cardsAccount/CardPremCA'
 export default function AccountPremiun() {
     return (
         <>
+        
         <ListAccount title={"Servidores premium 31 días"}>
             {/*<CardPremUsa2 />*/}
             {/*<CardPremCA />*/}

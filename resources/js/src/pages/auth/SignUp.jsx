@@ -69,7 +69,7 @@ export default function SignUp() {
                                     <div className="form-group">
                                         <input name="password" value={password} onChange={(e) => { setPassword(e.target.value) }} type="password" className="form-control" placeholder="Clave" />
                                     </div>
-                                    <button disabled="true" className="btn btn-success btn-block"> {loading ? "Creando tu cuenta...": "SignUp"} </button>
+                                    <button disabled={loading} className="btn btn-success btn-block"> {loading ? "Creando tu cuenta...": "SignUp"} </button>
                                     <Link to={"/login"} className="text-muted text-secondary d-block mt-2">Acceder</Link>
                                 </form>
                             </div>

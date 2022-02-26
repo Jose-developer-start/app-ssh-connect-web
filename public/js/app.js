@@ -69819,7 +69819,7 @@ function AccountFreeUSA() {
     className: "badge bg-success"
   }, "Valid SSL")))), auth != "" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
     type: "submit",
-    disabled: "true",
+    disabled: loading,
     className: "btn btn-primary btn-sm w-100 subb"
   }, loading ? "Creando..." : "Create") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
     to: "/login",
@@ -70093,7 +70093,7 @@ function AccountFreeUSA2() {
     className: "badge bg-success"
   }, "Valid SSL")))), auth != "" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
     type: "submit",
-    disabled: "true",
+    disabled: loading,
     className: "btn btn-primary btn-sm w-100 subb"
   }, loading ? "Creando..." : "Create") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
     to: "/login",
@@ -70125,7 +70125,7 @@ __webpack_require__.r(__webpack_exports__);
 function Accounts() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_home_ListAccount__WEBPACK_IMPORTED_MODULE_1__["default"], {
     title: "Servidores gratis 3 días"
-  });
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_cardsAccount_CardFreeCA__WEBPACK_IMPORTED_MODULE_2__["default"], null));
 }
 
 /***/ }),
@@ -70856,7 +70856,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Header() {
-  alert('Hola a todos nuestros usuarios, nos encontramos con un problema en nuestros servicios. Por favor estar pendiente de los cambios en los dominios de los payload');
+  alert('Mil disculpas a los usuarios premium, se sigue trabajando en el servidor para dar solución , para mayor info escribirme a telegram');
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "header__content"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -71748,7 +71748,7 @@ function Websocket_ca1() {
     className: "badge bg-success"
   }, "Valid SSL")))), auth != "" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     type: "submit",
-    disabled: "true",
+    disabled: loading,
     className: "btn btn-primary btn-sm w-100 subb"
   }, loading ? "Creando..." : "Create") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/login",
@@ -71964,7 +71964,7 @@ function Websocket_usa() {
     className: "badge bg-success"
   }, "Valid SSL")))), auth != "" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     type: "submit",
-    disabled: "true",
+    disabled: loading,
     className: "btn btn-primary btn-sm w-100 subb"
   }, loading ? "Creando..." : "Create") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/login",
@@ -72182,7 +72182,7 @@ function Websocket_usa2() {
     className: "badge bg-success"
   }, "Valid SSL")))), auth != "" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     type: "submit",
-    disabled: "true",
+    disabled: loading,
     className: "btn btn-primary btn-sm w-100 subb"
   }, loading ? "Creando..." : "Create") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/login",
@@ -73226,7 +73226,7 @@ function SignUp() {
     className: "form-control",
     placeholder: "Clave"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-    disabled: "true",
+    disabled: loading,
     className: "btn btn-success btn-block"
   }, " ", loading ? "Creando tu cuenta..." : "SignUp", " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
     to: "/login",
