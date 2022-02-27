@@ -19,8 +19,12 @@
         $year = date('Y');
         $month = date('n');
         $day = date('j');
-        if($day < 29){
-        $day = date('j') + 3;
+        if($day < 28){
+            if($day == 26){
+                $day = date('j') + 2;
+            }else{
+                $day = date('j') + 3;
+            }
         }else{
             if($day > 28 and $month > 11){
             $month == 1;
