@@ -33,15 +33,11 @@ export default function InfoAccount({ data }) {
                         {
                             (sessionStorage.getItem('country') == "canada") ?
                                 <p>
-                                    GET shi://sni.cloudflaressl.com HTTP/1.1 
-                                    Host: canada.vip-cloud.tk
-                                    Upgrade: websocket[crlf][crlf]
+                                    GET shi://sni.cloudflaressl.com HTTP/1.1[crlf]Host: canada.vip-cloud.tk[crlf]Upgrade: websocket[crlf][crlf]
                                 </p>
                                 :
                                 <p>
-                                    GET shi://sni.cloudflaressl.com HTTP/1.1 
-                                    Host: vip-cloud.tk
-                                    Upgrade: websocket[crlf][crlf]
+                                    GET shi://sni.cloudflaressl.com HTTP/1.1[crlf]Host: vip-cloud.tk[crlf]Upgrade: websocket[crlf][crlf]
                                 </p>
                         }
 

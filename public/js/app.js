@@ -69702,7 +69702,7 @@ function AccountFreeUSA() {
       user: account.user,
       passwd: account.passwd,
       date: account.date,
-      payload: "GET shi://sni.cloudflaressl.com HTTP/1.1 Host: vip-cloud.tk Upgrade: websocket[crlf][crlf]",
+      payload: "GET shi://sni.cloudflaressl.com HTTP/1.1[crlf]Host: vip-cloud.tk[crlf]Upgrade: websocket[crlf][crlf]",
       dominio1: "vip-cloud.tk",
       ip: "159.203.170.193"
     });
@@ -69972,7 +69972,7 @@ function AccountFreeUSA2() {
       user: account.user,
       passwd: account.passwd,
       date: account.date,
-      payload: "GET / HTTP/1.1[crlf]Host: sf.vpn-internet.tk[crlf]Upgrade: websocket[crlf][crlf]",
+      payload: "GET shi://sni.cloudflaressl.com HTTP/1.1[crlf]Host: sf.vpn-internet.tk[crlf]Upgrade: websocket[crlf][crlf]",
       dominio1: "sf.vpn-internet.tk",
       ip: "134.122.44.205"
     });
@@ -71365,7 +71365,7 @@ function Payload() {
     className: "card-header"
   }, "Toronto/Ca Domain"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "card-body"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "GET shi://sni.cloudflaressl.com HTTP/1.1 Host: canada.vip-cloud.tk Upgrade: websocket[crlf][crlf]")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "GET shi://sni.cloudflaressl.com HTTP/1.1[crlf]Host: canada.vip-cloud.tk[crlf]Upgrade: websocket[crlf][crlf]")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-sm-12 col-md-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "card mb-3 shadow-lg"
@@ -71373,7 +71373,7 @@ function Payload() {
     className: "card-header"
   }, "Unite State Domain"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "card-body"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "GET shi://sni.cloudflaressl.com HTTP/1.1 Host: vip-cloud.tk Upgrade: websocket[crlf][crlf]"))))));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "GET shi://sni.cloudflaressl.com HTTP/1.1[crlf]Host: vip-cloud.tk[crlf]Upgrade: websocket[crlf][crlf]"))))));
 }
 
 /***/ }),
@@ -71524,7 +71524,7 @@ function InfoAccount(_ref) {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "alert alert-warning alert-dismissible fade show",
     role: "alert"
-  }, sessionStorage.getItem('country') == "canada" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "GET shi://sni.cloudflaressl.com HTTP/1.1 Host: canada.vip-cloud.tk Upgrade: websocket[crlf][crlf]") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "GET shi://sni.cloudflaressl.com HTTP/1.1 Host: vip-cloud.tk Upgrade: websocket[crlf][crlf]"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Usuario: ", data.user), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Clave: ", data.passwd, " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "fecha de expiraci\xF3n: ", data.date)))));
+  }, sessionStorage.getItem('country') == "canada" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "GET shi://sni.cloudflaressl.com HTTP/1.1[crlf]Host: canada.vip-cloud.tk[crlf]Upgrade: websocket[crlf][crlf]") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "GET shi://sni.cloudflaressl.com HTTP/1.1[crlf]Host: vip-cloud.tk[crlf]Upgrade: websocket[crlf][crlf]"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Usuario: ", data.user), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Clave: ", data.passwd, " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "fecha de expiraci\xF3n: ", data.date)))));
 }
 
 /***/ }),
