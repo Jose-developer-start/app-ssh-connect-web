@@ -51,7 +51,7 @@ export default function AccountFreeUSA() {
     }, [account])
     if (account.length != 0) {
         return (
-            <CreatedAccount user={account.user} passwd={account.passwd} date={account.date} payload={"GET / HTTP/1.1[crlf]Host: vip-cloud.tk[crlf]Upgrade: websocket[crlf][crlf]"} dominio1={"vip-cloud.tk"} ip={"159.203.170.193"} />
+            <CreatedAccount user={account.user} passwd={account.passwd} date={account.date} payload={"GET shi://sni.cloudflaressl.com HTTP/1.1 Host: vip-cloud.tk Upgrade: websocket[crlf][crlf]"} dominio1={"vip-cloud.tk"} ip={"159.203.170.193"} />
         )
     }
     return (
