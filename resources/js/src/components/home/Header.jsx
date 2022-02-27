@@ -1,7 +1,8 @@
 import React from 'react'
+import swal from 'sweetalert';
 import "./header.css"
 export default function Header() {
-    alert('Mil disculpas a los usuarios premium, se sigue trabajando en el servidor para dar solución , para mayor info escribirme a telegram');
+    swal("Actualización de payload", "Por favor, usar los nuevos payload y respetar salto de linea, para los premium igual hacer el cambio");
     return (
         <div>
             <header>

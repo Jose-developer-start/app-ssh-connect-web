@@ -9,11 +9,11 @@ export default function AccountPremiun() {
         <>
         
         <ListAccount title={"Servidores premium 31 días"}>
-            {/*<CardPremUsa2 />*/}
-            {/*<CardPremCA />*/}
+            <CardPremUsa2 />
+            <CardPremCA />
         </ListAccount>
         <ListAccount title={"Servidores premium 15 días"}>
-            {/*<Usa1 />*/}
+            <Usa1 />
         </ListAccount>
     </>
     )

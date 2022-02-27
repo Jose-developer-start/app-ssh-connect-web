@@ -59,7 +59,7 @@ export default function Websocket_ca1() {
                             <div className="col-md-4">
                                 <div className="p-2 bg-white rounded shadow-sm mb-2">
                                     <ul className="list-group list-group-flush">
-                                        <li className="list-group-item py-2">WS Domain 1: canada.v2ray-usa.tk
+                                        <li className="list-group-item py-2">WS Domain 1: canada.vip-cloud.tk
                                             <span className="badge badge-primary badge-pill" /><i className="far fa-check-circle"></i>
                                         </li>
                                         <li className="list-group-item py-2">Port: TLS 443, HTTP 80 <span className="badge badge-primary badge-pill" /><i className="far fa-check-circle"></i></li>
@@ -98,7 +98,7 @@ export default function Websocket_ca1() {
                                             <label htmlFor="hostname" className="form-label">Domain: </label>
                                             <div className="form-check">
 
-                                                <label className="form-check-label" htmlFor="openv2ray.com">canada.v2ray-usa.tk <span className="badge bg-success">Valid SSL</span></label>
+                                                <label className="form-check-label" htmlFor="openv2ray.com">canada.vip-cloud.tk <span className="badge bg-success">Valid SSL</span></label>
                                             </div>
                                         </div>
 

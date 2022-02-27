@@ -10,7 +10,9 @@ export default function Payload() {
                     <p className="card-header">Toronto/Ca Domain</p>
                         <div className="card-body">
                             <p>
-                                GET / HTTP/1.1[crlf]Host: canada.internet-vps.tk[crlf]Upgrade: websocket[crlf][crlf]
+                                GET shi://sni.cloudflaressl.com HTTP/1.1 
+                                Host: canada.vip-cloud.tk
+                                Upgrade: websocket[crlf][crlf]
                             </p>
                         </div>
                     </div>
@@ -20,31 +22,14 @@ export default function Payload() {
                     <p className="card-header">Unite State Domain</p>
                         <div className="card-body">
                             <p>
-                                GET / HTTP/1.1[crlf]Host: ssh-ws.tk[crlf]Upgrade: websocket[crlf][crlf]
+                                GET shi://sni.cloudflaressl.com HTTP/1.1 
+                                Host: vip-cloud.tk
+                                Upgrade: websocket[crlf][crlf]
                             </p>
                         </div>
                     </div>
                 </div>
-                <div className="col-sm-12 col-md-6">
-                    <div className="card mb-3 shadow-lg">
-                        <p className="card-header">Unite State Domain</p>
-                        <div className="card-body">
-                            <p>
-                                GET / HTTP/1.1[crlf]Host: internet-vip.cf[crlf]Upgrade: websocket[crlf][crlf]
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-sm-12 col-md-6">
-                    <div className="card mb-3 shadow-lg">
-                    <p className="card-header">Unite State Domain New</p>
-                        <div className="card-body">
-                            <p>
-                                GET / HTTP/1.1[crlf]Host: v2ray-usa.tk[crlf]Upgrade: websocket[crlf][crlf]
-                            </p>
-                        </div>
-                    </div>
-                </div>
+               
             </div>
         </div>
 

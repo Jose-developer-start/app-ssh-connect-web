@@ -20,8 +20,10 @@
         $month = date('n');
         $day = date('j');
         if($day < 28){
-            if($day == 26){
-                $day = date('j') + 2;
+            if($month == 2){
+                $day = date('j') + 3;
+                $month ++;
+                $day = $day - 28;
             }else{
                 $day = date('j') + 3;
             }
