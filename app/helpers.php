@@ -29,16 +29,21 @@
             }
         }else{
             if($day > 28 and $month > 11){
-            $month == 1;
-            $year = $year + 1;
+                $month == 1;
+                $year = $year + 1;
             }else{
                 if($month < 12){
+                    if($month == 2){
+                        $day = $day +3;
+                        $day -= 28;
+                    }else{
+                        $days = date('j') + 3;
+                        $day = $days - 31;
+                    }
                     $month++;
                 }
             }
-            //7 DAYS
-            $days = date('j') + 3;
-            $day = $days - 31;
+
         }
         return $date = strval($year."-".$month."-".$day);
     }
