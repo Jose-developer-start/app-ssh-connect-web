@@ -11,7 +11,7 @@ header {
 .header__content {
     height: 60vh;
     width: 100%;
-    background-color: rgba(145, 177, 221, 0.2);
+    background-color: rgba(59, 55, 55, 0.5);
 }
 header h1 {
     color: #f1f4f4;

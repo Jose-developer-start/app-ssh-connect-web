@@ -2,9 +2,10 @@ import React from 'react'
 import swal from 'sweetalert';
 import "./header.css"
 export default function Header() {
-    swal("Actualización de payload", "Por favor, usar los nuevos payload y respetar salto de linea, para los premium igual hacer el cambio");
+    //Mensaje de alerta
+    //swal("Actualización de payload", "Por favor, usar los nuevos payload y respetar salto de linea, para los premium igual hacer el cambio");
     return (
-        <div>
+
             <header>
                 <div className="header__content">
                     <div className="container d-flex h-100 flex-column justify-content-center align-items-around">
@@ -28,6 +29,5 @@ export default function Header() {
                     </div>
                 </div>
             </header>
-        </div>
     )
 }
