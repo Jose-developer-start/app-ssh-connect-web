@@ -70125,7 +70125,7 @@ __webpack_require__.r(__webpack_exports__);
 function Accounts() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_home_ListAccount__WEBPACK_IMPORTED_MODULE_1__["default"], {
     title: "Servidores gratis 3 días"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_cardsAccount_CardFreeCA__WEBPACK_IMPORTED_MODULE_2__["default"], null));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_cardsAccount_CardFreeUsa1__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_cardsAccount_CardFreeCA__WEBPACK_IMPORTED_MODULE_2__["default"], null));
 }
 
 /***/ }),
