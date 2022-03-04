@@ -50,7 +50,7 @@ export default function AccountFreeUSA2() {
     }, [account])
     if (account.length != 0) {
         return (
-            <CreatedAccount user={account.user} passwd={account.passwd} date={account.date} payload={"GET shi://sni.cloudflaressl.com HTTP/1.1[crlf]Host: sf.vpn-internet.tk[crlf]Upgrade: websocket[crlf][crlf]"} dominio1={"sf.vpn-internet.tk"} ip={"134.122.44.205"} />
+            <CreatedAccount user={account.user} passwd={account.passwd} date={account.date} payload={"GET shi://sni.cloudflaressl.com HTTP/1.1[crlf]Host: sf.vpn-internet.tk[crlf]Upgrade: websocket[crlf][crlf]"} dominio1={"sf.vpn-internet.tk"} ip={"143.244.188.234"} />
         )
     }
     return (
