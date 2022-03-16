@@ -1,9 +1,15 @@
-import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom';
+import React, { useContext, useEffect, useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom';
 import Alert from '../../components/Alert';
+import UserContext from '../../components/context/user/UserContext';
 import Loading from './Loading';
 
 export default function SignIn() {
+
+    const {login} = useContext(UserContext);
+
+    const navegate = useNavigate();
+
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [authUser, setAuthUser] = useState(
@@ -14,7 +20,7 @@ export default function SignIn() {
 
     const onSubmit = (e) => {
         e.preventDefault();
-
+        //Validation form
         if (email == "" || password == "") {
             setResult("Rellena todos los campos!!");
             return 0;
@@ -38,7 +44,7 @@ export default function SignIn() {
             const postJson = await postsFetch.json();
 
             if (postJson.data.name != "") {
-
+                login(postJson.data);
                 setAuthUser(sessionStorage.setItem('user', JSON.stringify(postJson.data)));
             } else {
                 setResult(postJson.data.result)
@@ -52,10 +58,9 @@ export default function SignIn() {
     if (authUser != "") {
         setTimeout(() => {
             location.href = location.origin
-
         }, 1000);
         return (
-            <Loading title={"Validando tu información..."} />
+            <Loading title={"Validando su información..."} />
         )
 
     }
