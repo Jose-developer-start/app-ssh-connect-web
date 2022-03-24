@@ -14,7 +14,7 @@ const Payment = () => {
     useEffect(() => {
         const script = document.createElement('script')
         script.src =
-            'https://www.paypal.com/sdk/js?client-id=ATYhHQHQmLSuWb91fq6uAIBQXW3vmnAPbKJvVkdz9o85qsoI4MB0sG9QOk6IWPBbSj3BkrWrp0hFdsZ4'
+            'https://www.paypal.com/sdk/js?client-id=AS8C2bl-A1NT_UcVZslKOPezeUTjzc2s-BNi10YjypRQmH5z_w1RWYlY8Xx-C0QyDNSzJ784nrNsK1_k'
         script.addEventListener('load', () => setLoaded(true))
         document.body.appendChild(script)
 
@@ -112,6 +112,17 @@ const Payment = () => {
             <div className="img-login">
                 <div className="container">
                     <div className="row">
+                        <div className="col-sm-12 col-md-6">
+                            <div className="card shadow-lg mt-5">
+                                <div className="card-header"><h3 className="text-dark">Datos del usuario SSH</h3></div>
+                                <div className="card-body">
+                                    <p><b>Región: </b>{JSON.parse(ssh).country}</p>
+                                    <p><b>Usuario SSH: </b>{JSON.parse(ssh).user}</p>
+                                    <p><b>Password SSH: </b>{JSON.parse(ssh).passwd}</p>
+                                    <p><b>Vencimiento: </b>{JSON.parse(ssh).date}</p>
+                                </div>
+                            </div>
+                        </div>
                         <div className="col-sm-12 col-md-6 mx-auto">
                             <div className="card shadow-lg my-5">
                                 <h4 className="text-muted card-header bg-green pb-2">
