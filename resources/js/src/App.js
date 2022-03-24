@@ -18,6 +18,7 @@ import Websocket_usa2 from "./components/premiumSSH/Websocket_usa2";
 import Websocket_ca1 from "./components/premiumSSH/Websocket_ca1";
 import Contact from "./pages/Contact";
 import UserState from "./components/context/user/UserState";
+import Condition from "./pages/Condition";
 
 function App() {
     return (
@@ -39,6 +40,8 @@ function App() {
                     <Route path="/panel" element={<Panel />} />
 
                     <Route path="/payment" element={<Payment />} />
+
+                    <Route path="/terminos-y-condiciones" element={<Condition />} />
 
                     {/**Rutas de servidores premium**/}
 

@@ -6358,7 +6358,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap);", ""]);
 
 // module
-exports.push([module.i, "header {\n    height: 60vh;\n    width: 100%;\n    background-color: #232e3c;\n    background-image: url(\"https://res.cloudinary.com/hive-vpn/image/upload/v1640102752/earth-g93ef8c2f4_1280_attbls.jpg\") !important;\n    background-repeat: no-repeat;\n    background-size: cover;\n}\n.header__content {\n    height: 60vh;\n    width: 100%;\n    background-color: rgba(59, 55, 55, 0.5);\n}\nheader h1 {\n    color: #f1f4f4;\n    font-family: \"Poppins\", sans-serif;\n}\n\nheader p {\n    color: #beb193;\n    font-size: 20px;\n    font-family: \"Poppins\", sans-serif;\n    color: #4dcb44 !important;\n    font-weight: 500;\n}\n\n.ticket {\n    background: #f8aa02;\n    height: 150px;\n    width: 150px;\n    padding: 5px;\n    border-radius: 5px;\n    text-align: center;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    flex-direction: column;\n}\n.ticket__header h3 {\n    font-weight: 700;\n    font-size: 40px;\n    color: #f2f2f2;\n    border-bottom: 1px solid #00467a;\n}\n\n.ticket__footer p {\n    font-family: \"Poppins\", \"san-serif\";\n    font-weight: 300;\n    color: rgb(66, 35, 66) !important;\n}\n.header__title {\n    display: block;\n    font-family: \"Poppins\", \"san-serif\";\n    white-space: nowrap;\n    border-right: 4px solid;\n    width: 14.5ch;\n    -webkit-animation: typing 6s steps(19), blink 0.5s step-end alternate;\n            animation: typing 6s steps(19), blink 0.5s step-end alternate;\n    overflow: hidden;\n}\n@-webkit-keyframes typing {\n    from {\n        width: 0;\n    }\n}\n@keyframes typing {\n    from {\n        width: 0;\n    }\n}\n@-webkit-keyframes blink {\n    50% {\n        border-color: transparent;\n    }\n}\n@keyframes blink {\n    50% {\n        border-color: transparent;\n    }\n}\n", ""]);
+exports.push([module.i, "header {\n    height: 60vh;\n    width: 100%;\n    background-color: #232e3c;\n    background-image: url(\"https://res.cloudinary.com/ddfsqcy12/image/upload/v1648140447/map-gfa4f71b51_1280_dyxh58.jpg\") !important;\n    background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center;\n}\n.header__content {\n    height: 60vh;\n    width: 100%;\n    background-color: rgba(59, 55, 55, 0.7);\n}\nheader h1 {\n    color: #f1f4f4;\n    font-family: \"Poppins\", sans-serif;\n}\n\nheader p {\n    color: #beb193;\n    font-size: 20px;\n    font-family: \"Poppins\", sans-serif;\n    color: #4dcb44 !important;\n    font-weight: 500;\n}\n\n.ticket {\n    background: #f8aa02;\n    height: 150px;\n    width: 150px;\n    padding: 5px;\n    border-radius: 5px;\n    text-align: center;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    flex-direction: column;\n}\n.ticket__header h3 {\n    font-weight: 700;\n    font-size: 40px;\n    color: #f2f2f2;\n    border-bottom: 1px solid #00467a;\n}\n\n.ticket__footer p {\n    font-family: \"Poppins\", \"san-serif\";\n    font-weight: 300;\n    color: rgb(66, 35, 66) !important;\n}\n.header__title {\n    display: block;\n    font-family: \"Poppins\", \"san-serif\";\n    white-space: nowrap;\n    border-right: 4px solid;\n    width: 14.5ch;\n    -webkit-animation: typing 6s steps(19), blink 0.5s step-end alternate;\n            animation: typing 6s steps(19), blink 0.5s step-end alternate;\n    overflow: hidden;\n}\n@-webkit-keyframes typing {\n    from {\n        width: 0;\n    }\n}\n@keyframes typing {\n    from {\n        width: 0;\n    }\n}\n@-webkit-keyframes blink {\n    50% {\n        border-color: transparent;\n    }\n}\n@keyframes blink {\n    50% {\n        border-color: transparent;\n    }\n}\n", ""]);
 
 // exports
 
@@ -6378,6 +6378,25 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 // module
 exports.push([module.i, ".tarj-icon:hover{\n    cursor: pointer;\n    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/src/pages/Condition.css":
+/*!******************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./resources/js/src/pages/Condition.css ***!
+  \******************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "h1{\n    color: #00467a;\n}\nh2{\n    color: #6c757d !important;\n}\n\n/*CONTENT STYLE CSS*/\n\n.content{\n    background-color: #f5f5f5;\n    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);\n    padding:10px 20px ;\n}", ""]);
 
 // exports
 
@@ -69151,6 +69170,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_premiumSSH_Websocket_ca1__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/premiumSSH/Websocket_ca1 */ "./resources/js/src/components/premiumSSH/Websocket_ca1.jsx");
 /* harmony import */ var _pages_Contact__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./pages/Contact */ "./resources/js/src/pages/Contact.jsx");
 /* harmony import */ var _components_context_user_UserState__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/context/user/UserState */ "./resources/js/src/components/context/user/UserState.js");
+/* harmony import */ var _pages_Condition__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./pages/Condition */ "./resources/js/src/pages/Condition.jsx");
+
 
 
 
@@ -69193,6 +69214,9 @@ function App() {
     path: "/payment",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_pages_Payment__WEBPACK_IMPORTED_MODULE_7__["default"], null)
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+    path: "/terminos-y-condiciones",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_pages_Condition__WEBPACK_IMPORTED_MODULE_17__["default"], null)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
     path: "/websocket/unit-state/usa1",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_premiumSSH_Websocket_usa__WEBPACK_IMPORTED_MODULE_8__["default"], null)
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
@@ -69229,7 +69253,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_InfoIP__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/InfoIP */ "./resources/js/src/components/InfoIP.jsx");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var _components_InfoIP__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/InfoIP */ "./resources/js/src/components/InfoIP.jsx");
 
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
@@ -69253,6 +69278,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
 
 
@@ -69305,7 +69331,11 @@ function Footer() {
     className: "footer__content-main"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", {
     className: "footer__content-title text-center py-4 m-0"
-  }, "CONECTADOS A HIVE VPN")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  }, "CONECTADOS A HIVE VPN"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h4", {
+    className: "text-light footer__content-title text-center "
+  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    to: "terminos-y-condiciones"
+  }, "Terminos y condiciones"), " ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("hr", {
     className: "text-light opacity-8"
@@ -69325,7 +69355,7 @@ function Footer() {
     className: "col-sm-12 col-md-4 d-flex justify-content-center align-items-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
     className: "footer__power footer__text m-0 p-0"
-  }, "By @noscriptsh")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_InfoIP__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, "By @noscriptsh")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_InfoIP__WEBPACK_IMPORTED_MODULE_3__["default"], {
     data: infoIP
   }));
 }
@@ -72252,6 +72282,66 @@ function Websocket_usa2() {
     to: "/login",
     className: "btn btn-secondary btn-block"
   }, "Login")))))))));
+}
+
+/***/ }),
+
+/***/ "./resources/js/src/pages/Condition.css":
+/*!**********************************************!*\
+  !*** ./resources/js/src/pages/Condition.css ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/postcss-loader/src??ref--6-2!./Condition.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/src/pages/Condition.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./resources/js/src/pages/Condition.jsx":
+/*!**********************************************!*\
+  !*** ./resources/js/src/pages/Condition.jsx ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Condition; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Condition_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Condition.css */ "./resources/js/src/pages/Condition.css");
+/* harmony import */ var _Condition_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Condition_css__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function Condition() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "content my-4"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "text-center py-4"
+  }, "Condiciones de hive-vpn.tk"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "content__info"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Generalidad"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Te doy la bienvenida y te invito a conocer las presentes Condiciones Generales de Contrataci\xF3n del servicio de usuarios SSH y las Pol\xEDtica de Privacidad para que conozcas toda la informaci\xF3n necesaria respecto a las transacciones electr\xF3nicas que realices en este Sitio Web."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Las Condiciones podr\xE1n sufrir modificaciones en cualquier momento, las cuales ser\xE1n informadas en los canales oficiales de hive-vpn.tk"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Caracter\xEDsticas del servicio"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Las presentes condiciones regulan los servicios de suscripci\xF3n que permite al usuario conocer el precio de los servicios premium ofrecidos."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Acceso premium a una cuenta SSH (10 usuarios) de 30 d\xEDas, con un costo de $4 USD."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Acceso premium a una cuenta SSH (10 usuarios) de 15 d\xEDas, con un costo de $2 USD.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Los servicios premium cuentan con soporte, en el caso de ser una cuenta gratis no tienen los mismos beneficios."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Condiciones de uso"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Los usuarios que ofrecemos solo permiten conexion con el protocolo Websocket y SSL/TLS, de este modo, no se garantiza conexi\xF3n por alg\xFAn otro protocolo."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "El Suscriptor se compromete a no usar el Sitio Web ni sus Servicios con fines fraudulentos, as\xED como a no llevar a cabo conducta alguna que pudiera da\xF1ar la imagen, los intereses y los derechos de hive-vpn.tk"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "El Suscriptor se compromete a no realizar acto alguno con objeto de da\xF1ar, inutilizar o sobrecargar el Sitio Web, o que impidiera, de cualquier forma, la normal utilizaci\xF3n y funcionamiento del mismo."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "El Suscriptor se compremete a no abusar de las cuentas SSH, si en alg\xFAn caso se detecta creaci\xF3n de muchos usuarios en menos de 24 horas, la IP del usuario sera baneado y su cuenta ser\xE1 suspendida"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Modalidad de suscripci\xF3n y precio"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Los precios varian de acuerdo al mercado, pero la suscripci\xF3n es por 30 dias o 15 d\xEDas, es decir, durante se encuentre activo el usuario SSH, de lo contrario no se podra hacer reclamos."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Los reembolsos solo aplican durante las 24 horas, comenzando desde la creaci\xF3n del usuario o pago."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Forma de pago"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Se aceptannn las siguientes formas de pago:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "PayPal: Si elige pagar con PayPal, ser\xE1 redirigido a PayPal para que pueda pagar con su cuenta PayPal o con su tarjeta de d\xE9bito o cr\xE9dito de manera r\xE1pida y segura, sin compartir informaci\xF3n financiera.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Servicio de atenci\xF3n"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Puedes contactarme por medio de la red social Telegram para resolver dudas o problemas con el servicio, como los que se mencionan a continuaci\xF3n: Cuenta desactiva de ssh antes del tiempo de caducidad, problemas al momento de pagar y crear el usuario."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Los horaios de atenci\xF3n es de Lunes a Domingo de 8:00 AM a 8:30 PM, normalmente seras atendido en hora o mas."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Tu conducta"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Debes de utilizar los servicios unicamente para fines legales. Tu como usuario aceptas y eres responsable de cualquier actividad ilegal."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Para hacer ataques DDoS con los servicios que ofrecemos, no los hacemos responsables."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Protecci\xF3n de datos"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Los datos personales que se registran en el sitio web no seran utilizados no seran compartidos con ninguna entidad de acuerdo con el Reglamento General de Protecci\xF3n de Datos."))));
 }
 
 /***/ }),

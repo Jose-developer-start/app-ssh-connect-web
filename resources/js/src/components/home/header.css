@@ -4,14 +4,15 @@ header {
     height: 60vh;
     width: 100%;
     background-color: #232e3c;
-    background-image: url("https://res.cloudinary.com/hive-vpn/image/upload/v1640102752/earth-g93ef8c2f4_1280_attbls.jpg") !important;
+    background-image: url("https://res.cloudinary.com/ddfsqcy12/image/upload/v1648140447/map-gfa4f71b51_1280_dyxh58.jpg") !important;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 .header__content {
     height: 60vh;
     width: 100%;
-    background-color: rgba(59, 55, 55, 0.5);
+    background-color: rgba(59, 55, 55, 0.7);
 }
 header h1 {
     color: #f1f4f4;

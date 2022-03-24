@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 import InfoIP from './components/InfoIP';
 export default function Footer() {
     const [infoIP, setInfoIP] = useState({})
@@ -15,6 +16,7 @@ export default function Footer() {
         <footer className="bg-dark" id="footer-main">
             <div className="footer__content-main">
                 <h3 className="footer__content-title text-center py-4 m-0">CONECTADOS A HIVE VPN</h3>
+                <h4 className="text-light footer__content-title text-center "> <Link to={"terminos-y-condiciones"}>Terminos y condiciones</Link> </h4>
             </div>
             <div className="container">
             <hr className="text-light opacity-8" />
