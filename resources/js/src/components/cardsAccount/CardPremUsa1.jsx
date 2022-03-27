@@ -24,7 +24,7 @@ export default function Usa1() {
                 </div>
                 <div className="small border-top">
                     <span className="badge bg-success">Online</span>
-                    <span className="badge bg-primary">Host: vip-cloud.tk</span>
+                    <span className="badge bg-primary">Host: vip1.hivevpn.tk</span>
                     <span className="badge bg-dark text-white">DNS Host: 1.1.1.1</span>
                 </div>
             </div>

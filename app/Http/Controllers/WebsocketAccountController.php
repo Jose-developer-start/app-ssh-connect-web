@@ -36,7 +36,7 @@ class WebsocketAccountController extends Controller
 
         $comand = 'useradd -e '.$date.' -p "$(mkpasswd --method=sha-512 '.$passwd.')" '.$user;
         
-        $exec = ssh2_exec(connect('159.203.170.193','vps-2021-hive',22), $comand);
+        $exec = ssh2_exec(connect('157.245.11.150','vps-2021-hive',22), $comand);
 
         $account = WebsocketAccount::create([
             'user' => $user,
@@ -63,7 +63,7 @@ class WebsocketAccountController extends Controller
 
         $comand = 'useradd -e '.$date.' -p "$(mkpasswd --method=sha-512 '.$passwd.')" '.$user;
         
-        $exec = ssh2_exec(connect('159.203.170.193','vps-2021-hive',22), $comand);
+        $exec = ssh2_exec(connect('157.245.11.150','vps-2021-hive',22), $comand);
 
         $account = WebsocketAccount::create([
             'user' => $user,
@@ -109,7 +109,7 @@ class WebsocketAccountController extends Controller
         $comand = 'userdel '. $websocketAccount->user;
     
         //$exec = ssh2_exec(connect('143.198.170.229','vps_2021',22), $comand); //VPS OLD
-        $exec = ssh2_exec(connect('159.203.170.193','vps-2021-hive',22), $comand);
+        $exec = ssh2_exec(connect('157.245.11.150','vps-2021-hive',22), $comand);
 
         //$exec = ssh2_exec(connect('192.168.49.186','jose002',22), $comand); //VPS PRUEBA
         return response()->json($websocketAccount->delete());

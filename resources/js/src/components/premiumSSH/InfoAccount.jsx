@@ -9,10 +9,10 @@ export default function InfoAccount({ data }) {
 
                     <div className="p-2 bg-white rounded shadow-sm mb-2">
                         <ul className="list-group list-group-flush">
-                            <li className="list-group-item py-2">WS Domain USA: usa2.vip-cloud.tk
+                            <li className="list-group-item py-2">WS Domain USA: usa2.vip1.hivevpn.tk
                                 <span className="badge badge-primary badge-pill" /><i className="far fa-check-circle"></i>
                             </li>
-                            <li className="list-group-item py-2">WS Domain canada: canada.vip-cloud.tk
+                            <li className="list-group-item py-2">WS Domain canada: canada.vip1.hivevpn.tk
                                 <span className="badge badge-primary badge-pill" /><i className="far fa-check-circle"></i>
                             </li>
                             <li className="list-group-item py-2">Port: SSL/TLS 443, HTTP 80 <span className="badge badge-primary badge-pill" /><i className="far fa-check-circle"></i></li>
@@ -33,11 +33,11 @@ export default function InfoAccount({ data }) {
                         {
                             (sessionStorage.getItem('country') == "canada") ?
                                 <p>
-                                    GET shi://sni.cloudflaressl.com HTTP/1.1[crlf]Host: canada.vip-cloud.tk[crlf]Upgrade: websocket[crlf][crlf]
+                                    GET shi://sni.cloudflaressl.com HTTP/1.1[crlf]Host: canada.vip1.hivevpn.tk[crlf]Upgrade: websocket[crlf][crlf]
                                 </p>
                                 :
                                 <p>
-                                    GET shi://sni.cloudflaressl.com HTTP/1.1[crlf]Host: vip-cloud.tk[crlf]Upgrade: websocket[crlf][crlf]
+                                    GET shi://sni.cloudflaressl.com HTTP/1.1[crlf]Host: vip1.hivevpn.tk[crlf]Upgrade: websocket[crlf][crlf]
                                 </p>
                         }
 

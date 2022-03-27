@@ -10,7 +10,7 @@ export default function Payload() {
                     <p className="card-header">Toronto/Ca Domain</p>
                         <div className="card-body">
                             <p>
-                            GET shi://sni.cloudflaressl.com HTTP/1.1[crlf]Host: canada.vip-cloud.tk[crlf]Upgrade: websocket[crlf][crlf]
+                            GET shi://sni.cloudflaressl.com HTTP/1.1[crlf]Host: canada.vip1.hivevpn.tk[crlf]Upgrade: websocket[crlf][crlf]
                             </p>
                         </div>
                     </div>
@@ -20,7 +20,7 @@ export default function Payload() {
                     <p className="card-header">Unite State Domain</p>
                         <div className="card-body">
                             <p>
-                            GET shi://sni.cloudflaressl.com HTTP/1.1[crlf]Host: vip-cloud.tk[crlf]Upgrade: websocket[crlf][crlf]
+                            GET shi://sni.cloudflaressl.com HTTP/1.1[crlf]Host: vip1.hivevpn.tk[crlf]Upgrade: websocket[crlf][crlf]
                             </p>
                         </div>
                     </div>
