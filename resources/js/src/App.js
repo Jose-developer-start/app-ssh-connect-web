@@ -19,6 +19,7 @@ import Websocket_ca1 from "./components/premiumSSH/Websocket_ca1";
 import Contact from "./pages/Contact";
 import UserState from "./components/context/user/UserState";
 import Condition from "./pages/Condition";
+import V2ray from "./components/accountsFree/V2rayUSA1";
 
 function App() {
     return (
@@ -42,6 +43,10 @@ function App() {
                     <Route path="/payment" element={<Payment />} />
 
                     <Route path="/terminos-y-condiciones" element={<Condition />} />
+
+                    {/**Rutas de servidores de v2ray*/}
+
+                    <Route path="/v2ray/usa/new-york1" element={ <V2ray /> } />
 
                     {/**Rutas de servidores premium**/}
 

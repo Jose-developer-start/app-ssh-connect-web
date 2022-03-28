@@ -24,6 +24,9 @@ Route::post('websockets/usa2','WSFreeAccountController@create_server_usa2');
 //Delete SSH
 
 Route::delete('websockets/{websocketAccount}','WebsocketAccountController@destroy');
+///rutas de V2RAY
+
+Route::post('v2ray','V2rayCoreController@v2rayUSA1');
 
 //Paga
 Route::post('websockets/premium/usa/us1','WebsocketAccountController@premium_usa1');

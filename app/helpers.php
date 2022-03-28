@@ -39,6 +39,9 @@
                     }else{
                         $days = date('j') + 3;
                         $day = $days - 31;
+                        if($day == 0){
+                            $day = 1;
+                        }
                     }
                     $month++;
                 }
