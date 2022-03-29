@@ -7,7 +7,7 @@ export default function V2rayUSA1() {
   const [auth, setAuth] = useState(sessionStorage.getItem('user') || "");
     const [authData, setAuthData] = useState(null)
     const [user, setUser] = useState("");
-    const [passwd, setPasswd] = useState("");
+    const [host, setHost] = useState("");
     const [loading, setLoading] = useState(false);
     const [account, setAccount] = useState([]);
     var today = new Date();
@@ -15,7 +15,7 @@ export default function V2rayUSA1() {
     const onSubmit = (e) => {
         e.preventDefault();
 
-        if (/\s/.test(user) || /\s/.test(passwd)) {
+        if (/\s/.test(user) || /\s/.test(host)) {
             swal('Error', 'No puede contener espacios', 'error');
             return 0;
         }
@@ -24,7 +24,7 @@ export default function V2rayUSA1() {
             "user_id": authData.id,
             "date": date,
             "user": user,
-            "passwd": passwd,
+            "passwd": host,
             "country": "New-york/USA",
             "uuid": uuidv4()
         }
@@ -38,8 +38,8 @@ export default function V2rayUSA1() {
                     "Content-Type": "application/json"
                 }
             });
-            const dataJson = await result.json();
-            console.log(dataJson)
+            const dataJson = await result.text();
+            //console.log(dataJson)
             setAccount(dataJson);
         }
         setLoading(true);
@@ -53,7 +53,7 @@ export default function V2rayUSA1() {
     }, [account])
     if (account.length != 0) {
         return (
-            <CreateV2ray />
+            <CreateV2ray uuid={account} host={host} />
         )
     }
   return (
@@ -69,7 +69,7 @@ export default function V2rayUSA1() {
                             <div className="col-md-4">
                                 <div className="p-2 bg-white rounded shadow-sm mb-2">
                                     <ul className="list-group list-group-flush">
-                                        <li className="list-group-item py-2">WS Domain : usa2.v2ray-ssl.tk
+                                        <li className="list-group-item py-2">WS Domain : free.v2ray-ssl.tk
                                             <span className="badge badge-primary badge-pill" /><i className="far fa-check-circle"></i>
                                         </li>
                                         <li className="list-group-item py-2">Port: 443<span className="badge badge-primary badge-pill" /><i className="far fa-check-circle"></i></li>
@@ -96,23 +96,23 @@ export default function V2rayUSA1() {
                                             </div>
                                         </div>
                                         <div className="mb-3">
-                                            <label htmlFor="password" className="form-label">HOST</label>
+                                            <label htmlFor="password" className="form-label">Host</label>
                                             <div className="input-group">
                                                 <span className="input-group-text">Hive VPN</span>
-                                                <input type="text" onChange={(e) => { setPasswd(e.target.value) }} className="form-control" name="passwd" id="password" placeholder="clave" required />
+                                                <input type="text" onChange={(e) => { setHost(e.target.value) }} className="form-control" name="host" id="password" placeholder="Host" required />
                                             </div>
                                         </div>
                                         <div className="mb-3">
                                             <label htmlFor="hostname" className="form-label">Domain: </label>
                                             <div className="form-check">
 
-                                                <label className="form-check-label" htmlFor="openv2ray.com">sf.vpn-internet.tk <span className="badge bg-success">Valid SSL</span></label>
+                                                <label className="form-check-label" htmlFor="openv2ray.com">free.v2ray-ssl.tk <span className="badge bg-success">Valid SSL/TLS</span></label>
                                             </div>
                                         </div>
 
                                         {
                                             (auth != "") ? (
-                                                <button type="submit" disabled={"true"} className="btn btn-primary btn-sm w-100 subb">{loading ? "Creando..." : "Create"}</button>
+                                                <button type="submit" disabled={loading} className="btn btn-primary btn-sm w-100 subb">{loading ? "Creando..." : "Create"}</button>
                                             ) : (
                                                 <Link to="/login" className="btn btn-secondary btn-block" >Login</Link>
                                             )

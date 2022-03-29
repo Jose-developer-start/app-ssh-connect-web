@@ -28,6 +28,7 @@
         "browser-sync": "^2.27.7",
         "browser-sync-webpack-plugin": "^2.3.0",
         "history": "^5.1.0",
+        "js-base64": "^3.7.2",
         "react-router-dom": "^6.1.1",
         "sweetalert": "^2.1.2",
         "uuid": "^8.3.2"
