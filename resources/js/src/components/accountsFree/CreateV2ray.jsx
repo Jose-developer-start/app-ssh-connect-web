@@ -17,11 +17,11 @@ export default function CreateV2ray({ uuid, host }) {
             <div className="card-header">
               <div className="input-group">
                 <span className="input-group-text">UUID</span>
-                <input className="form-control" type="text" readOnly="true" value={getUUID} />
+                <input className="form-control" type="text" readOnly={true} value={getUUID} />
               </div>
             </div>
             <div className="card-body">
-              <textarea className="form-control" rows="5" cols="10" readOnly="true">
+              <textarea className="form-control" rows="5" cols="10" readOnly={true}>
                 {"vmess://" + encodeVmess}
               </textarea>
             </div>

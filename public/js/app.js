@@ -71394,7 +71394,7 @@ function CreateV2ray(_ref) {
   }, "UUID"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
     className: "form-control",
     type: "text",
-    readOnly: "true",
+    readOnly: true,
     value: getUUID
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "card-body"
@@ -71402,7 +71402,7 @@ function CreateV2ray(_ref) {
     className: "form-control",
     rows: "5",
     cols: "10",
-    readOnly: "true"
+    readOnly: true
   }, "vmess://" + encodeVmess))))));
 }
 
