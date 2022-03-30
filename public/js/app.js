@@ -71400,7 +71400,7 @@ function CreateV2ray(_ref) {
     className: "card-body"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("textarea", {
     className: "form-control",
-    rows: "5",
+    rows: "8",
     cols: "10",
     readOnly: true
   }, "vmess://" + encodeVmess))))));

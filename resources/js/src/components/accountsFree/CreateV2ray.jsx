@@ -21,7 +21,7 @@ export default function CreateV2ray({ uuid, host }) {
               </div>
             </div>
             <div className="card-body">
-              <textarea className="form-control" rows="5" cols="10" readOnly={true}>
+              <textarea className="form-control" rows="8" cols="10" readOnly={true}>
                 {"vmess://" + encodeVmess}
               </textarea>
             </div>
