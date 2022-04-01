@@ -87,6 +87,9 @@
 
         if($day < 3){
             $day = date('j') + 30;
+            if($day > 30){
+                $day = 30;
+            }
         }else{
             if($day > 3 && $month > 11){
                 $month = 1;
