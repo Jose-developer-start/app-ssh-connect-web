@@ -23,7 +23,7 @@ class WSFreeAccountController extends Controller
 
         $comand = 'useradd -e '.$date.' -p "$(mkpasswd --method=sha-512 '.$passwd.')" '.$user;
         
-        $exec = ssh2_exec(connect('157.245.11.150','vps-2021-hive',22), $comand);
+        $exec = ssh2_exec(connect('138.197.65.194','vps-2021-hive',22), $comand);
         //$exec = ssh2_exec(connect('192.168.49.186','jose002',22), $comand);
 
         $account = WebsocketAccount::create([

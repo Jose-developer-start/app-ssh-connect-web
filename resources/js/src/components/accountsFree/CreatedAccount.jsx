@@ -21,7 +21,7 @@ export default function CreatedAccount({user,passwd,date,payload,dominio1,ip}) {
                             </li>
                             <li className="list-group-item py-2">Limit Acc: 100</li>
                             <li className="list-group-item py-2">Active: 3 Dias</li>
-                            <li className="list-group-item py-2">Port UDP: 7400
+                            <li className="list-group-item py-2">Port UDP: 7300
                                 <span className="badge badge-primary badge-pill" /><i className="far fa-check-circle"></i>
                             </li>
 

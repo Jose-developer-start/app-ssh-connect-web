@@ -51,7 +51,7 @@ export default function AccountFreeUSA() {
     }, [account])
     if (account.length != 0) {
         return (
-            <CreatedAccount user={account.user} passwd={account.passwd} date={account.date} payload={"GET shi://sni.cloudflaressl.com HTTP/1.1[crlf]Host: vip1.hivevpn.tk[crlf]Upgrade: websocket[crlf][crlf]"} dominio1={"vip1.hivevpn.tk"} ip={"157.245.11.150"} />
+            <CreatedAccount user={account.user} passwd={account.passwd} date={account.date} payload={"GET shi://sni.cloudflaressl.com HTTP/1.1[crlf]Host: usa1.vip-cloud.tk[crlf]Upgrade: websocket[crlf][crlf]"} dominio1={"usa1.vip-cloud.tk"} ip={"138.197.65.194"} />
         )
     }
     return (
@@ -68,7 +68,7 @@ export default function AccountFreeUSA() {
                             <div className="col-md-4">
                                 <div className="p-2 bg-white rounded shadow-sm mb-2">
                                     <ul className="list-group list-group-flush">
-                                        <li className="list-group-item py-2">WS Domain : vip1.hivevpn.tk
+                                        <li className="list-group-item py-2">WS Domain : usa1.vip-cloud.tk
                                             <span className="badge badge-primary badge-pill" /><i className="far fa-check-circle"></i>
                                         </li>
                                         <li className="list-group-item py-2">Port: TLS 443, HTTP 80 <span className="badge badge-primary badge-pill" /><i className="far fa-check-circle"></i></li>
@@ -77,7 +77,7 @@ export default function AccountFreeUSA() {
                                         </li>
                                         <li className="list-group-item py-2">Limit Acc: 100</li>
                                         <li className="list-group-item py-2">Active: 3 Dias</li>
-                                        <li className="list-group-item py-2">Port UDP: 7400
+                                        <li className="list-group-item py-2">Port UDP: 7300
                                             <span className="badge badge-primary badge-pill" /><i className="far fa-check-circle"></i>
                                         </li>
 
@@ -107,7 +107,7 @@ export default function AccountFreeUSA() {
                                             <label htmlFor="hostname" className="form-label">Domain: </label>
                                             <div className="form-check">
 
-                                                <label className="form-check-label" htmlFor="openv2ray.com">vip1.hivevpn.tk <span className="badge bg-success">Valid SSL</span></label>
+                                                <label className="form-check-label" htmlFor="openv2ray.com">usa1.vip-cloud.tk <span className="badge bg-success">Valid SSL</span></label>
                                             </div>
                                         </div>
 

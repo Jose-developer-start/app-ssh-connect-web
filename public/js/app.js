@@ -70908,9 +70908,9 @@ function AccountFreeUSA() {
       user: account.user,
       passwd: account.passwd,
       date: account.date,
-      payload: "GET shi://sni.cloudflaressl.com HTTP/1.1[crlf]Host: vip1.hivevpn.tk[crlf]Upgrade: websocket[crlf][crlf]",
-      dominio1: "vip1.hivevpn.tk",
-      ip: "157.245.11.150"
+      payload: "GET shi://sni.cloudflaressl.com HTTP/1.1[crlf]Host: usa1.vip-cloud.tk[crlf]Upgrade: websocket[crlf][crlf]",
+      dominio1: "usa1.vip-cloud.tk",
+      ip: "138.197.65.194"
     });
   }
 
@@ -70938,7 +70938,7 @@ function AccountFreeUSA() {
     className: "list-group list-group-flush"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
     className: "list-group-item py-2"
-  }, "WS Domain : vip1.hivevpn.tk", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+  }, "WS Domain : usa1.vip-cloud.tk", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
     className: "badge badge-primary badge-pill"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
     className: "far fa-check-circle"
@@ -70960,7 +70960,7 @@ function AccountFreeUSA() {
     className: "list-group-item py-2"
   }, "Active: 3 Dias"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
     className: "list-group-item py-2"
-  }, "Port UDP: 7400", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+  }, "Port UDP: 7300", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
     className: "badge badge-primary badge-pill"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
     className: "far fa-check-circle"
@@ -71021,7 +71021,7 @@ function AccountFreeUSA() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
     className: "form-check-label",
     htmlFor: "openv2ray.com"
-  }, "vip1.hivevpn.tk ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+  }, "usa1.vip-cloud.tk ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
     className: "badge bg-success"
   }, "Valid SSL")))), auth != "" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
     type: "submit",
@@ -71333,7 +71333,7 @@ __webpack_require__.r(__webpack_exports__);
 function Accounts() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_home_ListAccount__WEBPACK_IMPORTED_MODULE_1__["default"], {
     title: "Servidores gratis 3 días"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_cardsAccount_CardFreeCA__WEBPACK_IMPORTED_MODULE_2__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_home_ListAccount__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_cardsAccount_CardFreeUsa1__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_cardsAccount_CardFreeCA__WEBPACK_IMPORTED_MODULE_2__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_home_ListAccount__WEBPACK_IMPORTED_MODULE_1__["default"], {
     title: "v2ray de 3 días"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_cardsAccount_CardFreeV2rayUsa1__WEBPACK_IMPORTED_MODULE_4__["default"], null)));
 }
@@ -71470,7 +71470,7 @@ function CreatedAccount(_ref) {
     className: "list-group-item py-2"
   }, "Active: 3 Dias"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: "list-group-item py-2"
-  }, "Port UDP: 7400", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+  }, "Port UDP: 7300", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "badge badge-primary badge-pill"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "far fa-check-circle"
@@ -71930,7 +71930,7 @@ function Usa1() {
     className: "badge bg-success"
   }, "Online"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "badge bg-primary"
-  }, "Host: vip1.hivevpn.tk"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+  }, "Host: usa1.vip-cloud.tk"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "badge bg-dark text-white"
   }, "DNS Host: 1.1.1.1"))));
 }
